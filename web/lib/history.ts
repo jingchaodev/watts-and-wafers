@@ -31,9 +31,12 @@ function readLines(name: string): Record<string, unknown>[] {
   }
 }
 
-// Vast keys carry form-factor suffixes ("H100 SXM"); join on the base class.
+// Strip form-factor/memory suffixes ("H100 SXM", "A100 PCIe 80GB") to the base class.
 function baseGpu(name: string): string {
-  return name.replace(/\s+(SXM\d*|NVL|PCIe)$/i, "").trim();
+  return name
+    .replace(/\s+(SXM\d*|NVL|PCIe)(\s+\d+GB)?$/i, "")
+    .replace(/\s+\d+GB$/i, "")
+    .trim();
 }
 
 const CHART_GPUS = ["H100", "H200", "B200", "A100"];
@@ -57,6 +60,31 @@ export function loadGpuTrend(): GpuTrendPayload {
     const ts = line.ts as string;
     const mins = (line.min_per_gpu ?? {}) as Record<string, number>;
     for (const [g, v] of Object.entries(mins)) push(out, baseGpu(g), "Spot floor (backfill)", ts, v);
+  }
+
+  // External backfill (see data/history/BACKFILL_PROVENANCE.md): on-demand rate
+  // cards only — spot/marketplace kinds excluded to keep series semantics uniform.
+  const EXT_PROVIDER_NAMES: Record<string, string> = {
+    runpod: "RunPod (ext)",
+    lambda: "Lambda",
+    nebius: "Nebius",
+    crusoe: "Crusoe",
+    coreweave: "CoreWeave",
+    "vast.ai": "Vast on-demand (ext)",
+  };
+  for (const line of readLines("backfill_external.jsonl")) {
+    if (line.kind !== "ondemand") continue;
+    const ts = line.ts as string;
+    const name = EXT_PROVIDER_NAMES[line.provider as string];
+    if (!name) continue;
+    const prices = (line.prices ?? {}) as Record<string, number>;
+    const byBase: Record<string, number> = {};
+    for (const [g, v] of Object.entries(prices)) {
+      if (typeof v !== "number" || v <= 0) continue;
+      const b = baseGpu(g);
+      byBase[b] = Math.min(byBase[b] ?? Infinity, v);
+    }
+    for (const [g, v] of Object.entries(byBase)) push(out, g, name, ts, v);
   }
 
   for (const line of readLines("neoclouds.jsonl")) {

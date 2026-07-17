@@ -28,7 +28,13 @@ echarts.use([
 const PALETTE: Record<string, string> = {
   "Vast median": "#D97757",
   RunPod: "#788C5D",
+  "RunPod (ext)": "#9DB183",
   DataCrunch: "#5B7DA3",
+  Lambda: "#B8860B",
+  Nebius: "#3E8E8C",
+  Crusoe: "#A0522D",
+  CoreWeave: "#6B5B95",
+  "Vast on-demand (ext)": "#E0A18C",
   "Azure on-demand": "#8E63CE",
   "Azure spot": "#C4A5EE",
   "Spot floor (backfill)": "#8F8A7D",
@@ -66,17 +72,39 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
     const p50 = quantile(all, 0.5);
     const p75 = quantile(all, 0.75);
 
+    // break lines across real data gaps (>35 days) instead of drawing a
+    // fake interpolated segment through months with no observations
+    const GAP_MS = 35 * 24 * 3600 * 1000;
+    const withGaps = (pts: [string, number][]): [string, number | null][] => {
+      const outPts: [string, number | null][] = [];
+      for (let j = 0; j < pts.length; j++) {
+        if (j > 0) {
+          const prev = Date.parse(pts[j - 1][0]);
+          const cur = Date.parse(pts[j][0]);
+          if (cur - prev > GAP_MS)
+            outPts.push([new Date(prev + GAP_MS / 2).toISOString(), null]);
+        }
+        outPts.push(pts[j]);
+      }
+      return outPts;
+    };
+
+    // markArea/markLine must anchor to a default-VISIBLE series or they vanish
+    const HIDDEN = new Set(["Azure on-demand", "Vast on-demand (ext)", "Spot floor (backfill)"]);
+    const names = Object.keys(seriesMap);
+    const anchorIdx = Math.max(0, names.findIndex((n) => !HIDDEN.has(n)));
+
     const series = Object.entries(seriesMap).map(([name, pts], i) => ({
       name,
       type: "line" as const,
-      data: pts,
+      data: withGaps(pts),
       // sparse young series still need visible marks; hide symbols once dense
       showSymbol: pts.length < 50,
       symbolSize: 4,
       connectNulls: false,
       lineStyle: { width: name.includes("backfill") ? 1.4 : 1.8, color: PALETTE[name] },
       itemStyle: { color: PALETTE[name] },
-      ...(i === 0 && isFinite(p25)
+      ...(i === anchorIdx && isFinite(p25)
         ? {
             markArea: {
               silent: true,
@@ -103,7 +131,7 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
     return {
       backgroundColor: "transparent",
       animation: false,
-      grid: { left: 48, right: 16, top: 40, bottom: 64 },
+      grid: { left: 48, right: 16, top: 64, bottom: 64 },
       legend: {
         top: 0,
         textStyle: { color: "#3D3D3A", fontSize: 12 },
@@ -112,7 +140,11 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
         icon: "rect",
         // Azure on-demand quotes 3-6x above marketplace and crush the y-axis;
         // keep the series one click away instead of on by default.
-        selected: { "Azure on-demand": false },
+        selected: {
+          "Azure on-demand": false,
+          "Vast on-demand (ext)": false,
+          "Spot floor (backfill)": false,
+        },
       },
       tooltip: {
         trigger: "axis",
@@ -210,8 +242,14 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
       <p style={{ fontSize: 11, color: "#87867F", fontFamily: "ui-monospace, monospace", marginTop: 4 }}>
         Sources: Vast.ai marketplace API (median $/GPU-hr of rentable offers) · RunPod &amp; DataCrunch
         public pricing (lowest on-demand $/GPU-hr) · Azure Retail Prices API (cheapest US-region
-        ND-series, per-GPU) · Spot floor backfill = lowest spot/on-demand price across providers,
-        from our pre-launch tracker (Jul 8–17, 2026). Collected hourly/daily by{" "}
+        ND-series, per-GPU) · Lambda/Nebius/Crusoe/CoreWeave/RunPod history May–Jul 2026 via{" "}
+        <a href="https://github.com/cherielilili/gpu-pricing-tracker" style={{ color: "#87867F" }}>
+          gpu-pricing-tracker
+        </a>{" "}
+        (on-demand rate cards) · RunPod H1-2025 points from Internet Archive snapshots of
+        runpod.io/pricing · Spot floor backfill = lowest spot/on-demand price across providers,
+        from our pre-launch tracker (Jul 8–17, 2026). Full provenance in the repo. Collected
+        hourly/daily by{" "}
         <a href="https://github.com/jingchaodev/watts-and-wafers" style={{ color: "#87867F" }}>
           open collectors
         </a>
