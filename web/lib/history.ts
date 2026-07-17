@@ -102,8 +102,15 @@ export function loadGpuTrend(): GpuTrendPayload {
   for (const line of readLines("vast_backfill.jsonl")) {
     const ts = line.ts as string;
     const gpus = (line.gpus ?? {}) as Record<string, { median_dph?: number }>;
+    // fold form factors (SXM/NVL/PCIe) into one point per base class, same as
+    // the live vast reader below — otherwise one day gets N points and zigzags
+    const byBase: Record<string, number[]> = {};
     for (const [g, v] of Object.entries(gpus)) {
-      if (typeof v?.median_dph === "number") push(out, baseGpu(g), "Vast median (ext)", ts, v.median_dph);
+      if (typeof v?.median_dph === "number") (byBase[baseGpu(g)] ??= []).push(v.median_dph);
+    }
+    for (const [g, arr] of Object.entries(byBase)) {
+      const sorted = [...arr].sort((a, b) => a - b);
+      push(out, g, "Vast median (ext)", ts, sorted[Math.floor(sorted.length / 2)]);
     }
   }
 
