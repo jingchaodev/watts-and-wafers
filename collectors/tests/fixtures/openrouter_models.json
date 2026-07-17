@@ -1,0 +1,861 @@
+{
+  "data": [
+    {
+      "id": "openai/o1-pro",
+      "canonical_slug": "openai/o1-pro",
+      "hugging_face_id": "",
+      "name": "OpenAI: o1-pro",
+      "created": 1742423211,
+      "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide...",
+      "context_length": 200000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00015",
+        "completion": "0.0006",
+        "web_search": "0.01"
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 100000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "structured_outputs"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-10-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/o1-pro/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false
+      }
+    },
+    {
+      "id": "openai/gpt-5.5-pro",
+      "canonical_slug": "openai/gpt-5.5-pro-20260423",
+      "hugging_face_id": "",
+      "name": "OpenAI: GPT-5.5 Pro",
+      "created": 1777051896,
+      "description": "GPT-5.5 Pro is OpenAI\u2019s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for...",
+      "context_length": 1050000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00003",
+        "completion": "0.00018",
+        "web_search": "0.01",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.00006",
+            "completion": "0.00027"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": "2025-12-01",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-5.5-pro-20260423/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    {
+      "id": "openai/gpt-5.4-pro",
+      "canonical_slug": "openai/gpt-5.4-pro-20260305",
+      "hugging_face_id": "",
+      "name": "OpenAI: GPT-5.4 Pro",
+      "created": 1772734366,
+      "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922K input, 128K...",
+      "context_length": 1050000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00003",
+        "completion": "0.00018",
+        "web_search": "0.01",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.00006",
+            "completion": "0.00027"
+          }
+        ]
+      },
+      "top_provider": {
+        "context_length": 1050000,
+        "max_completion_tokens": 128000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-5.4-pro-20260305/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    {
+      "id": "openai/gpt-5.2-pro",
+      "canonical_slug": "openai/gpt-5.2-pro-20251211",
+      "hugging_face_id": "",
+      "name": "OpenAI: GPT-5.2 Pro",
+      "created": 1765389780,
+      "description": "GPT-5.2 Pro is OpenAI\u2019s most advanced model, offering major improvements in agentic coding and long context performance over GPT-5 Pro. It is optimized for complex tasks that require step-by-step reasoning,...",
+      "context_length": 400000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000021",
+        "completion": "0.000168",
+        "web_search": "0.01"
+      },
+      "top_provider": {
+        "context_length": 400000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-5.2-pro-20251211/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    {
+      "id": "anthropic/claude-opus-4.7-fast",
+      "canonical_slug": "anthropic/claude-4.7-opus-fast-20260512",
+      "hugging_face_id": null,
+      "name": "Anthropic: Claude Opus 4.7 (Fast)",
+      "created": 1778613011,
+      "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00003",
+        "completion": "0.00015",
+        "web_search": "0.01",
+        "input_cache_read": "0.000003",
+        "input_cache_write": "0.0000375",
+        "input_cache_write_1h": "0.00006"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/anthropic/claude-4.7-opus-fast-20260512/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low"
+        ],
+        "default_effort": "medium"
+      }
+    },
+    {
+      "id": "openai/gpt-5-pro",
+      "canonical_slug": "openai/gpt-5-pro-2025-10-06",
+      "hugging_face_id": "",
+      "name": "OpenAI: GPT-5 Pro",
+      "created": 1759776663,
+      "description": "GPT-5 Pro is OpenAI\u2019s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and...",
+      "context_length": 400000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000015",
+        "completion": "0.00012",
+        "web_search": "0.01"
+      },
+      "top_provider": {
+        "context_length": 400000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": "2024-09-30",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-5-pro-2025-10-06/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "high"
+        ],
+        "default_effort": "high"
+      }
+    },
+    {
+      "id": "openai/o3-pro",
+      "canonical_slug": "openai/o3-pro-2025-06-10",
+      "hugging_face_id": "",
+      "name": "OpenAI: o3 Pro",
+      "created": 1749598352,
+      "description": "The o-series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o3-pro model uses more compute to think harder and provide consistently...",
+      "context_length": 200000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "file",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00002",
+        "completion": "0.00008",
+        "web_search": "0.01"
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 100000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": "2024-06-30",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/o3-pro-2025-06-10/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false
+      }
+    },
+    {
+      "id": "anthropic/claude-opus-4.1",
+      "canonical_slug": "anthropic/claude-4.1-opus-20250805",
+      "hugging_face_id": "",
+      "name": "Anthropic: Claude Opus 4.1",
+      "created": 1754411591,
+      "description": "Claude Opus 4.1 is an updated version of Anthropic\u2019s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains...",
+      "context_length": 200000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000015",
+        "completion": "0.000075",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000015",
+        "input_cache_write": "0.00001875",
+        "input_cache_write_1h": "0.00003"
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 32000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": "2025-01-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/anthropic/claude-4.1-opus-20250805/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [
+          {
+            "arena": "models",
+            "category": "3d",
+            "elo": 1222,
+            "win_rate": 51.7,
+            "rank": 40
+          },
+          {
+            "arena": "models",
+            "category": "asciiart",
+            "elo": 1208,
+            "win_rate": 51.4,
+            "rank": 19
+          },
+          {
+            "arena": "models",
+            "category": "codecategories",
+            "elo": 1210,
+            "win_rate": 55.8,
+            "rank": 44
+          },
+          {
+            "arena": "models",
+            "category": "dataviz",
+            "elo": 1203,
+            "win_rate": 56.4,
+            "rank": 46
+          },
+          {
+            "arena": "models",
+            "category": "gamedev",
+            "elo": 1230,
+            "win_rate": 58.5,
+            "rank": 39
+          },
+          {
+            "arena": "models",
+            "category": "svg",
+            "elo": 1203,
+            "win_rate": 60.8,
+            "rank": 27
+          },
+          {
+            "arena": "models",
+            "category": "uicomponent",
+            "elo": 1209,
+            "win_rate": 58,
+            "rank": 46
+          },
+          {
+            "arena": "models",
+            "category": "website",
+            "elo": 1209,
+            "win_rate": 55.3,
+            "rank": 50
+          }
+        ]
+      },
+      "reasoning": {
+        "mandatory": false
+      }
+    },
+    {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "canonical_slug": "venice/uncensored",
+      "hugging_face_id": "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+      "name": "Venice: Uncensored (free)",
+      "created": 1752094966,
+      "description": "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an \u201cuncensored\u201d instruct-tuned LLM, preserving...",
+      "context_length": 32768,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 32768,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2024-04-30",
+      "expiration_date": "2026-07-19",
+      "links": {
+        "details": "/api/v1/models/venice/uncensored/endpoints"
+      }
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct:free",
+      "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
+      "hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
+      "name": "Meta: Llama 3.3 70B Instruct (free)",
+      "created": 1733506137,
+      "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 65536,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": "2026-07-19",
+      "links": {
+        "details": "/api/v1/models/meta-llama/llama-3.3-70b-instruct/endpoints"
+      },
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 9.4,
+          "coding_index": 11.9,
+          "agentic_index": 0.3
+        }
+      }
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+      "hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "created": 1727222400,
+      "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": "2026-07-19",
+      "links": {
+        "details": "/api/v1/models/meta-llama/llama-3.2-3b-instruct/endpoints"
+      }
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+      "canonical_slug": "nousresearch/hermes-3-llama-3.1-405b",
+      "hugging_face_id": "NousResearch/Hermes-3-Llama-3.1-405B",
+      "name": "Nous: Hermes 3 405B Instruct (free)",
+      "created": 1723766400,
+      "description": "Hermes 3 is a generalist language model with many improvements over Hermes 2, including advanced agentic capabilities, much better roleplaying, reasoning, multi-turn conversation, long context coherence, and improvements across the...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "chatml"
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": "2026-07-19",
+      "links": {
+        "details": "/api/v1/models/nousresearch/hermes-3-llama-3.1-405b/endpoints"
+      }
+    },
+    {
+      "id": "openrouter/auto-beta",
+      "canonical_slug": "openrouter/auto-beta",
+      "hugging_face_id": null,
+      "name": "Auto Router (Beta)",
+      "created": 1784311165,
+      "description": "Auto Router (Beta) is a task-aware router from OpenRouter. It classifies each request, then routes it the [most popular model](/rankings#task-spend) for that task based on aggregate spend, filtered by your...",
+      "context_length": 2000000,
+      "architecture": {
+        "modality": "text+image+file+audio+video->text+image",
+        "input_modalities": [
+          "text",
+          "image",
+          "audio",
+          "file",
+          "video"
+        ],
+        "output_modalities": [
+          "text",
+          "image"
+        ],
+        "tokenizer": "Router",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "-1",
+        "completion": "-1"
+      },
+      "top_provider": {
+        "context_length": null,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "prediction",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "web_search_options"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openrouter/auto-beta/endpoints"
+      }
+    }
+  ],
+  "total_count": 343,
+  "links": {
+    "next": null
+  }
+}

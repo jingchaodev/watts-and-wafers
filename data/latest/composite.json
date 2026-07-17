@@ -1,0 +1,35 @@
+{
+  "asof": "2026-07-17T20:43:27Z",
+  "index": 50.0,
+  "label": "NEUTRAL",
+  "signals": [
+    {
+      "key": "gpu_availability",
+      "weight": 0.35,
+      "z": 0.0,
+      "direction": "flat",
+      "detail": "insufficient history"
+    },
+    {
+      "key": "token_economics",
+      "weight": 0.25,
+      "z": 0.0,
+      "direction": "flat",
+      "detail": "insufficient history"
+    },
+    {
+      "key": "memory",
+      "weight": 0.25,
+      "z": 0.0,
+      "direction": "flat",
+      "detail": "insufficient history"
+    },
+    {
+      "key": "gpu_price",
+      "weight": 0.15,
+      "z": 0.0,
+      "direction": "flat",
+      "detail": "insufficient history"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "asof": "2026-07-17T20:43:27Z",
+  "dram_spot": [
+    {
+      "item": "DDR5 16Gb (2Gx8) 4800/5600",
+      "avg": 49.667,
+      "chg_pct": 0.68
+    },
+    {
+      "item": "DDR5 16Gb (2Gx8) eTT",
+      "avg": 23.62,
+      "chg_pct": 0.0
+    },
+    {
+      "item": "DDR4 16Gb (2Gx8) 3200",
+      "avg": 80.2,
+      "chg_pct": 0.09
+    },
+    {
+      "item": "DDR4 16Gb (2Gx8) eTT",
+      "avg": 11.5,
+      "chg_pct": 0.0
+    },
+    {
+      "item": "DDR4 8Gb (1Gx8) 3200",
+      "avg": 40.5,
+      "chg_pct": 1.5
+    },
+    {
+      "item": "DDR4 8Gb (1Gx8) eTT",
+      "avg": 4.214,
+      "chg_pct": 0.0
+    },
+    {
+      "item": "DDR3 4Gb 512Mx8 1600/1866",
+      "avg": 13.175,
+      "chg_pct": 0.0
+    }
+  ],
+  "nand_note": {
+    "date": "2026-07-17",
+    "summary": "[News] Memory Patent War Escalates: Kioxia Hit With $229M Viasat Verdict; Samsung Faces Netlist ITC Probe",
+    "url": "https://www.trendforce.com/news/2026/07/17/news-memory-patent-war-escalates-kioxia-hit-with-229m-viasat-verdict-samsung-faces-netlist-itc-probe/"
+  },
+  "proxies": {},
+  "errors": []
+}

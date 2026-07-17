@@ -1,0 +1,136 @@
+{
+  "offers": [
+    {
+      "id": 44075909,
+      "num_gpus": 1,
+      "dph_total": 1.3168888888888888,
+      "dph_base": 1.3066666666666666,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "Montana, US",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 44075906,
+      "num_gpus": 2,
+      "dph_total": 2.6235555555555554,
+      "dph_base": 2.6133333333333333,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "Montana, US",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 36742494,
+      "num_gpus": 2,
+      "dph_total": 4.402222222222222,
+      "dph_base": 4.3999999999999995,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "The Netherlands, NL",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 27383705,
+      "num_gpus": 4,
+      "dph_total": 8.801481481481481,
+      "dph_base": 8.799999999999999,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "The Netherlands, NL",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 27383707,
+      "num_gpus": 2,
+      "dph_total": 4.401481481481481,
+      "dph_base": 4.3999999999999995,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "The Netherlands, NL",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 45185889,
+      "num_gpus": 1,
+      "dph_total": 1.9679259259259263,
+      "dph_base": 1.9653333333333336,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "The Netherlands, NL",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 36742495,
+      "num_gpus": 4,
+      "dph_total": 8.802222222222222,
+      "dph_base": 8.799999999999999,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "The Netherlands, NL",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 44363268,
+      "num_gpus": 1,
+      "dph_total": 1.6688888888888889,
+      "dph_base": 1.6666666666666667,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": ", US",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 42516711,
+      "num_gpus": 1,
+      "dph_total": 1.6074074074074072,
+      "dph_base": 1.5999999999999999,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "Japan, JP",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 28160510,
+      "num_gpus": 1,
+      "dph_total": 2.201481481481481,
+      "dph_base": 2.1999999999999997,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "The Netherlands, NL",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 34211769,
+      "num_gpus": 1,
+      "dph_total": 3.048888888888889,
+      "dph_base": 3.046666666666667,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": ", US",
+      "rentable": true,
+      "external": null
+    },
+    {
+      "id": 21671176,
+      "num_gpus": 1,
+      "dph_total": 1.9262962962962964,
+      "dph_base": 1.9200000000000002,
+      "gpu_name": "H100 SXM",
+      "gpu_ram": 81559,
+      "geolocation": "India, IN",
+      "rentable": true,
+      "external": null
+    }
+  ]
+}

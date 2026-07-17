@@ -1,0 +1,361 @@
+:root {
+  --bg: #FAF9F5;
+  --text: #1F1F1F;
+  --clay: #D97757;
+  --olive: #788C5D;
+  --rust: #B14A3A;
+  --border: #D1CFC5;
+  --panel: #FFFFFF;
+  --muted: #6B6A62;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--clay);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 64px;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 32px 0 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.wordmark {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.header-meta a {
+  font-family: var(--font-sans);
+}
+
+/* ---------- Sections ---------- */
+
+section.block {
+  margin-bottom: 48px;
+}
+
+h2.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-sub {
+  font-size: 14px;
+  color: var(--muted);
+  margin: -8px 0 16px;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.card + .card {
+  margin-top: 16px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* ---------- Pills ---------- */
+
+.pill-stale {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: #FBE9D9;
+  color: #9A5B1F;
+  border: 1px solid #E8C79A;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.pill-label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+/* ---------- Hero / gauge ---------- */
+
+.hero-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 20px 32px;
+  margin-bottom: 20px;
+}
+
+.hero-number {
+  font-family: var(--font-mono);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.gauge {
+  position: relative;
+  height: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    var(--rust) 0%,
+    #D9A05B 35%,
+    var(--border) 50%,
+    #9AAE7C 65%,
+    var(--olive) 100%
+  );
+  margin: 12px 0 8px;
+  border: 1px solid var(--border);
+}
+
+.gauge-marker {
+  position: absolute;
+  top: -3px;
+  width: 3px;
+  height: 20px;
+  background: var(--text);
+  border-radius: 2px;
+  transform: translateX(-1.5px);
+}
+
+.gauge-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.signal-row {
+  display: grid;
+  grid-template-columns: 90px 56px 28px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.signal-row:first-of-type {
+  border-top: none;
+}
+
+.signal-key {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.signal-weight {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.signal-arrow {
+  font-size: 16px;
+  text-align: center;
+}
+
+.signal-detail {
+  color: var(--text);
+}
+
+.arrow-up {
+  color: var(--olive);
+}
+
+.arrow-down {
+  color: var(--rust);
+}
+
+.arrow-flat {
+  color: var(--muted);
+}
+
+/* ---------- Tables ---------- */
+
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+table.data-table th,
+table.data-table td {
+  padding: 8px 12px;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+table.data-table th:first-child,
+table.data-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+table.data-table thead th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--text);
+}
+
+table.data-table tbody tr:hover {
+  background: #F5F3EC;
+}
+
+.num {
+  font-family: var(--font-mono);
+}
+
+.tone-clay {
+  color: var(--clay);
+  font-weight: 600;
+}
+
+.tone-olive {
+  color: var(--olive);
+  font-weight: 600;
+}
+
+.tone-rust {
+  color: var(--rust);
+  font-weight: 600;
+}
+
+.tone-muted {
+  color: var(--muted);
+}
+
+.cell-with-spark {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* ---------- Muted note ---------- */
+
+.note-muted {
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  padding: 12px 0 0;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 20px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  .wordmark {
+    font-size: 26px;
+  }
+  .hero-number {
+    font-size: 48px;
+  }
+  .signal-row {
+    grid-template-columns: 70px 44px 22px 1fr;
+    font-size: 13px;
+  }
+  .card {
+    padding: 16px;
+  }
+}
