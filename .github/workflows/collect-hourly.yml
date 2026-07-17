@@ -1,0 +1,36 @@
+name: collect-hourly
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run hourly collectors
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+        run: python3 collectors/run.py --group hourly
+      - name: Commit and push data
+        run: |
+          git config user.name "ww-collector[bot]"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && { echo "no changes"; exit 0; }
+          git commit -m "data: hourly $(date -u +'%F %H:%M')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin main && exit 0
+            sleep $((i*5))
+          done
+          echo "push failed after retries" >&2; exit 1
