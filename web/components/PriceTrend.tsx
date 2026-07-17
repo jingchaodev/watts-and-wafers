@@ -1,0 +1,212 @@
+"use client";
+
+import { useEffect, useMemo, useRef, useState } from "react";
+import * as echarts from "echarts/core";
+import { LineChart } from "echarts/charts";
+import {
+  GridComponent,
+  TooltipComponent,
+  LegendComponent,
+  DataZoomComponent,
+  MarkAreaComponent,
+  MarkLineComponent,
+} from "echarts/components";
+import { SVGRenderer } from "echarts/renderers";
+import type { GpuTrendPayload } from "../lib/history";
+
+echarts.use([
+  LineChart,
+  GridComponent,
+  TooltipComponent,
+  LegendComponent,
+  DataZoomComponent,
+  MarkAreaComponent,
+  MarkLineComponent,
+  SVGRenderer,
+]);
+
+const PALETTE: Record<string, string> = {
+  "Vast median": "#D97757",
+  RunPod: "#788C5D",
+  DataCrunch: "#5B7DA3",
+  "Azure on-demand": "#8E63CE",
+  "Azure spot": "#C4A5EE",
+  "Spot floor (backfill)": "#8F8A7D",
+};
+
+function quantile(sorted: number[], q: number): number {
+  if (!sorted.length) return NaN;
+  const pos = (sorted.length - 1) * q;
+  const lo = Math.floor(pos);
+  return sorted[lo] + (sorted[Math.min(lo + 1, sorted.length - 1)] - sorted[lo]) * (pos - lo);
+}
+
+export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
+  const gpus = Object.keys(payload.gpus);
+  const [gpu, setGpu] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      const q = new URLSearchParams(window.location.search).get("gpu");
+      if (q && payload.gpus[q]) return q;
+    }
+    return gpus.includes("H100") ? "H100" : gpus[0];
+  });
+  const ref = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<echarts.ECharts | null>(null);
+
+  const option = useMemo(() => {
+    const seriesMap = payload.gpus[gpu] ?? {};
+    // percentile band from the union of marketplace/neocloud points for this
+    // class — Azure on-demand list prices sit 3-6x above and would skew it
+    const all = Object.entries(seriesMap)
+      .filter(([name]) => name !== "Azure on-demand" && !name.includes("backfill"))
+      .flatMap(([, pts]) => pts)
+      .map((p) => p[1])
+      .sort((a, b) => a - b);
+    const p25 = quantile(all, 0.25);
+    const p50 = quantile(all, 0.5);
+    const p75 = quantile(all, 0.75);
+
+    const series = Object.entries(seriesMap).map(([name, pts], i) => ({
+      name,
+      type: "line" as const,
+      data: pts,
+      // sparse young series still need visible marks; hide symbols once dense
+      showSymbol: pts.length < 50,
+      symbolSize: 4,
+      connectNulls: false,
+      lineStyle: { width: name.includes("backfill") ? 1.4 : 1.8, color: PALETTE[name] },
+      itemStyle: { color: PALETTE[name] },
+      ...(i === 0 && isFinite(p25)
+        ? {
+            markArea: {
+              silent: true,
+              itemStyle: { color: "rgba(135,134,127,0.08)" },
+              data: [[{ yAxis: p25 }, { yAxis: p75 }]],
+            },
+            markLine: {
+              silent: true,
+              symbol: "none",
+              lineStyle: { color: "#87867F", type: "dashed", width: 1 },
+              label: {
+                formatter: "P50 ${c}",
+                position: "insideEndTop",
+                color: "#87867F",
+                fontSize: 10,
+                fontFamily: "ui-monospace, monospace",
+              },
+              data: isFinite(p50) ? [{ yAxis: Math.round(p50 * 100) / 100 }] : [],
+            },
+          }
+        : {}),
+    }));
+
+    return {
+      backgroundColor: "transparent",
+      animation: false,
+      grid: { left: 48, right: 16, top: 40, bottom: 64 },
+      legend: {
+        top: 0,
+        textStyle: { color: "#3D3D3A", fontSize: 12 },
+        itemWidth: 14,
+        itemHeight: 2,
+        icon: "rect",
+        // Azure on-demand quotes 3-6x above marketplace and crush the y-axis;
+        // keep the series one click away instead of on by default.
+        selected: { "Azure on-demand": false },
+      },
+      tooltip: {
+        trigger: "axis",
+        backgroundColor: "#FFFFFF",
+        borderColor: "#D1CFC5",
+        textStyle: { color: "#1F1F1F", fontSize: 12 },
+        valueFormatter: (v: unknown) => (typeof v === "number" ? `$${v.toFixed(2)}/hr` : "—"),
+      },
+      xAxis: {
+        type: "time" as const,
+        axisLine: { lineStyle: { color: "#D1CFC5" } },
+        axisLabel: { color: "#87867F", fontSize: 11, fontFamily: "ui-monospace, monospace" },
+        splitLine: { show: false },
+      },
+      yAxis: {
+        type: "value" as const,
+        scale: true,
+        axisLabel: {
+          color: "#87867F",
+          fontSize: 11,
+          fontFamily: "ui-monospace, monospace",
+          formatter: "${value}",
+        },
+        splitLine: { lineStyle: { color: "#F0EEE6" } },
+      },
+      dataZoom: [
+        { type: "inside" as const, throttle: 50 },
+        {
+          type: "slider" as const,
+          height: 22,
+          bottom: 8,
+          borderColor: "#D1CFC5",
+          fillerColor: "rgba(217,119,87,0.12)",
+          handleStyle: { color: "#D97757" },
+          textStyle: { color: "#87867F", fontSize: 10 },
+        },
+      ],
+      series,
+    };
+  }, [payload, gpu]);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    const chart = echarts.init(ref.current, undefined, { renderer: "svg" });
+    chartRef.current = chart;
+    const onResize = () => chart.resize();
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      chart.dispose();
+      chartRef.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
+    chartRef.current?.setOption(option, { notMerge: true });
+  }, [option]);
+
+  const selectGpu = (g: string) => {
+    setGpu(g);
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      url.searchParams.set("gpu", g);
+      window.history.replaceState(null, "", url.toString());
+    }
+  };
+
+  return (
+    <div>
+      <div style={{ display: "flex", gap: 6, marginBottom: 12, flexWrap: "wrap" }}>
+        {gpus.map((g) => (
+          <button
+            key={g}
+            onClick={() => selectGpu(g)}
+            style={{
+              padding: "4px 12px",
+              borderRadius: 999,
+              border: `1px solid ${g === gpu ? "#D97757" : "#D1CFC5"}`,
+              background: g === gpu ? "rgba(217,119,87,0.12)" : "#FFFFFF",
+              color: g === gpu ? "#B14A3A" : "#3D3D3A",
+              fontSize: 13,
+              cursor: "pointer",
+              fontFamily: "inherit",
+            }}
+          >
+            {g}
+          </button>
+        ))}
+      </div>
+      <div ref={ref} style={{ width: "100%", height: 380 }} />
+      <p style={{ fontSize: 11, color: "#87867F", fontFamily: "ui-monospace, monospace", marginTop: 6 }}>
+        Gray band = P25–P75 of on-demand history (spot/backfill excluded) · legend toggles providers · drag to
+        zoom · backfill series from our pre-launch tracker (same sources)
+      </p>
+    </div>
+  );
+}

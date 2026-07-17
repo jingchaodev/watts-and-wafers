@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import GpuAvailability from "@/components/GpuAvailability";
 import GpuPrice from "@/components/GpuPrice";
+import PriceTrendSection from "@/components/PriceTrendSection";
 import TokenEconomics from "@/components/TokenEconomics";
 import Memory from "@/components/Memory";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero composite={data.composite} history={data.history.composite} />
         <GpuAvailability vast={data.vast} history={data.history.vast} />
+        <PriceTrendSection />
         <GpuPrice
           vast={data.vast}
           neoclouds={data.neoclouds}
