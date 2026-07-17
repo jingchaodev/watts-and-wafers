@@ -1,5 +1,5 @@
 {
-  "asof": "2026-07-17T22:09:04Z",
+  "asof": "2026-07-17T23:11:29Z",
   "index": 50.0,
   "label": "NEUTRAL",
   "signals": [
@@ -8,7 +8,7 @@
       "weight": 0.35,
       "z": 0.0,
       "direction": "flat",
-      "detail": "insufficient history"
+      "detail": "H100-class offers 54 (+1.9% vs prior)"
     },
     {
       "key": "token_economics",
@@ -29,7 +29,7 @@
       "weight": 0.15,
       "z": 0.0,
       "direction": "flat",
-      "detail": "insufficient history"
+      "detail": "H100-class median $/hr 2.05 (7d mean)"
     }
   ]
 }
