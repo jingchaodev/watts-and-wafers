@@ -1,6 +1,6 @@
 {
-  "asof": "2026-07-17T20:43:23Z",
-  "n_models": 343,
+  "asof": "2026-07-17T23:20:41Z",
+  "n_models": 344,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -689,6 +689,13 @@
       "context": 1000000
     },
     {
+      "id": "moonshotai/kimi-k2.7-code",
+      "name": "MoonshotAI: Kimi K2.7 Code",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 4.4,
+      "context": 262144
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -721,6 +728,13 @@
       "name": "Meta: Muse Spark 1.1",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
+      "context": 1048576
+    },
+    {
+      "id": "thinkingmachines/inkling",
+      "name": "Thinking Machines: Inkling",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 4.05,
       "context": 1048576
     },
     {
@@ -771,13 +785,6 @@
       "prompt_usd_per_m": 0.6,
       "completion_usd_per_m": 3.6,
       "context": 1000000
-    },
-    {
-      "id": "moonshotai/kimi-k2.7-code",
-      "name": "MoonshotAI: Kimi K2.7 Code",
-      "prompt_usd_per_m": 0.75,
-      "completion_usd_per_m": 3.5,
-      "context": 262144
     },
     {
       "id": "qwen/qwen3-coder-plus",
@@ -852,8 +859,8 @@
     {
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.917,
-      "completion_usd_per_m": 2.882,
+      "prompt_usd_per_m": 0.91,
+      "completion_usd_per_m": 2.86,
       "context": 1048576
     },
     {
@@ -1044,16 +1051,55 @@
       "prompt_usd_per_m": 0.4,
       "completion_usd_per_m": 2.0,
       "context": 131072
-    },
-    {
-      "id": "openai/gpt-5-mini",
-      "name": "OpenAI: GPT-5 Mini",
-      "prompt_usd_per_m": 0.25,
-      "completion_usd_per_m": 2.0,
-      "context": 400000
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
-  "tokens_daily": null,
+  "tokens_daily": {
+    "ts": "2026-07-16T00:00:00Z",
+    "date": "2026-07-16",
+    "total_b_tokens": 9619.2,
+    "top_models": [
+      {
+        "slug": "tencent/hy3-20260706:free",
+        "b_tokens": 1744.96
+      },
+      {
+        "slug": "xiaomi/mimo-v2.5-20260422",
+        "b_tokens": 1386.94
+      },
+      {
+        "slug": "deepseek/deepseek-v4-flash-20260423",
+        "b_tokens": 777.17
+      },
+      {
+        "slug": "z-ai/glm-5.2-20260616",
+        "b_tokens": 623.75
+      },
+      {
+        "slug": "other",
+        "b_tokens": 564.52
+      },
+      {
+        "slug": "minimax/minimax-m3-20260531",
+        "b_tokens": 564.33
+      },
+      {
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
+        "b_tokens": 441.15
+      },
+      {
+        "slug": "deepseek/deepseek-v4-pro-20260423",
+        "b_tokens": 392.41
+      },
+      {
+        "slug": "anthropic/claude-4.7-opus-20260416",
+        "b_tokens": 389.94
+      },
+      {
+        "slug": "anthropic/claude-4.8-opus-20260528",
+        "b_tokens": 332.39
+      }
+    ]
+  },
   "errors": []
 }

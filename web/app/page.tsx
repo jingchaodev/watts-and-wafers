@@ -5,6 +5,7 @@ import GpuAvailability from "@/components/GpuAvailability";
 import GpuPrice from "@/components/GpuPrice";
 import PriceTrendSection from "@/components/PriceTrendSection";
 import TokenEconomics from "@/components/TokenEconomics";
+import TokenVolumeSection from "@/components/TokenVolumeSection";
 import Memory from "@/components/Memory";
 import Footer from "@/components/Footer";
 
@@ -24,6 +25,7 @@ export default function Home() {
           neoclouds={data.neoclouds}
           hyperscaler={data.hyperscaler}
         />
+        <TokenVolumeSection />
         <TokenEconomics openrouter={data.openrouter} history={data.history.openrouter} />
         <Memory memory={data.memory} />
       </main>

@@ -15,7 +15,9 @@ import os
 import statistics
 import sys
 
-from common import atomic_write_json, append_history, fetch_url, iso_utc_now, latest_path
+import json
+
+from common import atomic_write_json, append_history, fetch_url, history_path, iso_utc_now, latest_path
 
 MODELS_URL = "https://openrouter.ai/api/v1/models"
 MAX_MODELS = 150
@@ -94,17 +96,66 @@ def parse_models(raw_json_text):
     }
 
 
+def parse_rankings_daily(raw_json_text):
+    """Pure parse: /api/v1/datasets/rankings-daily response -> {date: {slug: tokens}}."""
+    doc = json.loads(raw_json_text)
+    by_day = {}
+    for r in doc.get("data") or []:
+        try:
+            by_day.setdefault(r["date"], {})[r["model_permaslug"]] = int(r["total_tokens"])
+        except (KeyError, TypeError, ValueError):
+            continue
+    return by_day
+
+
+def _day_summary(day, models):
+    total = sum(models.values())
+    top = sorted(models.items(), key=lambda kv: -kv[1])[:10]
+    return {
+        "ts": f"{day}T00:00:00Z",
+        "date": day,
+        "total_b_tokens": round(total / 1e9, 2),
+        "top_models": [{"slug": s, "b_tokens": round(v / 1e9, 2)} for s, v in top],
+    }
+
+
 def fetch_tokens_daily():
-    """TODO: OpenRouter does not currently expose a public/authenticated
-    'tokens routed today' endpoint. Their /api/v1/generation endpoint reports
-    per-generation-id usage (requires a specific generation id, not a daily
-    aggregate), and rankings pages (openrouter.ai/rankings) are HTML, not a
-    documented JSON API. Until OpenRouter ships a real daily-volume API, this
-    returns None unconditionally — contract says absence of key -> null, no
-    error, and we extend that same graceful-null behavior even when a key IS
-    present, rather than guess at an undocumented endpoint shape.
+    """Official dataset endpoint (added 2026-07-17, verified live): per-model
+    daily token totals since 2025-01-01. Requires OPENROUTER_API_KEY. Fetches
+    the last few completed days, appends any missing dates to
+    data/history/openrouter_tokens.jsonl, and returns the latest day summary.
     """
-    return None
+    import datetime as _dt
+
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        return None
+    end = _dt.date.today() - _dt.timedelta(days=1)
+    start = end - _dt.timedelta(days=4)
+    raw = fetch_url(
+        f"https://openrouter.ai/api/v1/datasets/rankings-daily?start_date={start}&end_date={end}",
+        headers={"Authorization": f"Bearer {key}"},
+    )
+    by_day = parse_rankings_daily(raw)
+    if not by_day:
+        return None
+
+    hist = history_path("openrouter_tokens")
+    have = set()
+    if os.path.exists(hist):
+        with open(hist) as f:
+            for line in f:
+                try:
+                    have.add(json.loads(line)["date"])
+                except (ValueError, KeyError):
+                    continue
+    new_days = [d for d in sorted(by_day) if d not in have]
+    if new_days:
+        with open(hist, "a") as f:
+            for d in new_days:
+                f.write(json.dumps(_day_summary(d, by_day[d])) + "\n")
+    latest = max(by_day)
+    return _day_summary(latest, by_day[latest])
 
 
 def collect():
