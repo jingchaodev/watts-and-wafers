@@ -204,8 +204,18 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
       </div>
       <div ref={ref} style={{ width: "100%", height: 380 }} />
       <p style={{ fontSize: 11, color: "#87867F", fontFamily: "ui-monospace, monospace", marginTop: 6 }}>
-        Gray band = P25–P75 of on-demand history (spot/backfill excluded) · legend toggles providers · drag to
-        zoom · backfill series from our pre-launch tracker (same sources)
+        Gray band = P25–P75 of on-demand history (spot/backfill excluded) · legend toggles providers ·
+        drag to zoom
+      </p>
+      <p style={{ fontSize: 11, color: "#87867F", fontFamily: "ui-monospace, monospace", marginTop: 4 }}>
+        Sources: Vast.ai marketplace API (median $/GPU-hr of rentable offers) · RunPod &amp; DataCrunch
+        public pricing (lowest on-demand $/GPU-hr) · Azure Retail Prices API (cheapest US-region
+        ND-series, per-GPU) · Spot floor backfill = lowest spot/on-demand price across providers,
+        from our pre-launch tracker (Jul 8–17, 2026). Collected hourly/daily by{" "}
+        <a href="https://github.com/jingchaodev/watts-and-wafers" style={{ color: "#87867F" }}>
+          open collectors
+        </a>
+        .
       </p>
     </div>
   );
