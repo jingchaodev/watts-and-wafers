@@ -34,7 +34,7 @@ const PALETTE: Record<string, string> = {
   Nebius: "#3E8E8C",
   Crusoe: "#A0522D",
   CoreWeave: "#6B5B95",
-  "Vast on-demand (ext)": "#E0A18C",
+  "Vast median (ext)": "#E0A18C",
   "Azure on-demand": "#8E63CE",
   "Azure spot": "#C4A5EE",
   "Spot floor (backfill)": "#8F8A7D",
@@ -90,7 +90,7 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
     };
 
     // markArea/markLine must anchor to a default-VISIBLE series or they vanish
-    const HIDDEN = new Set(["Azure on-demand", "Vast on-demand (ext)", "Spot floor (backfill)"]);
+    const HIDDEN = new Set(["Azure on-demand", "Spot floor (backfill)"]);
     const names = Object.keys(seriesMap);
     const anchorIdx = Math.max(0, names.findIndex((n) => !HIDDEN.has(n)));
 
@@ -142,7 +142,6 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
         // keep the series one click away instead of on by default.
         selected: {
           "Azure on-demand": false,
-          "Vast on-demand (ext)": false,
           "Spot floor (backfill)": false,
         },
       },
@@ -162,6 +161,9 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
       yAxis: {
         type: "value" as const,
         scale: true,
+        // robust cap: a single 1-offer marketplace spike (e.g. $13 on a $2.5
+        // tape) must not compress the whole chart; outliers clip, data stays
+        max: isFinite(p75) ? Math.ceil(p75 * 2.5) : undefined,
         axisLabel: {
           color: "#87867F",
           fontSize: 11,
@@ -240,7 +242,7 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
       <div ref={ref} style={{ width: "100%", height: 380 }} />
       <p style={{ fontSize: 11, color: "#87867F", fontFamily: "ui-monospace, monospace", marginTop: 6 }}>
         Gray band = P25–P75 of on-demand history (spot/backfill excluded) · legend toggles providers ·
-        drag to zoom
+        drag to zoom · y-axis capped at 2.5×P75, rare single-offer spikes clip off-scale
       </p>
       <p style={{ fontSize: 11, color: "#87867F", fontFamily: "ui-monospace, monospace", marginTop: 4 }}>
         Sources: Vast.ai marketplace API (median $/GPU-hr of rentable offers) · RunPod &amp; DataCrunch

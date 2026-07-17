@@ -70,7 +70,8 @@ export function loadGpuTrend(): GpuTrendPayload {
     nebius: "Nebius",
     crusoe: "Crusoe",
     coreweave: "CoreWeave",
-    "vast.ai": "Vast on-demand (ext)",
+    // vast.ai intentionally absent: its rows carry marketplace MIN price
+    // (unverified-host junk floors); the median backfill below replaces it
   };
   for (const line of readLines("backfill_external.jsonl")) {
     if (line.kind !== "ondemand") continue;
@@ -92,6 +93,18 @@ export function loadGpuTrend(): GpuTrendPayload {
     const prov = (line.providers ?? {}) as Record<string, Record<string, number>>;
     for (const [g, v] of Object.entries(prov.runpod ?? {})) push(out, baseGpu(g), "RunPod", ts, v);
     for (const [g, v] of Object.entries(prov.datacrunch ?? {})) push(out, baseGpu(g), "DataCrunch", ts, v);
+  }
+
+  // Vast median backfill: same bundles API + per-GPU normalization as our
+  // collector, recorded daily by gpu-pricing-tracker since 2026-05-08. Kept as
+  // a separate "(ext)" series because their offer filter differs slightly
+  // (~5-10% level offset vs ours on the same day).
+  for (const line of readLines("vast_backfill.jsonl")) {
+    const ts = line.ts as string;
+    const gpus = (line.gpus ?? {}) as Record<string, { median_dph?: number }>;
+    for (const [g, v] of Object.entries(gpus)) {
+      if (typeof v?.median_dph === "number") push(out, baseGpu(g), "Vast median (ext)", ts, v.median_dph);
+    }
   }
 
   for (const line of readLines("vast.jsonl")) {
