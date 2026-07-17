@@ -171,9 +171,12 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
         splitLine: { lineStyle: { color: "#F0EEE6" } },
       },
       dataZoom: [
-        { type: "inside" as const, throttle: 50 },
+        // default to the dense era (external daily tracker begins 2026-05-08);
+        // the sparse 2025 Wayback points remain reachable by dragging left
+        { type: "inside" as const, throttle: 50, startValue: "2026-05-01T00:00:00Z" },
         {
           type: "slider" as const,
+          startValue: "2026-05-01T00:00:00Z",
           height: 22,
           bottom: 8,
           borderColor: "#D1CFC5",
