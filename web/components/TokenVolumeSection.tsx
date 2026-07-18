@@ -34,7 +34,7 @@ export default function TokenVolumeSection() {
   const points: [string, number][] = days.map((d) => [`${d.date}T00:00:00Z`, d.total_b_tokens]);
 
   return (
-    <section className="block">
+    <section className="block" id="token-volume">
       <h2 className="section-title">Token consumption</h2>
       <p className="section-sub">
         Daily tokens routed through OpenRouter, all models — the most direct public read on AI

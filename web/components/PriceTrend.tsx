@@ -13,6 +13,7 @@ import {
 } from "echarts/components";
 import { SVGRenderer } from "echarts/renderers";
 import type { GpuTrendPayload } from "../lib/history";
+import type { AnnotationEvent } from "../lib/types";
 
 echarts.use([
   LineChart,
@@ -47,7 +48,76 @@ function quantile(sorted: number[], q: number): number {
   return sorted[lo] + (sorted[Math.min(lo + 1, sorted.length - 1)] - sorted[lo]) * (pos - lo);
 }
 
-export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
+const DAY_MS = 24 * 3600 * 1000;
+
+/** Visibility rule: impact 3 always shows; impact 2 only when the zoomed
+ * window spans <12 months; impact 1 only when it spans <3 months. */
+function visibleEvents(events: AnnotationEvent[], windowMs: number): AnnotationEvent[] {
+  const twelveMonths = 365 * DAY_MS;
+  const threeMonths = 91 * DAY_MS;
+  return events.filter((e) => {
+    if (e.impact === 3) return true;
+    if (e.impact === 2) return windowMs < twelveMonths;
+    if (e.impact === 1) return windowMs < threeMonths;
+    return false;
+  });
+}
+
+/** Build markLine.data entries for the currently-visible annotation events,
+ * stacking same-day labels vertically so they don't collide. */
+function buildAnnotationMarkLines(events: AnnotationEvent[], windowMs: number) {
+  const visible = visibleEvents(events, windowMs)
+    .filter((e) => typeof e.date === "string")
+    .sort((a, b) => (a.date as string).localeCompare(b.date as string));
+
+  // Group same-day (or near-same-day, within 2 days) events so their labels
+  // can be offset instead of overlapping.
+  const groups: AnnotationEvent[][] = [];
+  for (const e of visible) {
+    const last = groups[groups.length - 1];
+    if (last) {
+      const lastDate = Date.parse(last[0].date as string);
+      const curDate = Date.parse(e.date as string);
+      if (Math.abs(curDate - lastDate) <= 2 * DAY_MS) {
+        last.push(e);
+        continue;
+      }
+    }
+    groups.push([e]);
+  }
+
+  const data: Record<string, unknown>[] = [];
+  for (const group of groups) {
+    group.forEach((e, idx) => {
+      data.push({
+        xAxis: e.date,
+        label: {
+          formatter: e.label ?? "",
+          position: "insideEndTop",
+          color: "#87867F",
+          fontSize: 10,
+          fontFamily: "ui-monospace, monospace",
+          // stack overlapping same-day labels below one another
+          offset: [0, idx * 14],
+        },
+        lineStyle: {
+          color: "#87867F",
+          type: "dashed" as const,
+          width: 1,
+        },
+      });
+    });
+  }
+  return data;
+}
+
+export default function PriceTrend({
+  payload,
+  events = [],
+}: {
+  payload: GpuTrendPayload;
+  events?: AnnotationEvent[];
+}) {
   const gpus = Object.keys(payload.gpus);
   const [gpu, setGpu] = useState<string>(() => {
     if (typeof window !== "undefined") {
@@ -94,6 +164,18 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
     const names = Object.keys(seriesMap);
     const anchorIdx = Math.max(0, names.findIndex((n) => !HIDDEN.has(n)));
 
+    // Initial zoom window mirrors the dataZoom default below (2026-05-01 -> now)
+    // so the very first render already applies the right event-visibility tier.
+    const defaultStart = Date.parse("2026-05-01T00:00:00Z");
+    const allTs = Object.values(seriesMap)
+      .flatMap((pts) => pts)
+      .map((p) => Date.parse(p[0]));
+    const defaultEnd = allTs.length ? Math.max(...allTs) : Date.now();
+    const initialWindowMs = Math.max(0, defaultEnd - defaultStart);
+    const annotationMarkLines = buildAnnotationMarkLines(events, initialWindowMs);
+
+    const p50MarkLineData = isFinite(p50) ? [{ yAxis: Math.round(p50 * 100) / 100 }] : [];
+
     const series = Object.entries(seriesMap).map(([name, pts], i) => ({
       name,
       type: "line" as const,
@@ -122,13 +204,23 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
                 fontSize: 10,
                 fontFamily: "ui-monospace, monospace",
               },
-              data: isFinite(p50) ? [{ yAxis: Math.round(p50 * 100) / 100 }] : [],
+              // P50 line (formatter keyed off yAxis) + event annotation lines
+              // (formatter keyed off xAxis) share one markLine.data array —
+              // ECharts lets each entry carry its own label/lineStyle override.
+              data: [
+                ...p50MarkLineData.map((d) => ({ ...d, label: { formatter: "P50 ${c}" } })),
+                ...annotationMarkLines,
+              ],
             },
           }
         : {}),
     }));
 
     return {
+      // stashed for the dataZoom listener below (not a real echarts option key,
+      // stripped before setOption via destructure) — avoids recomputing the
+      // full x-extent + anchor index on every zoom event.
+      __meta: { anchorIdx, fullMinTs: allTs.length ? Math.min(...allTs) : null, fullMaxTs: defaultEnd },
       backgroundColor: "transparent",
       animation: false,
       grid: { left: 48, right: 16, top: 64, bottom: 64 },
@@ -191,21 +283,75 @@ export default function PriceTrend({ payload }: { payload: GpuTrendPayload }) {
     };
   }, [payload, gpu]);
 
+  // Latest option's __meta, kept in a ref so the dataZoom handler (registered
+  // once on init) always reads current anchorIdx/x-extent without re-binding.
+  const metaRef = useRef<{ anchorIdx: number; fullMinTs: number | null; fullMaxTs: number } | null>(
+    null
+  );
+  const eventsRef = useRef<AnnotationEvent[]>(events);
+  eventsRef.current = events;
+
   useEffect(() => {
     if (!ref.current) return;
     const chart = echarts.init(ref.current, undefined, { renderer: "svg" });
     chartRef.current = chart;
     const onResize = () => chart.resize();
     window.addEventListener("resize", onResize);
+
+    const onDataZoom = () => {
+      const meta = metaRef.current;
+      if (!meta || meta.fullMinTs === null) return;
+      const opt = chart.getOption();
+      const dz = (opt.dataZoom as Array<{ startValue?: number; endValue?: number; start?: number; end?: number }>) ?? [];
+      const primary = dz[0] ?? {};
+      let startTs: number;
+      let endTs: number;
+      if (typeof primary.startValue === "number" && typeof primary.endValue === "number") {
+        startTs = primary.startValue;
+        endTs = primary.endValue;
+      } else {
+        const startPct = typeof primary.start === "number" ? primary.start : 0;
+        const endPct = typeof primary.end === "number" ? primary.end : 100;
+        const span = meta.fullMaxTs - meta.fullMinTs;
+        startTs = meta.fullMinTs + (span * startPct) / 100;
+        endTs = meta.fullMinTs + (span * endPct) / 100;
+      }
+      const windowMs = Math.max(0, endTs - startTs);
+      const newMarkLines = buildAnnotationMarkLines(eventsRef.current, windowMs);
+
+      const seriesOpt = opt.series as Array<Record<string, unknown>>;
+      const anchor = seriesOpt[meta.anchorIdx] as { markLine?: { data?: unknown[] } } | undefined;
+      const existingP50 = (anchor?.markLine?.data ?? []).filter(
+        (d) => d && typeof d === "object" && "yAxis" in (d as object)
+      );
+
+      chart.setOption(
+        {
+          series: seriesOpt.map((s, i) =>
+            i === meta.anchorIdx
+              ? { ...s, markLine: { ...(s.markLine as object), data: [...existingP50, ...newMarkLines] } }
+              : s
+          ),
+        },
+        { notMerge: false }
+      );
+    };
+    chart.on("dataZoom", onDataZoom);
+
     return () => {
       window.removeEventListener("resize", onResize);
+      chart.off("dataZoom", onDataZoom);
       chart.dispose();
       chartRef.current = null;
     };
   }, []);
 
   useEffect(() => {
-    chartRef.current?.setOption(option, { notMerge: true });
+    const { __meta, ...rest } = option as typeof option & {
+      __meta: { anchorIdx: number; fullMinTs: number | null; fullMaxTs: number };
+    };
+    metaRef.current = __meta;
+    chartRef.current?.setOption(rest, { notMerge: true });
   }, [option]);
 
   const selectGpu = (g: string) => {

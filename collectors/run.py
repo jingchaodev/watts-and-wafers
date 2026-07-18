@@ -20,6 +20,8 @@ import hyperscaler
 import memory
 import neoclouds
 import openrouter
+import signal_events
+import signals
 import vast
 
 COLLECTORS = {
@@ -30,11 +32,13 @@ COLLECTORS = {
     "memory": memory,
     "composite": composite,
     "crosscheck": crosscheck,
+    "signals": signals,
+    "signal_events": signal_events,
 }
 
 GROUPS = {
-    "hourly": ["vast", "neoclouds", "composite"],
-    "daily": ["hyperscaler", "openrouter", "memory", "composite", "crosscheck"],
+    "hourly": ["vast", "neoclouds", "composite", "signals", "signal_events"],
+    "daily": ["hyperscaler", "openrouter", "memory", "composite", "crosscheck", "signals", "signal_events"],
 }
 
 

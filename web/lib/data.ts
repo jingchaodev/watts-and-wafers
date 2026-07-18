@@ -8,6 +8,8 @@ import type {
   OpenRouterData,
   MemoryData,
   CompositeData,
+  SignalsData,
+  SignalEventsData,
 } from "./types";
 
 // Data lives one level up from web/, per the repo layout:
@@ -72,6 +74,10 @@ export function loadAllData(): AllData {
     path.join(LATEST_DIR, "composite.json"),
     {}
   );
+  const signals = readJsonSafe<SignalsData>(
+    path.join(LATEST_DIR, "signals.json"),
+    {}
+  );
 
   const history = {
     vast: readJsonlSafe<AllData["history"]["vast"][number]>(
@@ -91,7 +97,16 @@ export function loadAllData(): AllData {
     ),
   };
 
-  return { vast, neoclouds, hyperscaler, openrouter, memory, composite, history };
+  return { vast, neoclouds, hyperscaler, openrouter, memory, composite, signals, history };
+}
+
+/** signal_events.json lives alongside the other latest/*.json files but isn't
+ * part of AllData (it's consumed by a single feed section) — load separately. */
+export function loadSignalEvents(): SignalEventsData {
+  return readJsonSafe<SignalEventsData>(
+    path.join(LATEST_DIR, "signal_events.json"),
+    {}
+  );
 }
 
 /** Max asof across all latest/*.json files, for the header timestamp. */
@@ -115,6 +130,20 @@ export function isStale(asof: string | undefined | null, hours: number): boolean
   if (Number.isNaN(t)) return true;
   const ageMs = Date.now() - t;
   return ageMs > hours * 60 * 60 * 1000;
+}
+
+export type FreshnessTier = "green" | "amber" | "red";
+
+/** 3-tier freshness: green < hours, amber hours..2x, red beyond 2x. Missing/
+ * unparsable asof is always red (worst case, matches isStale's fail-safe). */
+export function freshnessTier(asof: string | undefined | null, hours: number): FreshnessTier {
+  if (!asof) return "red";
+  const t = Date.parse(asof);
+  if (Number.isNaN(t)) return "red";
+  const ageHours = (Date.now() - t) / (60 * 60 * 1000);
+  if (ageHours < hours) return "green";
+  if (ageHours < hours * 2) return "amber";
+  return "red";
 }
 
 export function formatAsof(asof: string | undefined | null): string {

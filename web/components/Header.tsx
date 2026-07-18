@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { formatAsof } from "@/lib/data";
 
 export default function Header({ asof }: { asof: string | null }) {
@@ -11,6 +12,7 @@ export default function Header({ asof }: { asof: string | null }) {
         <span title="Latest of all data-source asof timestamps">
           asof {formatAsof(asof)}
         </span>
+        <Link href="/methodology">Methodology</Link>
         <a
           href="https://github.com/jingchaodev/watts-and-wafers"
           target="_blank"

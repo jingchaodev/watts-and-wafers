@@ -1,5 +1,5 @@
 {
-  "asof": "2026-07-17T23:20:41Z",
+  "asof": "2026-07-18T01:52:42Z",
   "n_models": 344,
   "models": [
     {
@@ -857,13 +857,6 @@
       "context": 256000
     },
     {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.91,
-      "completion_usd_per_m": 2.86,
-      "context": 1048576
-    },
-    {
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "prompt_usd_per_m": 0.57,
@@ -875,6 +868,13 @@
       "name": "Qwen: Qwen3.6 27B",
       "prompt_usd_per_m": 0.45,
       "completion_usd_per_m": 2.7,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3.5-27b",
+      "name": "Qwen: Qwen3.5-27B",
+      "prompt_usd_per_m": 0.26,
+      "completion_usd_per_m": 2.6,
       "context": 262144
     },
     {
@@ -1054,52 +1054,6 @@
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
-  "tokens_daily": {
-    "ts": "2026-07-16T00:00:00Z",
-    "date": "2026-07-16",
-    "total_b_tokens": 9619.2,
-    "top_models": [
-      {
-        "slug": "tencent/hy3-20260706:free",
-        "b_tokens": 1744.96
-      },
-      {
-        "slug": "xiaomi/mimo-v2.5-20260422",
-        "b_tokens": 1386.94
-      },
-      {
-        "slug": "deepseek/deepseek-v4-flash-20260423",
-        "b_tokens": 777.17
-      },
-      {
-        "slug": "z-ai/glm-5.2-20260616",
-        "b_tokens": 623.75
-      },
-      {
-        "slug": "other",
-        "b_tokens": 564.52
-      },
-      {
-        "slug": "minimax/minimax-m3-20260531",
-        "b_tokens": 564.33
-      },
-      {
-        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
-        "b_tokens": 441.15
-      },
-      {
-        "slug": "deepseek/deepseek-v4-pro-20260423",
-        "b_tokens": 392.41
-      },
-      {
-        "slug": "anthropic/claude-4.7-opus-20260416",
-        "b_tokens": 389.94
-      },
-      {
-        "slug": "anthropic/claude-4.8-opus-20260528",
-        "b_tokens": 332.39
-      }
-    ]
-  },
+  "tokens_daily": null,
   "errors": []
 }

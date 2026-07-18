@@ -31,7 +31,7 @@ export default function GpuAvailability({
   const gpuEntries = Object.entries(vast.gpus ?? {});
 
   return (
-    <section className="block">
+    <section className="block" id="gpu-availability">
       <h2 className="section-title">
         GPU availability
         <StalePill asof={vast.asof} hours={3} />

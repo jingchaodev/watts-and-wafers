@@ -45,7 +45,7 @@ export default function GpuPrice({
   const providerNames = Object.keys(providers).sort();
 
   return (
-    <section className="block">
+    <section className="block" id="gpu-price-comparison">
       <h2 className="section-title">
         GPU price comparison
         <StalePill asof={neoclouds.asof} hours={3} />

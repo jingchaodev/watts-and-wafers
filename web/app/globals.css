@@ -7,6 +7,9 @@
   --border: #D1CFC5;
   --panel: #FFFFFF;
   --muted: #6B6A62;
+  /* cool blue-gray for "cold" signal tone — reuses the DataCrunch hex from
+     PriceTrend's palette so the two shades of "cool" in the app agree. */
+  --cool: #5B7DA3;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif;
@@ -151,6 +154,243 @@ h2.section-title {
   letter-spacing: 0.02em;
   border-radius: 999px;
   padding: 3px 12px;
+}
+
+/* ---------- Signal grid ---------- */
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.signal-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.signal-card:hover {
+  box-shadow: 0 2px 10px rgba(31, 31, 31, 0.06);
+  transform: translateY(-1px);
+}
+
+.signal-card.tone-hot {
+  border-left: 3px solid var(--clay);
+  background: rgba(217, 119, 87, 0.06);
+}
+
+.signal-card.tone-cold {
+  border-left: 3px solid var(--cool);
+  background: rgba(91, 125, 163, 0.06);
+}
+
+.signal-card-title {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.signal-percentile {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
+.signal-card-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.signal-card-value {
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.signal-card-delta {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.signal-card-read {
+  font-size: 13px;
+  color: var(--text);
+  margin: 4px 0 10px;
+  line-height: 1.4;
+}
+
+.signal-card-spark {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signal-card-provenance {
+  font-size: 10.5px;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 8px;
+  line-height: 1.3;
+}
+
+/* ---------- Composite strip ---------- */
+
+.composite-strip {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-bottom: 40px;
+}
+
+.composite-strip summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 14px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.composite-strip summary::-webkit-details-marker {
+  display: none;
+}
+
+.composite-strip summary::before {
+  content: "▸";
+  font-size: 11px;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.composite-strip[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.composite-strip-index {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.composite-strip-body {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Signal events feed ---------- */
+
+.signal-event-row {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.signal-event-row:first-of-type {
+  border-top: none;
+}
+
+.signal-event-date {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.signal-event-main {
+  min-width: 0;
+}
+
+.signal-event-signal {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-right: 6px;
+}
+
+.signal-event-detail {
+  color: var(--text);
+}
+
+.signal-event-kind {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 9px;
+  white-space: nowrap;
+}
+
+/* ---------- Footer health strip ---------- */
+
+.health-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 14px 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.health-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+}
+
+.health-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.health-dot.green {
+  background: var(--olive);
+}
+
+.health-dot.amber {
+  background: #D9A05B;
+}
+
+.health-dot.red {
+  background: var(--rust);
 }
 
 /* ---------- Hero / gauge ---------- */
@@ -344,6 +584,12 @@ table.data-table tbody tr:hover {
 
 /* ---------- Responsive ---------- */
 
+@media (max-width: 900px) {
+  .signal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 640px) {
   .wordmark {
     font-size: 26px;
@@ -357,5 +603,23 @@ table.data-table tbody tr:hover {
   }
   .card {
     padding: 16px;
+  }
+  .signal-grid {
+    grid-template-columns: 1fr;
+  }
+  .signal-event-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .signal-event-kind {
+    justify-self: start;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* 5-across on wide desktop: base .wrap max-width is 1080px, 3-col is the
+     comfortable default; open it up once there's room for all 5. */
+  .signal-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

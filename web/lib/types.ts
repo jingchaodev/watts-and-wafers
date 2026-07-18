@@ -138,6 +138,7 @@ export interface AllData {
   openrouter: OpenRouterData;
   memory: MemoryData;
   composite: CompositeData;
+  signals: SignalsData;
   history: {
     vast: VastHistoryLine[];
     composite: CompositeHistoryLine[];
@@ -145,4 +146,57 @@ export interface AllData {
     memory: MemoryHistoryLine[];
     neoclouds: NeocloudsHistoryLine[];
   };
+}
+
+// ---- Signals (v1 redesign) ----
+
+export type SignalTone = "hot" | "cold" | "neutral";
+
+export interface SignalCard {
+  key?: string;
+  title?: string;
+  value?: number | null;
+  unit?: string;
+  value_fmt?: string;
+  percentile?: number | null;
+  window_days?: number;
+  direction?: Direction;
+  delta_7d_pct?: number | null;
+  read?: string;
+  tone?: SignalTone;
+  spark?: [string, number][];
+  provenance?: string | null;
+}
+
+export interface SignalsData {
+  asof?: string;
+  cards?: SignalCard[];
+  composite?: { index?: number; label?: string };
+  errors?: string[];
+}
+
+export type SignalEventKind = "percentile_cross" | "label_flip" | "shock";
+
+export interface SignalEvent {
+  date?: string;
+  signal?: string;
+  kind?: SignalEventKind | string;
+  direction?: Direction | string;
+  detail?: string;
+}
+
+export interface SignalEventsData {
+  asof?: string;
+  events?: SignalEvent[];
+  errors?: string[];
+}
+
+// ---- Annotation events (data/events.jsonl, repo root) ----
+
+export interface AnnotationEvent {
+  date?: string;
+  label?: string;
+  category?: string;
+  impact?: number;
+  url?: string;
 }

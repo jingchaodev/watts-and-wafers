@@ -1,10 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { AnnotationEvent } from "./types";
 
 // Build-time reader for data/history/*.jsonl → chart-ready series.
 // Each point: [isoTs, value]. Sparse/malformed lines are skipped, never fatal.
 
 const HISTORY_DIR = path.join(process.cwd(), "..", "data", "history");
+// events.jsonl lives at repo-root data/, one level above data/history/ and
+// data/latest/ — same DATA_DIR pattern as lib/data.ts, but this file only
+// ever needed HISTORY_DIR so far.
+const DATA_DIR = path.join(process.cwd(), "..", "data");
 
 export type SeriesPoint = [string, number];
 export type GpuTrendPayload = {
@@ -153,4 +158,25 @@ export function loadGpuTrend(): GpuTrendPayload {
     for (const pts of Object.values(series)) pts.sort((a, b) => a[0].localeCompare(b[0]));
 
   return { gpus: out };
+}
+
+/** data/events.jsonl (repo root, read-only annotation feed) — one JSON object
+ * per line. Never fatal on missing/malformed file; empty array on failure. */
+export function loadAnnotationEvents(): AnnotationEvent[] {
+  try {
+    const raw = fs.readFileSync(path.join(DATA_DIR, "events.jsonl"), "utf8");
+    return raw
+      .split("\n")
+      .filter(Boolean)
+      .map((l) => {
+        try {
+          return JSON.parse(l) as AnnotationEvent;
+        } catch {
+          return null;
+        }
+      })
+      .filter((x): x is AnnotationEvent => x !== null && typeof x.date === "string");
+  } catch {
+    return [];
+  }
 }
