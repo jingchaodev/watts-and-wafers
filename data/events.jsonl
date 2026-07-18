@@ -1,0 +1,24 @@
+{"date":"2025-01-13","label":"AI Diffusion Rule announced","category":"policy","impact":2,"url":"https://www.federalregister.gov/documents/2025/01/15/2025-00636/framework-for-artificial-intelligence-diffusion"}
+{"date":"2025-01-20","label":"DeepSeek R1 released","category":"model","impact":3,"url":"https://api-docs.deepseek.com/news/news250120"}
+{"date":"2025-01-21","label":"Stargate $500B announced","category":"capex","impact":3,"url":"https://openai.com/index/announcing-the-stargate-project/"}
+{"date":"2025-01-27","label":"DeepSeek shock: NVDA -17% (-$589B)","category":"market","impact":3,"url":"https://www.cnbc.com/2025/01/27/nvidia-sheds-almost-600-billion-in-market-cap-biggest-drop-ever.html"}
+{"date":"2025-03-18","label":"GTC: Blackwell Ultra GB300 unveiled","category":"supply","impact":2,"url":"https://nvidianews.nvidia.com/news/nvidia-blackwell-ultra-ai-factory-platform-paves-way-for-age-of-ai-reasoning"}
+{"date":"2025-04-15","label":"H20 China export ban ($5.5B charge)","category":"policy","impact":3,"url":"https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"}
+{"date":"2025-04-28","label":"Qwen3 open-source launch","category":"model","impact":1,"url":"https://www.alibabacloud.com/blog/alibaba-introduces-qwen3-setting-new-benchmark-in-open-source-ai-with-hybrid-reasoning_602192"}
+{"date":"2025-05-13","label":"AI Diffusion Rule rescinded","category":"policy","impact":2,"url":"https://www.bis.gov/press-release/department-commerce-rescinds-biden-era-artificial-intelligence-diffusion-rule-strengthens-chip-related"}
+{"date":"2025-07-09","label":"Grok 4 launch (200K-GPU Colossus)","category":"model","impact":1,"url":"https://x.ai/news/grok-4"}
+{"date":"2025-07-11","label":"Kimi K2 open MoE launch","category":"model","impact":1,"url":"https://huggingface.co/moonshotai/Kimi-K2-Instruct"}
+{"date":"2025-07-15","label":"H20 China sales resume approved","category":"policy","impact":2,"url":"https://www.cnbc.com/2025/07/15/nvidia-says-us-government-will-allow-it-to-resume-h20-ai-chip-sales-to-china.html"}
+{"date":"2025-08-07","label":"GPT-5 launch","category":"model","impact":2,"url":"https://openai.com/gpt-5/"}
+{"date":"2025-09-22","label":"NVDA-OpenAI 10GW / $100B LOI","category":"capex","impact":3,"url":"https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems"}
+{"date":"2025-10-06","label":"AMD-OpenAI 6GW deal + warrant","category":"capex","impact":3,"url":"https://www.amd.com/en/newsroom/press-releases/2025-10-6-amd-and-openai-announce-strategic-partnership-to-d.html"}
+{"date":"2025-10-13","label":"Broadcom-OpenAI 10GW custom chips","category":"capex","impact":2,"url":"https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/"}
+{"date":"2025-10-29","label":"SK Hynix: 2026 capacity sold out","category":"supply","impact":2,"url":"https://www.techspot.com/news/110058-sk-hynix-completely-sells-out-semiconductor-supply-ai.html"}
+{"date":"2025-10-29","label":"Meta capex shock: $70-72B, -11%","category":"capex","impact":3,"url":"https://www.cnbc.com/2025/10/30/meta-stock-earnings-ai-spend.html"}
+{"date":"2025-11-04","label":"AI-bubble selloff week begins","category":"market","impact":2,"url":"https://www.cnbc.com/2025/11/03/stock-market-today-live-updates.html"}
+{"date":"2025-11-18","label":"Gemini 3 launch","category":"model","impact":2,"url":"https://blog.google/products-and-platforms/products/gemini/gemini-3-collection/"}
+{"date":"2026-01-28","label":"MSFT capex shock: -10% (-$357B)","category":"capex","impact":3,"url":"https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast"}
+{"date":"2026-02-05","label":"AMZN 2026 capex guide ~$200B","category":"capex","impact":3,"url":"https://www.stocktitan.net/sec-filings/AMZN/8-k-amazon-com-inc-reports-material-event-bd35b926ac2f.html"}
+{"date":"2026-06-24","label":"OpenAI-Broadcom Jalapeno chip reveal","category":"supply","impact":1,"url":"https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html"}
+{"date":"2026-07-15","label":"Thinking Machines Inkling launch","category":"model","impact":1,"url":"https://thinkingmachines.ai/news/introducing-inkling/"}
+{"date":"2026-07-16","label":"Kimi K3 launch (2.8T open model)","category":"model","impact":2,"url":"https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems"}
