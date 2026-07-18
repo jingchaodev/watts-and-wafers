@@ -1,26 +1,19 @@
 {
-  "asof": "2026-07-18T01:52:48Z",
+  "asof": "2026-07-18T14:36:55Z",
   "flags": [
-    {
-      "gpu": "A100",
-      "provider": "azure",
-      "price": 3.3996,
-      "cohort_median": 1.145,
-      "ratio": 2.969
-    },
     {
       "gpu": "H100",
       "provider": "azure",
       "price": 11.061,
-      "cohort_median": 2.92,
-      "ratio": 3.788
+      "cohort_median": 3.57,
+      "ratio": 3.098
     },
     {
       "gpu": "H200",
       "provider": "azure",
       "price": 10.6,
-      "cohort_median": 4.04,
-      "ratio": 2.624
+      "cohort_median": 4.145,
+      "ratio": 2.557
     }
   ],
   "errors": []
