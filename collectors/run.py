@@ -15,6 +15,7 @@ import argparse
 import sys
 
 import composite
+import crosscheck
 import hyperscaler
 import memory
 import neoclouds
@@ -28,11 +29,12 @@ COLLECTORS = {
     "openrouter": openrouter,
     "memory": memory,
     "composite": composite,
+    "crosscheck": crosscheck,
 }
 
 GROUPS = {
     "hourly": ["vast", "neoclouds", "composite"],
-    "daily": ["hyperscaler", "openrouter", "memory", "composite"],
+    "daily": ["hyperscaler", "openrouter", "memory", "composite", "crosscheck"],
 }
 
 

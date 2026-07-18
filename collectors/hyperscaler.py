@@ -13,6 +13,7 @@ import sys
 from urllib.parse import quote
 
 from common import atomic_write_json, append_history, fetch_url, iso_utc_now, latest_path
+from validation import check_price, check_relations, quarantine
 
 PRICES_URL = "https://prices.azure.com/api/retail/prices"
 FILTER = "serviceName eq 'Virtual Machines' and contains(armSkuName,'ND')"
@@ -139,15 +140,61 @@ def parse_pages(raw_json_texts):
     return azure
 
 
+def _validate_sku(sku, entry):
+    """Check one SKU entry's price band + spot/on-demand relation. Returns
+    (keep: bool, note: str|None). Price-band failure -> quarantine + drop
+    the whole SKU entry. Relation failure (spot > on-demand * 1.05) is
+    unambiguous here (spot must be <= on-demand) -> quarantine the spot
+    field specifically and null it out, but keep the on-demand entry.
+    """
+    price_result = check_price(entry.get("gpu"), entry.get("ondemand_gpu_hr"))
+    if price_result != "ok":
+        quarantine("hyperscaler", {"sku": sku, **entry}, price_result)
+        return False, f"{sku}: quarantined (price band violation: {price_result})"
+
+    rel_record = {
+        "ondemand_dph": entry.get("ondemand_vm_hr"),
+        "spot_dph": entry.get("spot_vm_hr"),
+    }
+    rel_violations = check_relations(rel_record)
+    if rel_violations:
+        # Unambiguous which member is implausible: spot is defined as <=
+        # on-demand, and on-demand already passed its own price-band check
+        # above, so the spot field is the offending one.
+        quarantine("hyperscaler", {"sku": sku, "spot_vm_hr": entry.get("spot_vm_hr")},
+                   "; ".join(rel_violations))
+        entry = dict(entry, spot_vm_hr=None)
+        return True, f"{sku}: quarantined spot_vm_hr ({'; '.join(rel_violations)})"
+
+    return True, None
+
+
 def collect():
     errors = []
     azure = {}
     try:
         pages = fetch_all_pages()
-        azure = parse_pages(pages)
+        raw_azure = parse_pages(pages)
     except Exception as e:  # noqa: BLE001
         errors.append({"source": "azure_retail_prices", "error": repr(e)})
         print(f"[hyperscaler] azure ERROR: {e}", file=sys.stderr)
+        return {"asof": iso_utc_now(), "azure": azure, "errors": errors}
+
+    n_quarantined = 0
+    for sku, entry in raw_azure.items():
+        keep, note = _validate_sku(sku, entry)
+        if keep:
+            if note and "quarantined spot_vm_hr" in note:
+                entry = dict(entry, spot_vm_hr=None)
+                errors.append({"sku": sku, "warning": note})
+            azure[sku] = entry
+        else:
+            n_quarantined += 1
+            errors.append({"sku": sku, "error": note})
+
+    if n_quarantined:
+        errors.append({"note": f"quarantined {n_quarantined} items"})
+
     return {"asof": iso_utc_now(), "azure": azure, "errors": errors}
 
 

@@ -97,6 +97,30 @@ until the OpenRouter API key lands; then it becomes
 45–55 NEUTRAL, ≥35 SOFTENING, <35 GLUT. z-scores computed from `data/history/*.jsonl`
 trailing windows (availability 7d vs prior 30d; prices 30d).
 
+### `data/latest/crosscheck.json` (daily, after vast/neoclouds/hyperscaler)
+```json
+{
+  "asof": "...",
+  "flags": [
+    {"gpu": "H100", "provider": "runpod", "price": 0.42, "cohort_median": 2.10, "ratio": 0.2}
+  ],
+  "errors": []
+}
+```
+For each GPU class, compares every provider's latest on-demand $/GPU-hr (vast's median_dph,
+each neocloud provider, azure's ondemand_gpu_hr) to the cohort median across providers; flags
+any provider whose |log-deviation| > ln(2.5) (i.e. price is >2.5x off the cohort median, either
+direction). Informational only — does not gate/exclude anything; the site may render it later.
+Requires >=2 providers reporting a class before a deviation is meaningful.
+
+### `data/history/quarantine.jsonl` (append-only, validation layer)
+```json
+{"ts": "...", "source": "vast", "item": {"gpu_name": "H100 SXM", "median_dph": 45.0}, "reason": "H100 SXM: $45.0000/gpu-hr above plausibility ceiling $16 (canon=H100)"}
+```
+Every value/record excluded from a `latest/*.json` file by `collectors/validation.py`'s price
+or relation checks is appended here — nothing fails silently. See `validation.py` for the
+per-GPU-class plausibility bands (deliberately wide: they catch unit errors, not market moves).
+
 ## History
 
 Every run appends one compact line per file to `data/history/<name>.jsonl`:
