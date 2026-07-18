@@ -1,0 +1,20 @@
+{
+ "asof": "2026-07-18T01:00:00Z",
+ "events": [
+  {
+   "date": "2026-07-16",
+   "signal": "token_growth",
+   "kind": "percentile_cross",
+   "direction": "up",
+   "detail": "7dMA 30d growth entered P91 (90d)"
+  },
+  {
+   "date": "2026-07-15",
+   "signal": "availability",
+   "kind": "shock",
+   "direction": "down",
+   "detail": "H100 offers 7d -32%"
+  }
+ ],
+ "errors": []
+}
