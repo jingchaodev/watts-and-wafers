@@ -140,3 +140,47 @@ prices, spot avg+chg, frontier price median, index). Rotation: when a history fi
 - Collectors are stdlib-only Python 3.10+ (urllib, json, re). No pip deps in collectors.
 - Env keys (optional, VPS only, never committed): `OPENROUTER_API_KEY`, `LAMBDA_API_KEY`,
   `FINNHUB_KEY` (memory proxies). Absence = graceful degradation.
+
+### `data/latest/signals.json` (every collector run — the five headline cards)
+```json
+{
+  "asof": "...",
+  "cards": [
+    {
+      "key": "h100_price",
+      "title": "H100 market price",
+      "value": 2.01, "unit": "$/hr", "value_fmt": "$2.01",
+      "percentile": 34, "window_days": 90,
+      "direction": "flat", "delta_7d_pct": -1.2,
+      "read": "Mid-range vs its 90-day history",
+      "tone": "neutral",
+      "spark": [["2026-06-18", 2.2]],
+      "provenance": "history includes external tracker data until own series reaches 90d"
+    }
+  ],
+  "composite": {"index": 50.0, "label": "NEUTRAL"},
+  "errors": []
+}
+```
+Exactly five cards, keys in order: `h100_price` (Vast median, ext-spliced percentile),
+`availability` (H100-class offers, value = 7d %change), `spot_discount` (Azure H100 spot÷OD,
+0-1), `gen_ratio` ((B200/3.2)÷H100, perf-adjusted), `token_growth` (7dMA 30d growth %).
+`tone`: `hot` = demand tightening, `cold` = softening, `neutral` — per-signal direction
+semantics live in the signals module, web only renders. `spark` = 30 daily points.
+A card whose inputs are missing renders with `value: null` + `read` explaining why — never absent.
+
+### `data/latest/signal_events.json` (every run) + `data/history/signal_events.jsonl`
+```json
+{
+  "asof": "...",
+  "events": [
+    {"date": "2026-07-17", "signal": "availability", "kind": "percentile_cross",
+     "direction": "down", "detail": "H100 offers 7d -32% → entered P8 (90d)"}
+  ],
+  "errors": []
+}
+```
+`kind`: `percentile_cross` (into ≤P10 or ≥P90, fire once per crossing), `label_flip`
+(composite label change), `shock` (availability 7d |change| > 30%). Dedup: per
+(signal, direction, kind) 7-day cooldown, state carried in the history file. `latest`
+holds the most recent 20; every NEW event also appends one line to the history jsonl.
