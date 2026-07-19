@@ -1,6 +1,13 @@
 {
-  "asof": "2026-07-19T17:27:37Z",
+  "asof": "2026-07-19T19:36:32Z",
   "events": [
+    {
+      "date": "2026-07-19",
+      "signal": "availability",
+      "kind": "shock",
+      "direction": "down",
+      "detail": "H100 offers 7d -37%"
+    },
     {
       "date": "2026-07-18",
       "signal": "composite",

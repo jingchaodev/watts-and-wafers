@@ -1,2 +1,3 @@
 {"date": "2026-07-18", "signal": "composite", "kind": "label_flip", "direction": "down", "detail": "Composite label TIGHTENING -> NEUTRAL"}
 {"date": "2026-07-18", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label NEUTRAL -> TIGHTENING"}
+{"date": "2026-07-19", "signal": "availability", "kind": "shock", "direction": "down", "detail": "H100 offers 7d -37%"}
