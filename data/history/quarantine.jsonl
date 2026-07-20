@@ -13,3 +13,4 @@
 {"ts": "2026-07-20T04:09:24Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-07-20T07:35:13Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-07-20T11:16:59Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
+{"ts": "2026-07-20T13:20:10Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
