@@ -2,3 +2,4 @@
 {"date": "2026-07-18", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label NEUTRAL -> TIGHTENING"}
 {"date": "2026-07-19", "signal": "availability", "kind": "shock", "direction": "down", "detail": "H100 offers 7d -37%"}
 {"date": "2026-07-20", "signal": "h100_price", "kind": "percentile_cross", "direction": "down", "detail": "H100 market price entered P10 (90d)"}
+{"date": "2026-07-21", "signal": "spot_discount", "kind": "percentile_cross", "direction": "up", "detail": "Spot discount (Azure H100) entered P100 (90d)"}

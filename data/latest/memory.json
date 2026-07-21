@@ -1,10 +1,10 @@
 {
-  "asof": "2026-07-20T15:31:40Z",
+  "asof": "2026-07-21T15:24:15Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 49.767,
-      "chg_pct": 0.2
+      "avg": 50.067,
+      "chg_pct": 0.6
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,8 +13,8 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 80.45,
-      "chg_pct": 0.31
+      "avg": 81.2,
+      "chg_pct": 0.93
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,13 +23,13 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 40.8,
+      "avg": 41.1,
       "chg_pct": 0.74
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 4.216,
-      "chg_pct": 0.05
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-07-20",
-    "summary": "[News] SK Group Chairman Says Abnormal Memory Prices Should Fall; AI Chip Demand Seen Up 60–100% Next Year",
-    "url": "https://www.trendforce.com/news/2026/07/20/news-sk-group-chairman-says-abnormal-memory-prices-should-fall-ai-chip-demand-seen-up-60-100-next-year/"
+    "date": "2026-07-15",
+    "summary": "[News] Samsung Galaxy Z Fold 8 May End Free Storage Upgrades on Rising Memory Costs; Flex Titanium Debuts",
+    "url": "https://www.trendforce.com/news/2026/07/15/news-samsung-galaxy-z-fold-8-may-end-free-storage-upgrades-on-rising-memory-costs-flex-titanium-debuts/"
   },
   "proxies": {},
   "errors": []

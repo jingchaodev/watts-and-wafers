@@ -1,6 +1,6 @@
 {
-  "asof": "2026-07-20T15:31:37Z",
-  "n_models": 339,
+  "asof": "2026-07-21T15:24:12Z",
+  "n_models": 338,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -768,8 +768,8 @@
     {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
-      "prompt_usd_per_m": 0.85,
-      "completion_usd_per_m": 3.8,
+      "prompt_usd_per_m": 0.82,
+      "completion_usd_per_m": 3.75,
       "context": 262144
     },
     {
@@ -806,13 +806,6 @@
       "prompt_usd_per_m": 0.966,
       "completion_usd_per_m": 3.036,
       "context": 202752
-    },
-    {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.9618,
-      "completion_usd_per_m": 3.0228,
-      "context": 1048576
     },
     {
       "id": "google/gemini-3.1-flash-image",
@@ -897,6 +890,13 @@
       "prompt_usd_per_m": 0.95,
       "completion_usd_per_m": 2.55,
       "context": 204800
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.8106,
+      "completion_usd_per_m": 2.5476,
+      "context": 1048576
     },
     {
       "id": "x-ai/grok-4.3",

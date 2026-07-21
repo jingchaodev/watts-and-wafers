@@ -1,6 +1,13 @@
 {
-  "asof": "2026-07-21T14:28:02Z",
+  "asof": "2026-07-21T15:24:16Z",
   "events": [
+    {
+      "date": "2026-07-21",
+      "signal": "spot_discount",
+      "kind": "percentile_cross",
+      "direction": "up",
+      "detail": "Spot discount (Azure H100) entered P100 (90d)"
+    },
     {
       "date": "2026-07-20",
       "signal": "h100_price",
