@@ -1,6 +1,13 @@
 {
-  "asof": "2026-07-22T18:36:59Z",
+  "asof": "2026-07-22T20:34:23Z",
   "events": [
+    {
+      "date": "2026-07-22",
+      "signal": "gen_ratio",
+      "kind": "percentile_cross",
+      "direction": "up",
+      "detail": "B200/H100 (perf-adj) entered P100 (90d)"
+    },
     {
       "date": "2026-07-21",
       "signal": "spot_discount",
