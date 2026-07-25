@@ -1,6 +1,6 @@
 {
-  "asof": "2026-07-24T15:15:18Z",
-  "n_models": 343,
+  "asof": "2026-07-25T14:48:19Z",
+  "n_models": 345,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -78,6 +78,13 @@
       "prompt_usd_per_m": 30.0,
       "completion_usd_per_m": 60.0,
       "context": 8191
+    },
+    {
+      "id": "anthropic/claude-opus-5-fast",
+      "name": "Claude Opus 5 (Fast)",
+      "prompt_usd_per_m": 10.0,
+      "completion_usd_per_m": 50.0,
+      "context": 1000000
     },
     {
       "id": "~anthropic/claude-fable-latest",
@@ -162,6 +169,13 @@
       "prompt_usd_per_m": 10.0,
       "completion_usd_per_m": 30.0,
       "context": 128000
+    },
+    {
+      "id": "anthropic/claude-opus-5",
+      "name": "Claude Opus 5",
+      "prompt_usd_per_m": 5.0,
+      "completion_usd_per_m": 25.0,
+      "context": 1000000
     },
     {
       "id": "anthropic/claude-opus-4.8",
@@ -773,17 +787,17 @@
       "context": 262144
     },
     {
-      "id": "moonshotai/kimi-k2.7-code",
-      "name": "MoonshotAI: Kimi K2.7 Code",
-      "prompt_usd_per_m": 0.82,
-      "completion_usd_per_m": 3.75,
-      "context": 262144
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "name": "NVIDIA: Nemotron 3 Ultra",
+      "prompt_usd_per_m": 0.6,
+      "completion_usd_per_m": 3.6,
+      "context": 512288
     },
     {
-      "id": "moonshotai/kimi-k2.6",
-      "name": "MoonshotAI: Kimi K2.6",
-      "prompt_usd_per_m": 0.684,
-      "completion_usd_per_m": 3.42,
+      "id": "moonshotai/kimi-k2.7-code",
+      "name": "MoonshotAI: Kimi K2.7 Code",
+      "prompt_usd_per_m": 0.78,
+      "completion_usd_per_m": 3.5,
       "context": 262144
     },
     {
@@ -864,6 +878,13 @@
       "context": 262144
     },
     {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
+      "prompt_usd_per_m": 0.646,
+      "completion_usd_per_m": 2.72,
+      "context": 262144
+    },
+    {
       "id": "qwen/qwen3-vl-235b-a22b-thinking",
       "name": "Qwen: Qwen3 VL 235B A22B Thinking",
       "prompt_usd_per_m": 0.26,
@@ -876,13 +897,6 @@
       "prompt_usd_per_m": 0.95,
       "completion_usd_per_m": 2.55,
       "context": 204800
-    },
-    {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.8036,
-      "completion_usd_per_m": 2.5256,
-      "context": 1048576
     },
     {
       "id": "google/gemini-3.5-flash-lite",
@@ -957,7 +971,7 @@
     {
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
-      "prompt_usd_per_m": 0.288,
+      "prompt_usd_per_m": 0.289,
       "completion_usd_per_m": 2.4,
       "context": 262144
     },
@@ -983,11 +997,11 @@
       "context": 131072
     },
     {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "name": "NVIDIA: Nemotron 3 Ultra",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 2.2,
-      "context": 512288
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.714,
+      "completion_usd_per_m": 2.244,
+      "context": 1048576
     },
     {
       "id": "z-ai/glm-4.5",
@@ -1037,20 +1051,6 @@
       "prompt_usd_per_m": 0.25,
       "completion_usd_per_m": 2.0,
       "context": 262144
-    },
-    {
-      "id": "mistralai/devstral-2512",
-      "name": "Mistral: Devstral 2 2512",
-      "prompt_usd_per_m": 0.4,
-      "completion_usd_per_m": 2.0,
-      "context": 262144
-    },
-    {
-      "id": "openai/gpt-5.1-codex-mini",
-      "name": "OpenAI: GPT-5.1-Codex-Mini",
-      "prompt_usd_per_m": 0.25,
-      "completion_usd_per_m": 2.0,
-      "context": 400000
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
