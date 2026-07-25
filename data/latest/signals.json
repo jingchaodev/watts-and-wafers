@@ -1,5 +1,5 @@
 {
-  "asof": "2026-07-25T09:14:33Z",
+  "asof": "2026-07-25T10:47:33Z",
   "cards": [
     {
       "key": "h100_price",
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -51.85,
+      "value": -42.59,
       "unit": "% (7d)",
-      "value_fmt": "-51.9%",
+      "value_fmt": "-42.6%",
       "percentile": null,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -51.85,
+      "delta_7d_pct": -42.59,
       "read": "Offers thinning — capacity being absorbed Percentile unavailable until 14d of own history (9d so far).",
       "tone": "hot",
       "spark": [
@@ -184,7 +184,7 @@
         ],
         [
           "2026-07-25",
-          26
+          31
         ]
       ],
       "provenance": null
@@ -240,13 +240,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.819,
+      "value": 0.8189,
       "unit": "ratio",
       "value_fmt": "0.82x",
       "percentile": 11,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -19.59,
+      "delta_7d_pct": -19.6,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -284,7 +284,7 @@
         ],
         [
           "2026-07-25",
-          0.8189875564465504
+          0.818917947471802
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -427,7 +427,7 @@
     }
   ],
   "composite": {
-    "index": 64.32,
+    "index": 61.02,
     "label": "TIGHTENING"
   },
   "errors": []
