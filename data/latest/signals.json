@@ -1,17 +1,17 @@
 {
-  "asof": "2026-07-25T15:32:05Z",
+  "asof": "2026-07-25T17:26:08Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.5165,
+      "value": 2.209,
       "unit": "$/hr",
-      "value_fmt": "$2.52",
-      "percentile": 52,
+      "value_fmt": "$2.21",
+      "percentile": 34,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 18.53,
-      "read": "Mid-range vs its 90-day history, trending up over the last week",
+      "delta_7d_pct": 4.05,
+      "read": "Cheap vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-07-25",
-          2.5164999999999997
+          2.20905
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -25.93,
+      "value": -31.48,
       "unit": "% (7d)",
-      "value_fmt": "-25.9%",
+      "value_fmt": "-31.5%",
       "percentile": null,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -25.93,
+      "delta_7d_pct": -31.48,
       "read": "Offers thinning — capacity being absorbed Percentile unavailable until 14d of own history (9d so far).",
       "tone": "hot",
       "spark": [
@@ -184,7 +184,7 @@
         ],
         [
           "2026-07-25",
-          40
+          37
         ]
       ],
       "provenance": null
@@ -244,13 +244,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8036,
+      "value": 0.9153,
       "unit": "ratio",
-      "value_fmt": "0.80x",
-      "percentile": 11,
+      "value_fmt": "0.92x",
+      "percentile": 33,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -21.1,
+      "delta_7d_pct": -10.13,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -288,7 +288,7 @@
         ],
         [
           "2026-07-25",
-          0.8035776375918935
+          0.9153397388017473
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -431,7 +431,7 @@
     }
   ],
   "composite": {
-    "index": 55.89,
+    "index": 56.99,
     "label": "TIGHTENING"
   },
   "errors": []
