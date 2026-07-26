@@ -1,6 +1,6 @@
 {
-  "asof": "2026-07-26T14:02:45Z",
-  "index": 56.48,
+  "asof": "2026-07-26T14:50:03Z",
+  "index": 57.06,
   "label": "TIGHTENING",
   "signals": [
     {
@@ -20,9 +20,9 @@
     {
       "key": "memory",
       "weight": 0.25,
-      "z": 0.4,
+      "z": 0.583,
       "direction": "up",
-      "detail": "DDR5 16Gb spot avg 50.286 (7d mean)"
+      "detail": "DDR5 16Gb spot avg 50.452 (7d mean)"
     },
     {
       "key": "gpu_price",
