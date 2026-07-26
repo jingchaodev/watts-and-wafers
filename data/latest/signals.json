@@ -1,16 +1,16 @@
 {
-  "asof": "2026-07-26T17:28:27Z",
+  "asof": "2026-07-26T19:39:45Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.4882,
+      "value": 2.6351,
       "unit": "$/hr",
-      "value_fmt": "$2.49",
-      "percentile": 51,
+      "value_fmt": "$2.64",
+      "percentile": 62,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 21.55,
+      "delta_7d_pct": 28.73,
       "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-07-26",
-          2.4882
+          2.6351
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,15 +140,15 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 21.21,
+      "value": -3.03,
       "unit": "% (7d)",
-      "value_fmt": "+21.2%",
+      "value_fmt": "-3.0%",
       "percentile": null,
       "window_days": 90,
-      "direction": "up",
-      "delta_7d_pct": 21.21,
-      "read": "Offers expanding — capacity loosening Percentile unavailable until 14d of own history (10d so far).",
-      "tone": "cold",
+      "direction": "down",
+      "delta_7d_pct": -3.03,
+      "read": "Offers thinning — capacity being absorbed Percentile unavailable until 14d of own history (10d so far).",
+      "tone": "hot",
       "spark": [
         [
           "2026-07-17",
@@ -188,7 +188,7 @@
         ],
         [
           "2026-07-26",
-          40
+          32
         ]
       ],
       "provenance": null
@@ -252,13 +252,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8126,
+      "value": 0.7673,
       "unit": "ratio",
-      "value_fmt": "0.81x",
-      "percentile": 20,
+      "value_fmt": "0.77x",
+      "percentile": 10,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -23.08,
+      "delta_7d_pct": -27.37,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -300,7 +300,7 @@
         ],
         [
           "2026-07-26",
-          0.8126168013021462
+          0.7672977306364084
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -443,7 +443,7 @@
     }
   ],
   "composite": {
-    "index": 55.67,
+    "index": 60.33,
     "label": "TIGHTENING"
   },
   "errors": []
