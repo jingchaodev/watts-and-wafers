@@ -1,10 +1,10 @@
 {
-  "asof": "2026-07-26T14:50:03Z",
+  "asof": "2026-07-27T16:01:05Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 50.833,
-      "chg_pct": 0.66
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,8 +13,8 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 83.25,
-      "chg_pct": 1.37
+      "avg": 84.512,
+      "chg_pct": 1.52
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,24 +23,24 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 42.143,
-      "chg_pct": 1.31
+      "avg": 42.077,
+      "chg_pct": -0.16
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.216,
-      "chg_pct": 0.0
+      "avg": 4.214,
+      "chg_pct": -0.05
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.429,
-      "chg_pct": 0.89
+      "avg": 13.595,
+      "chg_pct": 1.24
     }
   ],
   "nand_note": {
-    "date": "2026-07-24",
-    "summary": "[News] China’s DRAM Maker CXMT to Debut Jul. 27; IPO to Raise RMB 57.9B, Largest on STAR Market Since Launch",
-    "url": "https://www.trendforce.com/news/2026/07/24/news-chinas-dram-maker-cxmt-to-debut-jul-27-ipo-to-raise-rmb-57-9b-largest-on-star-market-since-launch/"
+    "date": "2026-07-27",
+    "summary": "[News] Q2 Memory Earnings Preview: What to Watch From Samsung, SK hynix, and Kioxia",
+    "url": "https://www.trendforce.com/news/2026/07/27/news-q2-memory-earnings-preview-what-to-watch-from-samsung-sk-hynix-and-kioxia/"
   },
   "proxies": {},
   "errors": []
