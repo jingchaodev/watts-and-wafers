@@ -1,1 +1,1 @@
-{"cards": [{"key": "h100_price", "percentile": 46}, {"key": "availability", "percentile": null}, {"key": "spot_discount", "percentile": 100}, {"key": "gen_ratio", "percentile": 27}, {"key": "token_growth", "percentile": 41}], "composite": {"index": 60.68, "label": "TIGHTENING"}}
+{"cards": [{"key": "h100_price", "percentile": 19}, {"key": "availability", "percentile": null}, {"key": "spot_discount", "percentile": 100}, {"key": "gen_ratio", "percentile": 55}, {"key": "token_growth", "percentile": 41}], "composite": {"index": 60.35, "label": "TIGHTENING"}}
