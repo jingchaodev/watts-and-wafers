@@ -1,20 +1,20 @@
 {
-  "asof": "2026-07-27T16:01:05Z",
+  "asof": "2026-07-28T15:52:48Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 50.833,
-      "chg_pct": 0.0
+      "avg": 50.933,
+      "chg_pct": 0.2
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 23.62,
-      "chg_pct": 0.0
+      "avg": 23.63,
+      "chg_pct": 0.04
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 84.512,
-      "chg_pct": 1.52
+      "avg": 85.0,
+      "chg_pct": 0.58
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -24,23 +24,23 @@
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
       "avg": 42.077,
-      "chg_pct": -0.16
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.214,
+      "avg": 4.212,
       "chg_pct": -0.05
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.595,
-      "chg_pct": 1.24
+      "avg": 13.738,
+      "chg_pct": 1.05
     }
   ],
   "nand_note": {
-    "date": "2026-07-27",
-    "summary": "[News] Q2 Memory Earnings Preview: What to Watch From Samsung, SK hynix, and Kioxia",
-    "url": "https://www.trendforce.com/news/2026/07/27/news-q2-memory-earnings-preview-what-to-watch-from-samsung-sk-hynix-and-kioxia/"
+    "date": "2026-07-28",
+    "summary": "[News] NVIDIA Reportedly Halves Vera Rubin SOCAMM Capacity as Memory Costs Near 29% of System BOM",
+    "url": "https://www.trendforce.com/news/2026/07/28/news-nvidia-reportedly-halves-vera-rubin-socamm-capacity-as-memory-costs-near-29-of-system-bom/"
   },
   "proxies": {},
   "errors": []
