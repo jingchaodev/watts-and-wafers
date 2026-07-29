@@ -1,20 +1,20 @@
 {
-  "asof": "2026-07-28T15:52:48Z",
+  "asof": "2026-07-29T15:33:06Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 50.933,
-      "chg_pct": 0.2
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 23.63,
-      "chg_pct": 0.04
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 85.0,
-      "chg_pct": 0.58
+      "avg": 84.976,
+      "chg_pct": -0.03
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,24 +23,24 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 42.077,
-      "chg_pct": 0.0
+      "avg": 42.041,
+      "chg_pct": -0.09
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 4.212,
-      "chg_pct": -0.05
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.738,
-      "chg_pct": 1.05
+      "avg": 13.81,
+      "chg_pct": 0.52
     }
   ],
   "nand_note": {
-    "date": "2026-07-28",
-    "summary": "[News] NVIDIA Reportedly Halves Vera Rubin SOCAMM Capacity as Memory Costs Near 29% of System BOM",
-    "url": "https://www.trendforce.com/news/2026/07/28/news-nvidia-reportedly-halves-vera-rubin-socamm-capacity-as-memory-costs-near-29-of-system-bom/"
+    "date": "2026-07-29",
+    "summary": "[Insights] Memory Spot Price Update: DRAM Spot Prices Rise Slightly as DDR3, DDR4 and DDR5 Inquiries Pick Up",
+    "url": "https://www.trendforce.com/news/2026/07/29/insights-memory-spot-price-update-dram-spot-prices-rise-slightly-as-ddr3-ddr4-and-ddr5-inquiries-pick-up/"
   },
   "proxies": {},
   "errors": []
