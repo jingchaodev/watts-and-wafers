@@ -1,6 +1,13 @@
 {
-  "asof": "2026-07-30T18:50:58Z",
+  "asof": "2026-07-30T20:37:28Z",
   "events": [
+    {
+      "date": "2026-07-30",
+      "signal": "availability",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "H100 availability entered P7 (90d)"
+    },
     {
       "date": "2026-07-30",
       "signal": "composite",

@@ -1,16 +1,16 @@
 {
-  "asof": "2026-07-30T18:50:58Z",
+  "asof": "2026-07-30T20:37:28Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.4986,
+      "value": 2.6248,
       "unit": "$/hr",
-      "value_fmt": "$2.50",
-      "percentile": 51,
+      "value_fmt": "$2.62",
+      "percentile": 62,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 30.58,
+      "delta_7d_pct": 37.18,
       "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-07-30",
-          2.4986
+          2.62485
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,15 +140,15 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 6.25,
+      "value": -15.62,
       "unit": "% (7d)",
-      "value_fmt": "+6.2%",
-      "percentile": 43,
+      "value_fmt": "-15.6%",
+      "percentile": 7,
       "window_days": 90,
-      "direction": "up",
-      "delta_7d_pct": 6.25,
-      "read": "Offers expanding — capacity loosening",
-      "tone": "cold",
+      "direction": "down",
+      "delta_7d_pct": -15.62,
+      "read": "Offers thinning — capacity being absorbed",
+      "tone": "hot",
       "spark": [
         [
           "2026-07-17",
@@ -204,7 +204,7 @@
         ],
         [
           "2026-07-30",
-          34
+          27
         ]
       ],
       "provenance": null
@@ -284,13 +284,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8366,
+      "value": 0.7965,
       "unit": "ratio",
-      "value_fmt": "0.84x",
-      "percentile": 36,
+      "value_fmt": "0.80x",
+      "percentile": 29,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -21.57,
+      "delta_7d_pct": -25.33,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -348,7 +348,7 @@
         ],
         [
           "2026-07-30",
-          0.8366435203714079
+          0.7964800369544925
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -491,7 +491,7 @@
     }
   ],
   "composite": {
-    "index": 56.6,
+    "index": 60.06,
     "label": "TIGHTENING"
   },
   "errors": []
