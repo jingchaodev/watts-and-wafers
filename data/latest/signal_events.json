@@ -1,6 +1,13 @@
 {
-  "asof": "2026-07-30T06:45:29Z",
+  "asof": "2026-07-30T09:46:22Z",
   "events": [
+    {
+      "date": "2026-07-30",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "down",
+      "detail": "Composite label TIGHTENING -> NEUTRAL"
+    },
     {
       "date": "2026-07-27",
       "signal": "availability",
