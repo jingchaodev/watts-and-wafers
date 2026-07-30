@@ -1,5 +1,5 @@
 {
-  "asof": "2026-07-29T15:33:04Z",
+  "asof": "2026-07-30T15:34:26Z",
   "n_models": 367,
   "models": [
     {
@@ -236,7 +236,7 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
-      "prompt_usd_per_m": 3.0,
+      "prompt_usd_per_m": 2.9,
       "completion_usd_per_m": 15.0,
       "context": 1048576
     },
@@ -871,6 +871,13 @@
       "context": 1048576
     },
     {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "name": "NVIDIA: Nemotron 3 Ultra",
+      "prompt_usd_per_m": 0.6,
+      "completion_usd_per_m": 3.6,
+      "context": 512288
+    },
+    {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "prompt_usd_per_m": 0.73,
@@ -890,6 +897,13 @@
       "prompt_usd_per_m": 0.8,
       "completion_usd_per_m": 3.2,
       "context": 300000
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.966,
+      "completion_usd_per_m": 3.036,
+      "context": 1048576
     },
     {
       "id": "z-ai/glm-5.1",
@@ -1037,20 +1051,6 @@
       "prompt_usd_per_m": 0.3,
       "completion_usd_per_m": 2.5,
       "context": 32768
-    },
-    {
-      "id": "moonshotai/kimi-k2-0905",
-      "name": "MoonshotAI: Kimi K2 0905",
-      "prompt_usd_per_m": 0.6,
-      "completion_usd_per_m": 2.5,
-      "context": 262144
-    },
-    {
-      "id": "google/gemini-2.5-flash",
-      "name": "Google: Gemini 2.5 Flash",
-      "prompt_usd_per_m": 0.3,
-      "completion_usd_per_m": 2.5,
-      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
