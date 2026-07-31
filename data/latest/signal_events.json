@@ -1,6 +1,13 @@
 {
-  "asof": "2026-07-31T12:21:24Z",
+  "asof": "2026-07-31T14:42:35Z",
   "events": [
+    {
+      "date": "2026-07-31",
+      "signal": "h100_price",
+      "kind": "percentile_cross",
+      "direction": "up",
+      "detail": "H100 market price entered P92 (90d)"
+    },
     {
       "date": "2026-07-30",
       "signal": "availability",
