@@ -1,10 +1,10 @@
 {
-  "asof": "2026-07-30T15:34:29Z",
+  "asof": "2026-07-31T15:39:03Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 50.967,
-      "chg_pct": 0.07
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,23 +13,23 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 84.976,
-      "chg_pct": 0.0
+      "avg": 85.22,
+      "chg_pct": 0.29
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
       "avg": 11.45,
-      "chg_pct": -0.65
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 42.13,
-      "chg_pct": 0.21
+      "avg": 42.112,
+      "chg_pct": -0.04
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 4.21,
-      "chg_pct": -0.05
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-07-29",
-    "summary": "[Insights] Memory Spot Price Update: DRAM Spot Prices Rise Slightly as DDR3, DDR4 and DDR5 Inquiries Pick Up",
-    "url": "https://www.trendforce.com/news/2026/07/29/insights-memory-spot-price-update-dram-spot-prices-rise-slightly-as-ddr3-ddr4-and-ddr5-inquiries-pick-up/"
+    "date": "2026-07-30",
+    "summary": "[News] Ahead of Cook's Final Apple Earnings Call: Rising Memory Costs and Potential Sep. iPhone Price Hike in Focus",
+    "url": "https://www.trendforce.com/news/2026/07/30/news-ahead-of-cooks-final-apple-earnings-call-rising-memory-costs-and-potential-sep-iphone-price-hike-in-focus/"
   },
   "proxies": {},
   "errors": []
