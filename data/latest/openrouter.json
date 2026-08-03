@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-02T14:48:38Z",
-  "n_models": 337,
+  "asof": "2026-08-03T16:06:28Z",
+  "n_models": 338,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -535,6 +535,13 @@
       "context": 262144
     },
     {
+      "id": "qwen/qwen3.8-max",
+      "name": "Qwen: Qwen3.8 Max",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 6.0,
+      "context": 1000000
+    },
+    {
       "id": "openai/gpt-5.6-terra-pro",
       "name": "OpenAI: GPT-5.6 Terra Pro",
       "prompt_usd_per_m": 1.0,
@@ -696,18 +703,18 @@
       "context": 202752
     },
     {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
-      "prompt_usd_per_m": 0.4,
-      "completion_usd_per_m": 4.0,
-      "context": 131072
-    },
-    {
       "id": "openai/gpt-3.5-turbo-16k",
       "name": "OpenAI: GPT-3.5 Turbo 16k",
       "prompt_usd_per_m": 3.0,
       "completion_usd_per_m": 4.0,
       "context": 16385
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
+      "prompt_usd_per_m": 0.98,
+      "completion_usd_per_m": 3.95,
+      "context": 131072
     },
     {
       "id": "qwen/qwen3-max-thinking",
@@ -892,6 +899,13 @@
       "context": 163840
     },
     {
+      "id": "qwen/qwen3.6-27b",
+      "name": "Qwen: Qwen3.6 27B",
+      "prompt_usd_per_m": 0.289,
+      "completion_usd_per_m": 2.4,
+      "context": 262144
+    },
+    {
       "id": "openai/gpt-audio-mini",
       "name": "OpenAI: GPT Audio Mini",
       "prompt_usd_per_m": 0.6,
@@ -976,13 +990,6 @@
       "context": 256000
     },
     {
-      "id": "qwen/qwen3.6-27b",
-      "name": "Qwen: Qwen3.6 27B",
-      "prompt_usd_per_m": 0.3,
-      "completion_usd_per_m": 2.0,
-      "context": 262144
-    },
-    {
       "id": "bytedance-seed/seed-2.0-lite",
       "name": "ByteDance Seed: Seed-2.0-Lite",
       "prompt_usd_per_m": 0.25,
@@ -1042,13 +1049,6 @@
       "id": "openai/gpt-3.5-turbo-0613",
       "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
       "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 2.0,
-      "context": 4095
-    },
-    {
-      "id": "openai/gpt-3.5-turbo-instruct",
-      "name": "OpenAI: GPT-3.5 Turbo Instruct",
-      "prompt_usd_per_m": 1.5,
       "completion_usd_per_m": 2.0,
       "context": 4095
     }
