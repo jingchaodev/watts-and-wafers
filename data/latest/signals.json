@@ -1,16 +1,16 @@
 {
-  "asof": "2026-08-03T07:52:02Z",
+  "asof": "2026-08-03T11:49:32Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.3648,
+      "value": 2.3617,
       "unit": "$/hr",
       "value_fmt": "$2.36",
       "percentile": 44,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 12.68,
+      "delta_7d_pct": 12.53,
       "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-03",
-          2.3648
+          2.36165
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 75.0,
+      "value": 53.57,
       "unit": "% (7d)",
-      "value_fmt": "+75.0%",
-      "percentile": 89,
+      "value_fmt": "+53.6%",
+      "percentile": 72,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 75.0,
+      "delta_7d_pct": 53.57,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -220,7 +220,7 @@
         ],
         [
           "2026-08-03",
-          49
+          43
         ]
       ],
       "provenance": null
@@ -312,13 +312,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8457,
+      "value": 0.8469,
       "unit": "ratio",
       "value_fmt": "0.85x",
       "percentile": 39,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -12.22,
+      "delta_7d_pct": -12.1,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -392,7 +392,7 @@
         ],
         [
           "2026-08-03",
-          0.8457374830852504
+          0.8468655389240574
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -535,7 +535,7 @@
     }
   ],
   "composite": {
-    "index": 56.11,
+    "index": 59.41,
     "label": "TIGHTENING"
   },
   "errors": []
