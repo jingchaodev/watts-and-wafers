@@ -52,3 +52,4 @@
 {"ts": "2026-08-03T22:29:18Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-08-04T00:17:33Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-08-04T03:43:10Z", "source": "vast", "item": {"gpu_name": "RTX 4090", "offers": 57, "total_gpus": 177, "median_dph": 0.4269, "p25_dph": 0.3356, "min_dph": 0.0402}, "reason": "RTX 4090: $0.0402/gpu-hr below plausibility floor $0.05 (canon=RTX 4090)"}
+{"ts": "2026-08-04T06:44:24Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
