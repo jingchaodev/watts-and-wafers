@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-03T16:06:28Z",
+  "asof": "2026-08-04T15:59:15Z",
   "n_models": 338,
   "models": [
     {
@@ -745,13 +745,6 @@
       "context": 262144
     },
     {
-      "id": "moonshotai/kimi-k2.6",
-      "name": "MoonshotAI: Kimi K2.6",
-      "prompt_usd_per_m": 0.6,
-      "completion_usd_per_m": 3.41,
-      "context": 262144
-    },
-    {
       "id": "qwen/qwen3-coder-plus",
       "name": "Qwen: Qwen3 Coder Plus",
       "prompt_usd_per_m": 0.65,
@@ -899,6 +892,20 @@
       "context": 163840
     },
     {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
+      "prompt_usd_per_m": 0.589,
+      "completion_usd_per_m": 2.48,
+      "context": 262144
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.76,
+      "completion_usd_per_m": 2.42,
+      "context": 1048576
+    },
+    {
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "prompt_usd_per_m": 0.289,
@@ -1044,13 +1051,6 @@
       "prompt_usd_per_m": 0.4,
       "completion_usd_per_m": 2.0,
       "context": 131072
-    },
-    {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 2.0,
-      "context": 4095
     }
   ],
   "frontier_median_completion_usd_per_m": 14.0,

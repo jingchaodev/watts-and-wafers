@@ -1,25 +1,25 @@
 {
-  "asof": "2026-08-03T16:06:31Z",
+  "asof": "2026-08-04T15:59:17Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 51.333,
-      "chg_pct": 0.72
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 23.63,
-      "chg_pct": 0.0
+      "avg": 23.64,
+      "chg_pct": 0.04
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 85.707,
-      "chg_pct": 0.57
+      "avg": 85.951,
+      "chg_pct": 0.29
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.45,
-      "chg_pct": 0.0
+      "avg": 11.4,
+      "chg_pct": -0.44
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
@@ -28,19 +28,19 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.21,
-      "chg_pct": 0.0
+      "avg": 4.208,
+      "chg_pct": -0.05
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.838,
-      "chg_pct": 0.2
+      "avg": 13.867,
+      "chg_pct": 0.21
     }
   ],
   "nand_note": {
-    "date": "2026-07-30",
-    "summary": "[News] Ahead of Cook's Final Apple Earnings Call: Rising Memory Costs and Potential Sep. iPhone Price Hike in Focus",
-    "url": "https://www.trendforce.com/news/2026/07/30/news-ahead-of-cooks-final-apple-earnings-call-rising-memory-costs-and-potential-sep-iphone-price-hike-in-focus/"
+    "date": "2026-08-04",
+    "summary": "[News] NVIDIA RTX 50 Prices in Korea May Rise Up to 30% From Aug. on Higher TSMC Wafer and GDDR7 Memory Costs",
+    "url": "https://www.trendforce.com/news/2026/08/04/news-nvidia-rtx-50-prices-in-korea-may-rise-up-to-30-from-aug-on-higher-tsmc-wafer-and-gddr7-memory-costs/"
   },
   "proxies": {},
   "errors": []
