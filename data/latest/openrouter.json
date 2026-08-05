@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-04T15:59:15Z",
+  "asof": "2026-08-05T15:49:07Z",
   "n_models": 338,
   "models": [
     {
@@ -557,7 +557,7 @@
     },
     {
       "id": "x-ai/grok-4.5",
-      "name": "xAI: Grok 4.5",
+      "name": "SpaceXAI: Grok 4.5",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 500000
@@ -703,18 +703,18 @@
       "context": 202752
     },
     {
+      "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
+      "prompt_usd_per_m": 0.4,
+      "completion_usd_per_m": 4.0,
+      "context": 131072
+    },
+    {
       "id": "openai/gpt-3.5-turbo-16k",
       "name": "OpenAI: GPT-3.5 Turbo 16k",
       "prompt_usd_per_m": 3.0,
       "completion_usd_per_m": 4.0,
       "context": 16385
-    },
-    {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
-      "prompt_usd_per_m": 0.98,
-      "completion_usd_per_m": 3.95,
-      "context": 131072
     },
     {
       "id": "qwen/qwen3-max-thinking",
@@ -740,7 +740,7 @@
     {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
-      "prompt_usd_per_m": 0.73,
+      "prompt_usd_per_m": 0.7,
       "completion_usd_per_m": 3.5,
       "context": 262144
     },
@@ -830,21 +830,21 @@
     },
     {
       "id": "x-ai/grok-4.3",
-      "name": "xAI: Grok 4.3",
+      "name": "SpaceXAI: Grok 4.3",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 2.5,
       "context": 1000000
     },
     {
       "id": "x-ai/grok-4.20-multi-agent",
-      "name": "xAI: Grok 4.20 Multi-Agent",
+      "name": "SpaceXAI: Grok 4.20 Multi-Agent",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 2.5,
       "context": 2000000
     },
     {
       "id": "x-ai/grok-4.20",
-      "name": "xAI: Grok 4.20",
+      "name": "SpaceXAI: Grok 4.20",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 2.5,
       "context": 2000000
@@ -991,7 +991,7 @@
     },
     {
       "id": "x-ai/grok-build-0.1",
-      "name": "xAI: Grok Build 0.1",
+      "name": "SpaceXAI: Grok Build 0.1",
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 2.0,
       "context": 256000
