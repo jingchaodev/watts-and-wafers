@@ -1,23 +1,19 @@
 {
-  "asof": "2026-08-04T22:31:17Z",
+  "asof": "2026-08-05T00:16:52Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.2676,
+      "value": 2.1959,
       "unit": "$/hr",
-      "value_fmt": "$2.27",
-      "percentile": 33,
+      "value_fmt": "$2.20",
+      "percentile": 31,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -10.56,
+      "delta_7d_pct": -13.51,
       "read": "Cheap vs its 90-day history, trending down over the last week",
       "tone": "cold",
       "spark": [
-        [
-          "2026-07-06",
-          2.78125
-        ],
         [
           "2026-07-07",
           3.0321499999999997
@@ -133,6 +129,10 @@
         [
           "2026-08-04",
           2.2676
+        ],
+        [
+          "2026-08-05",
+          2.1959
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 23.53,
+      "value": 5.26,
       "unit": "% (7d)",
-      "value_fmt": "+23.5%",
-      "percentile": 74,
+      "value_fmt": "+5.3%",
+      "percentile": 65,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 23.53,
+      "delta_7d_pct": 5.26,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -225,6 +225,10 @@
         [
           "2026-08-04",
           42
+        ],
+        [
+          "2026-08-05",
+          40
         ]
       ],
       "provenance": null
@@ -324,13 +328,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.891,
+      "value": 0.92,
       "unit": "ratio",
-      "value_fmt": "0.89x",
-      "percentile": 58,
+      "value_fmt": "0.92x",
+      "percentile": 65,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 12.95,
+      "delta_7d_pct": 15.53,
       "read": "Blackwell already at or below H100 compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
@@ -409,6 +413,10 @@
         [
           "2026-08-04",
           0.891009492414888
+        ],
+        [
+          "2026-08-05",
+          0.9200242497381484
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -551,7 +559,7 @@
     }
   ],
   "composite": {
-    "index": 57.3,
+    "index": 58.33,
     "label": "TIGHTENING"
   },
   "errors": []
