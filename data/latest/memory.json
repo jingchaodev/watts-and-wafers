@@ -1,10 +1,10 @@
 {
-  "asof": "2026-08-05T15:49:09Z",
+  "asof": "2026-08-07T14:35:42Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 51.333,
-      "chg_pct": 0.0
+      "avg": 51.6,
+      "chg_pct": 0.19
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,8 +13,8 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 86.683,
-      "chg_pct": 0.85
+      "avg": 86.268,
+      "chg_pct": -0.48
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,8 +23,8 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 42.112,
-      "chg_pct": 0.0
+      "avg": 42.45,
+      "chg_pct": 0.5
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
@@ -33,14 +33,14 @@
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.919,
-      "chg_pct": 0.38
+      "avg": 13.976,
+      "chg_pct": 0.2
     }
   ],
   "nand_note": {
     "date": "2026-08-05",
-    "summary": "[Insights] Memory Spot Price Update: DRAM Spot Price Gains Slow, While DDR4 and DDR3 Continue Uptrend",
-    "url": "https://www.trendforce.com/news/2026/08/05/insights-memory-spot-price-update-dram-spot-price-gains-slow-while-ddr4-and-ddr3-continue-uptrend/"
+    "summary": "[News] Samsung Unveils Industry-First 400+ Layer V10 BV-NAND; Memory Density Up 58% vs. V9",
+    "url": "https://www.trendforce.com/news/2026/08/05/news-samsung-unveils-industry-first-400-layer-v10-bv-nand-memory-density-up-58-vs-v9/"
   },
   "proxies": {},
   "errors": []
