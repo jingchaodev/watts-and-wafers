@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-07T14:35:40Z",
+  "asof": "2026-08-08T14:12:52Z",
   "n_models": 400,
   "models": [
     {
@@ -915,7 +915,7 @@
     {
       "id": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
-      "prompt_usd_per_m": 1.0,
+      "prompt_usd_per_m": 0.95,
       "completion_usd_per_m": 4.05,
       "context": 1048576
     },
