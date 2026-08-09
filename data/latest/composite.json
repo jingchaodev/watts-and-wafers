@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-09T13:24:04Z",
-  "index": 52.47,
+  "asof": "2026-08-09T14:17:26Z",
+  "index": 52.35,
   "label": "NEUTRAL",
   "signals": [
     {
@@ -13,16 +13,16 @@
     {
       "key": "token_economics",
       "weight": 0.25,
-      "z": 1.512,
+      "z": 1.414,
       "direction": "up",
       "detail": "frontier $/M completion 14.0 (latest)"
     },
     {
       "key": "memory",
       "weight": 0.25,
-      "z": 1.002,
+      "z": 1.062,
       "direction": "up",
-      "detail": "DDR5 16Gb spot avg 51.305 (7d mean)"
+      "detail": "DDR5 16Gb spot avg 51.395 (7d mean)"
     },
     {
       "key": "gpu_price",

@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-08T14:12:52Z",
+  "asof": "2026-08-09T14:17:23Z",
   "n_models": 400,
   "models": [
     {
@@ -362,7 +362,7 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
-      "prompt_usd_per_m": 2.5,
+      "prompt_usd_per_m": 2.8,
       "completion_usd_per_m": 14.0,
       "context": 1048576
     },
@@ -997,6 +997,13 @@
       "context": 262144
     },
     {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen: Qwen3.5 397B A17B",
+      "prompt_usd_per_m": 0.5,
+      "completion_usd_per_m": 3.6,
+      "context": 262144
+    },
+    {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "prompt_usd_per_m": 0.7,
@@ -1044,13 +1051,6 @@
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 3.0,
       "context": 256000
-    },
-    {
-      "id": "nousresearch/hermes-4-405b",
-      "name": "Nous: Hermes 4 405B",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 3.0,
-      "context": 131072
     }
   ],
   "frontier_median_completion_usd_per_m": 14.0,
