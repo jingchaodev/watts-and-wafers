@@ -1,10 +1,10 @@
 {
-  "asof": "2026-08-09T14:17:26Z",
+  "asof": "2026-08-10T14:40:17Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 51.6,
-      "chg_pct": 0.19
+      "avg": 51.767,
+      "chg_pct": 0.32
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,8 +13,8 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 86.268,
-      "chg_pct": -0.48
+      "avg": 86.744,
+      "chg_pct": 0.55
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -24,7 +24,7 @@
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
       "avg": 42.45,
-      "chg_pct": 0.5
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
@@ -33,14 +33,14 @@
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.976,
-      "chg_pct": 0.2
+      "avg": 14.024,
+      "chg_pct": 0.34
     }
   ],
   "nand_note": {
-    "date": "2026-08-05",
-    "summary": "[News] Samsung Unveils Industry-First 400+ Layer V10 BV-NAND; Memory Density Up 58% vs. V9",
-    "url": "https://www.trendforce.com/news/2026/08/05/news-samsung-unveils-industry-first-400-layer-v10-bv-nand-memory-density-up-58-vs-v9/"
+    "date": "2026-08-07",
+    "summary": "[News] Winbond Says Customers Seek LTAs Through 2030; Adata Expects Even Tighter DRAM Supply in 2027",
+    "url": "https://www.trendforce.com/news/2026/08/07/news-winbond-says-customers-seek-ltas-through-2030-adata-expects-even-tighter-dram-supply-in-2027/"
   },
   "proxies": {},
   "errors": []
