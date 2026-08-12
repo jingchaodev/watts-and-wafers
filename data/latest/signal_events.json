@@ -1,6 +1,20 @@
 {
-  "asof": "2026-08-12T10:29:41Z",
+  "asof": "2026-08-12T12:02:34Z",
   "events": [
+    {
+      "date": "2026-08-12",
+      "signal": "gen_ratio",
+      "kind": "percentile_cross",
+      "direction": "up",
+      "detail": "B200/H100 (perf-adj) entered P93 (90d)"
+    },
+    {
+      "date": "2026-08-12",
+      "signal": "h100_price",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "H100 market price entered P7 (90d)"
+    },
     {
       "date": "2026-08-12",
       "signal": "availability",
@@ -126,20 +140,6 @@
       "kind": "percentile_cross",
       "direction": "up",
       "detail": "B200/H100 (perf-adj) entered P100 (90d)"
-    },
-    {
-      "date": "2026-07-21",
-      "signal": "spot_discount",
-      "kind": "percentile_cross",
-      "direction": "up",
-      "detail": "Spot discount (Azure H100) entered P100 (90d)"
-    },
-    {
-      "date": "2026-07-20",
-      "signal": "h100_price",
-      "kind": "percentile_cross",
-      "direction": "down",
-      "detail": "H100 market price entered P10 (90d)"
     }
   ],
   "errors": []
