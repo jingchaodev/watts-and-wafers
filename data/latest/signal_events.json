@@ -1,6 +1,13 @@
 {
-  "asof": "2026-08-12T16:12:45Z",
+  "asof": "2026-08-12T17:16:40Z",
   "events": [
+    {
+      "date": "2026-08-12",
+      "signal": "gen_ratio",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "B200/H100 (perf-adj) entered P7 (90d)"
+    },
     {
       "date": "2026-08-12",
       "signal": "gen_ratio",
@@ -133,13 +140,6 @@
       "kind": "label_flip",
       "direction": "up",
       "detail": "Composite label NEUTRAL -> TIGHTENING"
-    },
-    {
-      "date": "2026-07-22",
-      "signal": "gen_ratio",
-      "kind": "percentile_cross",
-      "direction": "up",
-      "detail": "B200/H100 (perf-adj) entered P100 (90d)"
     }
   ],
   "errors": []
