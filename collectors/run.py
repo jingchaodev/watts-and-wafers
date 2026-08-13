@@ -12,6 +12,7 @@ prevents the others from running. Exit code is 0 unless EVERY collector run
 in this invocation failed (raised or returned nonzero).
 """
 import argparse
+import json
 import sys
 
 import composite
@@ -62,6 +63,8 @@ def main(argv=None):
     group_arg = parser.add_mutually_exclusive_group(required=True)
     group_arg.add_argument("--group", choices=sorted(GROUPS.keys()), help="Named group to run")
     group_arg.add_argument("--only", choices=sorted(COLLECTORS.keys()), help="Run a single collector")
+    parser.add_argument("--json", action="store_true",
+                        help="Emit a machine-readable summary line on stdout (human log goes to stderr)")
     args = parser.parse_args(argv)
 
     if args.only:
@@ -69,14 +72,29 @@ def main(argv=None):
     else:
         names = list(GROUPS[args.group])
 
+    # With --json, keep stdout a single JSON line for cron automation; human
+    # progress lines go to stderr.
+    log = sys.stderr if args.json else sys.stdout
+
     results = {}
     for name in names:
-        print(f"[run] --- {name} ---")
+        print(f"[run] --- {name} ---", file=log)
         results[name] = run_one(name)
 
     n_ok = sum(1 for v in results.values() if v)
     n_total = len(results)
-    print(f"[run] done: {n_ok}/{n_total} collectors ok ({results})")
+    failed = [n for n, ok in results.items() if not ok]
+
+    if args.json:
+        print(json.dumps({
+            "group": args.only or args.group,
+            "ok": n_ok,
+            "total": n_total,
+            "failed": failed,
+            "exit": 0 if n_ok > 0 else 1,
+        }))
+    else:
+        print(f"[run] done: {n_ok}/{n_total} collectors ok ({results})")
 
     return 0 if n_ok > 0 else 1
 

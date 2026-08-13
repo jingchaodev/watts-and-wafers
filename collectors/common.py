@@ -61,7 +61,7 @@ def atomic_write_json(path, payload):
     if d:
         os.makedirs(d, exist_ok=True)
     tmp = path + ".tmp"
-    with open(tmp, "w") as f:
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write("\n")
     os.replace(tmp, path)
@@ -83,14 +83,14 @@ def append_history(name, line_dict):
     """
     path = history_path(name)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "a") as f:
+    with open(path, "a", encoding="utf-8") as f:
         f.write(json.dumps(line_dict, ensure_ascii=False) + "\n")
     _rotate_history(path)
 
 
 def _rotate_history(path):
     try:
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             lines = f.read().splitlines()
     except FileNotFoundError:
         return
@@ -99,7 +99,7 @@ def _rotate_history(path):
     drop = int(len(lines) * HISTORY_DROP_FRACTION)
     kept = lines[drop:]
     tmp = path + ".tmp"
-    with open(tmp, "w") as f:
+    with open(tmp, "w", encoding="utf-8") as f:
         f.write("\n".join(kept) + ("\n" if kept else ""))
     os.replace(tmp, path)
 
@@ -111,7 +111,7 @@ def read_history(name, limit=None):
     path = history_path(name)
     out = []
     try:
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
                 if not line:
@@ -122,6 +122,16 @@ def read_history(name, limit=None):
                     continue
     except FileNotFoundError:
         return []
-    if limit:
-        out = out[-limit:]
+    if limit is not None:
+        out = out[-limit:] if limit > 0 else []
     return out
+
+
+def read_latest_json(name):
+    """Load data/latest/<name>.json into a dict; {} if missing or corrupt."""
+    path = latest_path(name)
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, ValueError):
+        return {}
