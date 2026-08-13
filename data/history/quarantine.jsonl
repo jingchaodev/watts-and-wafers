@@ -83,3 +83,4 @@
 {"ts": "2026-08-11T23:07:29Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-08-12T05:09:17Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-08-12T23:05:27Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
+{"ts": "2026-08-13T03:02:50Z", "source": "vast", "item": {"gpu_name": "H100 NVL", "offers": 11, "total_gpus": 23, "median_dph": 2.1399, "p25_dph": 1.6022, "min_dph": 0.1975}, "reason": "H100 NVL: $0.1975/gpu-hr below plausibility floor $0.5 (canon=H100)"}
