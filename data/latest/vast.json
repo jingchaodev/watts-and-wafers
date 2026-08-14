@@ -1,46 +1,46 @@
 {
-  "asof": "2026-08-14T19:17:45Z",
+  "asof": "2026-08-14T19:58:54Z",
   "gpus": {
     "H100 SXM": {
-      "offers": 31,
-      "total_gpus": 85,
-      "median_dph": 2.5222,
-      "p25_dph": 2.0102,
+      "offers": 30,
+      "total_gpus": 83,
+      "median_dph": 2.7853,
+      "p25_dph": 2.2669,
       "min_dph": 1.6022
     },
     "H100 NVL": {
-      "offers": 14,
-      "total_gpus": 28,
-      "median_dph": 2.4683,
-      "p25_dph": 1.9348,
+      "offers": 15,
+      "total_gpus": 32,
+      "median_dph": 2.4678,
+      "p25_dph": 2.295,
       "min_dph": 1.6022
     },
     "H200": {
-      "offers": 14,
-      "total_gpus": 47,
-      "median_dph": 4.2113,
-      "p25_dph": 4.0795,
+      "offers": 17,
+      "total_gpus": 65,
+      "median_dph": 4.0811,
+      "p25_dph": 3.9485,
       "min_dph": 3.6848
     },
     "B200": {
       "offers": 23,
-      "total_gpus": 85,
-      "median_dph": 6.5104,
+      "total_gpus": 84,
+      "median_dph": 6.8763,
       "p25_dph": 5.8764,
       "min_dph": 4.1271
     },
     "A100 SXM4": {
-      "offers": 53,
-      "total_gpus": 112,
-      "median_dph": 0.9477,
-      "p25_dph": 0.8015,
-      "min_dph": 0.4948
+      "offers": 56,
+      "total_gpus": 118,
+      "median_dph": 0.9498,
+      "p25_dph": 0.8007,
+      "min_dph": 0.4815
     },
     "RTX 4090": {
       "offers": 64,
-      "total_gpus": 96,
-      "median_dph": 0.3428,
-      "p25_dph": 0.3089,
+      "total_gpus": 88,
+      "median_dph": 0.3404,
+      "p25_dph": 0.3102,
       "min_dph": 0.1339
     },
     "MI300X": {
