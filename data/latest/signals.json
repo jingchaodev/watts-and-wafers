@@ -1,18 +1,18 @@
 {
-  "asof": "2026-08-14T12:00:50Z",
+  "asof": "2026-08-14T13:48:42Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.4735,
+      "value": 2.5943,
       "unit": "$/hr",
-      "value_fmt": "$2.47",
-      "percentile": 50,
+      "value_fmt": "$2.59",
+      "percentile": 66,
       "window_days": 90,
-      "direction": "down",
-      "delta_7d_pct": -2.16,
-      "read": "Mid-range vs its 90-day history, trending down over the last week",
-      "tone": "cold",
+      "direction": "up",
+      "delta_7d_pct": 2.62,
+      "read": "Rich vs its 90-day history, trending up over the last week",
+      "tone": "hot",
       "spark": [
         [
           "2026-07-16",
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-14",
-          2.4735
+          2.59425
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -31.82,
+      "value": -13.64,
       "unit": "% (7d)",
-      "value_fmt": "-31.8%",
-      "percentile": 14,
+      "value_fmt": "-13.6%",
+      "percentile": 55,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -31.82,
+      "delta_7d_pct": -13.64,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -264,7 +264,7 @@
         ],
         [
           "2026-08-14",
-          30
+          38
         ]
       ],
       "provenance": null
@@ -392,13 +392,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8452,
+      "value": 0.8336,
       "unit": "ratio",
-      "value_fmt": "0.85x",
+      "value_fmt": "0.83x",
       "percentile": 48,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 6.84,
+      "delta_7d_pct": 5.37,
       "read": "Blackwell already at or below H100 compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
@@ -516,7 +516,7 @@
         ],
         [
           "2026-08-14",
-          0.8452092177077017
+          0.8335742507468438
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -659,7 +659,7 @@
     }
   ],
   "composite": {
-    "index": 63.4,
+    "index": 59.36,
     "label": "TIGHTENING"
   },
   "errors": []
