@@ -1,6 +1,13 @@
 {
-  "asof": "2026-08-15T03:57:44Z",
+  "asof": "2026-08-15T04:50:46Z",
   "events": [
+    {
+      "date": "2026-08-15",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "up",
+      "detail": "Composite label NEUTRAL -> TIGHTENING"
+    },
     {
       "date": "2026-08-14",
       "signal": "composite",
@@ -133,13 +140,6 @@
       "kind": "shock",
       "direction": "down",
       "detail": "H100 offers 7d -38%"
-    },
-    {
-      "date": "2026-07-26",
-      "signal": "gen_ratio",
-      "kind": "percentile_cross",
-      "direction": "down",
-      "detail": "B200/H100 (perf-adj) entered P10 (90d)"
     }
   ],
   "errors": []
