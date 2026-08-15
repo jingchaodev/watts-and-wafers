@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-14T14:34:29Z",
-  "n_models": 411,
+  "asof": "2026-08-15T13:55:36Z",
+  "n_models": 413,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -672,7 +672,7 @@
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
-      "context": 1010000
+      "context": 1048576
     },
     {
       "id": "x-ai/grok-4.6",
@@ -864,13 +864,6 @@
       "context": 1000000
     },
     {
-      "id": "z-ai/glm-5.1",
-      "name": "Z.ai: GLM 5.1",
-      "prompt_usd_per_m": 1.4,
-      "completion_usd_per_m": 4.4,
-      "context": 204800
-    },
-    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1004,13 +997,6 @@
       "context": 262144
     },
     {
-      "id": "qwen/qwen3.5-397b-a17b",
-      "name": "Qwen: Qwen3.5 397B A17B",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 3.6,
-      "context": 262144
-    },
-    {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "prompt_usd_per_m": 0.71,
@@ -1025,11 +1011,25 @@
       "context": 1000000
     },
     {
+      "id": "qwen/qwen3.8-27b",
+      "name": "Qwen: Qwen3.8 27B",
+      "prompt_usd_per_m": 0.45,
+      "completion_usd_per_m": 3.2,
+      "context": 262144
+    },
+    {
       "id": "amazon/nova-pro-v1",
       "name": "Amazon: Nova Pro 1.0",
       "prompt_usd_per_m": 0.8,
       "completion_usd_per_m": 3.2,
       "context": 300000
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "prompt_usd_per_m": 0.966,
+      "completion_usd_per_m": 3.036,
+      "context": 204800
     },
     {
       "id": "bytedance-seed/seed-2.0-code",
