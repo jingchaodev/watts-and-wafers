@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-16T13:55:57Z",
+  "asof": "2026-08-17T14:03:42Z",
   "flags": [
     {
       "gpu": "H100",
@@ -9,11 +9,11 @@
       "ratio": 3.098
     },
     {
-      "gpu": "MI300X",
-      "provider": "runpod",
-      "price": 0.5,
-      "cohort_median": 1.975,
-      "ratio": 0.253
+      "gpu": "H200",
+      "provider": "azure",
+      "price": 10.6,
+      "cohort_median": 4.145,
+      "ratio": 2.557
     }
   ],
   "errors": []

@@ -1,10 +1,10 @@
 {
-  "asof": "2026-08-16T13:55:57Z",
+  "asof": "2026-08-17T14:03:42Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 52.733,
-      "chg_pct": 0.06
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,8 +13,8 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 88.207,
-      "chg_pct": 0.56
+      "avg": 88.939,
+      "chg_pct": 0.83
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,24 +23,24 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 42.717,
-      "chg_pct": 0.25
+      "avg": 42.895,
+      "chg_pct": 0.42
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.219,
-      "chg_pct": 0.26
+      "avg": 4.229,
+      "chg_pct": 0.24
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.978,
-      "chg_pct": 0.0
+      "avg": 13.982,
+      "chg_pct": 0.03
     }
   ],
   "nand_note": {
-    "date": "2026-08-12",
-    "summary": "[News] Micron Meets Less Than Half of Data Center Demand as Customers Rush to Secure Memory at “Very High” Prices",
-    "url": "https://www.trendforce.com/news/2026/08/12/news-micron-can-meet-less-than-half-of-data-center-demand-as-customers-rush-to-secure-memory-at-very-high-prices/"
+    "date": "2026-08-14",
+    "summary": "[News] Nanya Tech Reportedly Eyes Yunlin, Pingtung Fabs for 1d DRAM, Custom Memory, Investment to Top NT$300B",
+    "url": "https://www.trendforce.com/news/2026/08/14/news-nanya-tech-reportedly-eyes-new-yunlin-pingtung-fabs-for-1d-dram-custom-memory-investment-to-top-nt300b/"
   },
   "proxies": {},
   "errors": []
