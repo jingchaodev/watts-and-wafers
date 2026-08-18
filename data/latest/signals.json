@@ -1,17 +1,17 @@
 {
-  "asof": "2026-08-18T10:50:42Z",
+  "asof": "2026-08-18T11:45:05Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.2642,
+      "value": 2.0197,
       "unit": "$/hr",
-      "value_fmt": "$2.26",
-      "percentile": 32,
+      "value_fmt": "$2.02",
+      "percentile": 10,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -12.42,
-      "read": "Cheap vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -21.88,
+      "read": "Near 90-day lows, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-18",
-          2.2641999999999998
+          2.0197000000000003
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -22.86,
+      "value": -25.71,
       "unit": "% (7d)",
-      "value_fmt": "-22.9%",
+      "value_fmt": "-25.7%",
       "percentile": 3,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -22.86,
+      "delta_7d_pct": -25.71,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-08-18",
-          27
+          26
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9551,
+      "value": 1.1063,
       "unit": "ratio",
-      "value_fmt": "0.96x",
-      "percentile": 79,
+      "value_fmt": "1.11x",
+      "percentile": 100,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 23.3,
-      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
+      "delta_7d_pct": 42.82,
+      "read": "Blackwell nearing compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-08-18",
-          0.9550834731914142
+          1.1062905381987422
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 67.19,
+    "index": 68.1,
     "label": "SURGING"
   },
   "errors": []
