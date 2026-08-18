@@ -1,17 +1,17 @@
 {
-  "asof": "2026-08-18T14:10:34Z",
+  "asof": "2026-08-18T14:55:51Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.12,
+      "value": 1.7524,
       "unit": "$/hr",
-      "value_fmt": "$2.12",
-      "percentile": 20,
+      "value_fmt": "$1.75",
+      "percentile": 2,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -17.99,
-      "read": "Cheap vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -32.22,
+      "read": "Near 90-day lows, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-18",
-          2.12005
+          1.7524
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -22.86,
+      "value": -17.14,
       "unit": "% (7d)",
-      "value_fmt": "-22.9%",
-      "percentile": 3,
+      "value_fmt": "-17.1%",
+      "percentile": 15,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -22.86,
+      "delta_7d_pct": -17.14,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-08-18",
-          27
+          29
         ]
       ],
       "provenance": null
@@ -412,15 +412,15 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9861,
+      "value": 1.193,
       "unit": "ratio",
-      "value_fmt": "0.99x",
-      "percentile": 82,
+      "value_fmt": "1.19x",
+      "percentile": 100,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 27.31,
-      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
-      "tone": "neutral",
+      "delta_7d_pct": 54.01,
+      "read": "Blackwell nearing compute-price parity, premium widening",
+      "tone": "cold",
       "spark": [
         [
           "2026-07-20",
@@ -540,7 +540,7 @@
         ],
         [
           "2026-08-18",
-          0.9861206103629633
+          1.1930067336224608
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,8 +683,8 @@
     }
   ],
   "composite": {
-    "index": 66.21,
-    "label": "SURGING"
+    "index": 64.89,
+    "label": "TIGHTENING"
   },
   "errors": []
 }
