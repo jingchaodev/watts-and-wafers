@@ -1,17 +1,17 @@
 {
-  "asof": "2026-08-18T04:01:49Z",
+  "asof": "2026-08-18T04:55:41Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.2915,
+      "value": 1.6349,
       "unit": "$/hr",
-      "value_fmt": "$2.29",
-      "percentile": 36,
+      "value_fmt": "$1.63",
+      "percentile": 1,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -11.36,
-      "read": "Mid-range vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -36.76,
+      "read": "Near 90-day lows, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-18",
-          2.29155
+          1.6349
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -34.29,
+      "value": -45.71,
       "unit": "% (7d)",
-      "value_fmt": "-34.3%",
+      "value_fmt": "-45.7%",
       "percentile": 3,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -34.29,
+      "delta_7d_pct": -45.71,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-08-18",
-          23
+          19
         ]
       ],
       "provenance": null
@@ -412,15 +412,15 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9437,
+      "value": 1.2492,
       "unit": "ratio",
-      "value_fmt": "0.94x",
-      "percentile": 79,
+      "value_fmt": "1.25x",
+      "percentile": 100,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 21.83,
-      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
-      "tone": "neutral",
+      "delta_7d_pct": 61.27,
+      "read": "Blackwell still carries a compute-price premium, premium widening",
+      "tone": "cold",
       "spark": [
         [
           "2026-07-20",
@@ -540,7 +540,7 @@
         ],
         [
           "2026-08-18",
-          0.9436844057515654
+          1.2492067557648785
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 71.24,
+    "index": 72.92,
     "label": "SURGING"
   },
   "errors": []
