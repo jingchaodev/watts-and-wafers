@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-18T14:10:34Z",
+  "asof": "2026-08-19T14:13:05Z",
   "flags": [
     {
       "gpu": "H100",
@@ -12,7 +12,7 @@
       "gpu": "H200",
       "provider": "azure",
       "price": 10.6,
-      "cohort_median": 4.145,
+      "cohort_median": 4.1458,
       "ratio": 2.557
     }
   ],

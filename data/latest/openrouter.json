@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-18T14:10:32Z",
-  "n_models": 412,
+  "asof": "2026-08-19T14:13:02Z",
+  "n_models": 415,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -864,6 +864,20 @@
       "context": 1000000
     },
     {
+      "id": "z-ai/glm-5.3",
+      "name": "Z.ai: GLM 5.3",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 1048576
+    },
+    {
+      "id": "z-ai/glm-5.2:batch",
+      "name": "Z.ai: GLM 5.2 (batch)",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 512000
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -913,8 +927,29 @@
       "context": 1048576
     },
     {
+      "id": "thinkingmachines/inkling:batch",
+      "name": "Thinking Machines: Inkling (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 4.05,
+      "context": 524288
+    },
+    {
       "id": "sakana/sakana-namazu",
       "name": "Sakana: Sakana Namazu",
+      "prompt_usd_per_m": 0.95,
+      "completion_usd_per_m": 4.0,
+      "context": 262144
+    },
+    {
+      "id": "moonshotai/kimi-k2.7-code:batch",
+      "name": "MoonshotAI: Kimi K2.7 Code (batch)",
+      "prompt_usd_per_m": 0.95,
+      "completion_usd_per_m": 4.0,
+      "context": 262144
+    },
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
       "prompt_usd_per_m": 0.95,
       "completion_usd_per_m": 4.0,
       "context": 262144
@@ -990,6 +1025,13 @@
       "context": 512288
     },
     {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
+      "name": "NVIDIA: Nemotron 3 Ultra (batch)",
+      "prompt_usd_per_m": 0.6,
+      "completion_usd_per_m": 3.6,
+      "context": 512288
+    },
+    {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "prompt_usd_per_m": 0.71,
@@ -1009,48 +1051,6 @@
       "prompt_usd_per_m": 0.45,
       "completion_usd_per_m": 3.2,
       "context": 262144
-    },
-    {
-      "id": "amazon/nova-pro-v1",
-      "name": "Amazon: Nova Pro 1.0",
-      "prompt_usd_per_m": 0.8,
-      "completion_usd_per_m": 3.2,
-      "context": 300000
-    },
-    {
-      "id": "z-ai/glm-5.1",
-      "name": "Z.ai: GLM 5.1",
-      "prompt_usd_per_m": 0.966,
-      "completion_usd_per_m": 3.036,
-      "context": 204800
-    },
-    {
-      "id": "bytedance-seed/seed-2.0-code",
-      "name": "ByteDance Seed: Seed-2.0-Code",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 3.0,
-      "context": 262144
-    },
-    {
-      "id": "google/gemini-3.1-flash-image",
-      "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 3.0,
-      "context": 131072
-    },
-    {
-      "id": "google/gemini-3.1-flash-image-preview",
-      "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 3.0,
-      "context": 65536
-    },
-    {
-      "id": "google/gemini-3-flash-preview",
-      "name": "Google: Gemini 3 Flash Preview",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 3.0,
-      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 13.0,

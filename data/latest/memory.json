@@ -1,10 +1,10 @@
 {
-  "asof": "2026-08-18T14:10:34Z",
+  "asof": "2026-08-19T14:13:05Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 52.733,
-      "chg_pct": 0.0
+      "avg": 53.267,
+      "chg_pct": 1.01
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,34 +13,34 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 89.427,
-      "chg_pct": 0.55
+      "avg": 90.098,
+      "chg_pct": 0.75
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.325,
-      "chg_pct": 0.0
+      "avg": 11.275,
+      "chg_pct": -0.44
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 42.895,
-      "chg_pct": 0.0
+      "avg": 43.073,
+      "chg_pct": 0.42
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 4.236,
-      "chg_pct": 0.17
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.991,
-      "chg_pct": 0.06
+      "avg": 13.961,
+      "chg_pct": -0.21
     }
   ],
   "nand_note": {
-    "date": "2026-08-18",
-    "summary": "[News] Samsung Reportedly Eyes Another Wide Fold for 2027 After Fold8 Success; Memory Costs Still Weigh on Mobile",
-    "url": "https://www.trendforce.com/news/2026/08/18/news-samsung-reportedly-eyes-another-wide-fold-for-2027-after-fold8-success-memory-costs-still-weigh-on-mobile/"
+    "date": "2026-08-19",
+    "summary": "[Insights] Memory Spot Price Update: 3Q DRAM Spot Volumes Seen Staying Low; DDR4 Prices Up 0.67% This Week",
+    "url": "https://www.trendforce.com/news/2026/08/19/insights-memory-spot-price-update-3q-dram-spot-volumes-seen-staying-low-ddr4-prices-up-0-67-this-week/"
   },
   "proxies": {},
   "errors": []
