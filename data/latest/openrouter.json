@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-20T14:17:42Z",
-  "n_models": 416,
+  "asof": "2026-08-21T14:16:14Z",
+  "n_models": 420,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -875,7 +875,7 @@
       "name": "Z.ai: GLM 5.2 (batch)",
       "prompt_usd_per_m": 1.4,
       "completion_usd_per_m": 4.4,
-      "context": 512000
+      "context": 1048575
     },
     {
       "id": "openai/o4-mini-high",
@@ -1041,8 +1041,8 @@
     {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
-      "prompt_usd_per_m": 0.71,
-      "completion_usd_per_m": 3.5,
+      "prompt_usd_per_m": 0.67,
+      "completion_usd_per_m": 3.4,
       "context": 262144
     },
     {
