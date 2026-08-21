@@ -1,6 +1,13 @@
 {
-  "asof": "2026-08-20T23:44:06Z",
+  "asof": "2026-08-21T02:00:47Z",
   "events": [
+    {
+      "date": "2026-08-21",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "down",
+      "detail": "Composite label SURGING -> TIGHTENING"
+    },
     {
       "date": "2026-08-20",
       "signal": "gen_ratio",
@@ -133,13 +140,6 @@
       "kind": "percentile_cross",
       "direction": "down",
       "detail": "B200/H100 (perf-adj) entered P10 (90d)"
-    },
-    {
-      "date": "2026-08-02",
-      "signal": "availability",
-      "kind": "percentile_cross",
-      "direction": "up",
-      "detail": "H100 availability entered P100 (90d)"
     }
   ],
   "errors": []
