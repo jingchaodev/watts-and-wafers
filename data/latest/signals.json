@@ -1,16 +1,16 @@
 {
-  "asof": "2026-08-21T14:16:18Z",
+  "asof": "2026-08-21T14:56:54Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.281,
+      "value": 2.2782,
       "unit": "$/hr",
       "value_fmt": "$2.28",
       "percentile": 36,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -17.98,
+      "delta_7d_pct": -18.08,
       "read": "Mid-range vs its 90-day history, trending down over the last week",
       "tone": "cold",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-21",
-          2.281
+          2.2782
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -19.57,
+      "value": -26.09,
       "unit": "% (7d)",
-      "value_fmt": "-19.6%",
-      "percentile": 53,
+      "value_fmt": "-26.1%",
+      "percentile": 36,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -19.57,
+      "delta_7d_pct": -26.09,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-08-21",
-          37
+          34
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.948,
+      "value": 0.9492,
       "unit": "ratio",
       "value_fmt": "0.95x",
       "percentile": 78,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 24.39,
+      "delta_7d_pct": 24.54,
       "read": "Blackwell already at or below H100 compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-08-21",
-          0.948049101271372
+          0.9492142919849001
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 60.47,
+    "index": 62.02,
     "label": "TIGHTENING"
   },
   "errors": []
