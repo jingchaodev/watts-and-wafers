@@ -122,3 +122,4 @@
 {"ts": "2026-08-22T13:04:19Z", "source": "runpod", "item": {"gpu": "H200", "price": 0.5}, "reason": "H200: $0.5000/gpu-hr below plausibility floor $0.8 (canon=H200)"}
 {"ts": "2026-08-22T13:47:18Z", "source": "vast", "item": {"gpu_name": "H100 SXM", "offers": 34, "total_gpus": 79, "median_dph": 1.9344, "p25_dph": 1.7356, "min_dph": 0.4136}, "reason": "H100 SXM: $0.4136/gpu-hr below plausibility floor $0.5 (canon=H100)"}
 {"ts": "2026-08-22T14:41:54Z", "source": "vast", "item": {"gpu_name": "H100 SXM", "offers": 40, "total_gpus": 99, "median_dph": 1.968, "p25_dph": 1.7356, "min_dph": 0.3336}, "reason": "H100 SXM: $0.3336/gpu-hr below plausibility floor $0.5 (canon=H100)"}
+{"ts": "2026-08-22T15:39:35Z", "source": "vast", "item": {"gpu_name": "H100 SXM", "offers": 39, "total_gpus": 91, "median_dph": 2.0011, "p25_dph": 1.7356, "min_dph": 0.3069}, "reason": "H100 SXM: $0.3069/gpu-hr below plausibility floor $0.5 (canon=H100)"}

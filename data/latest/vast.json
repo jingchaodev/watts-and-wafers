@@ -1,40 +1,40 @@
 {
-  "asof": "2026-08-22T14:41:56Z",
+  "asof": "2026-08-22T15:39:36Z",
   "gpus": {
     "H100 NVL": {
-      "offers": 11,
-      "total_gpus": 12,
-      "median_dph": 2.5276,
-      "p25_dph": 2.3409,
+      "offers": 8,
+      "total_gpus": 9,
+      "median_dph": 2.4586,
+      "p25_dph": 2.4015,
       "min_dph": 2.002
     },
     "H200": {
-      "offers": 20,
-      "total_gpus": 66,
+      "offers": 19,
+      "total_gpus": 62,
       "median_dph": 3.9477,
       "p25_dph": 3.9349,
       "min_dph": 3.2953
     },
     "B200": {
-      "offers": 23,
-      "total_gpus": 84,
+      "offers": 22,
+      "total_gpus": 82,
       "median_dph": 7.2513,
       "p25_dph": 5.3146,
       "min_dph": 3.9921
     },
     "A100 SXM4": {
-      "offers": 61,
+      "offers": 63,
       "total_gpus": 125,
-      "median_dph": 0.8406,
-      "p25_dph": 0.7896,
+      "median_dph": 0.8337,
+      "p25_dph": 0.7763,
       "min_dph": 0.2689
     },
     "RTX 4090": {
       "offers": 64,
-      "total_gpus": 256,
-      "median_dph": 0.376,
-      "p25_dph": 0.3289,
-      "min_dph": 0.1336
+      "total_gpus": 82,
+      "median_dph": 0.3501,
+      "p25_dph": 0.2956,
+      "min_dph": 0.1348
     },
     "MI300X": {
       "offers": 0,
@@ -47,7 +47,7 @@
   "errors": [
     {
       "gpu_name": "H100 SXM",
-      "error": "H100 SXM: quarantined (price band violation: H100 SXM: $0.3336/gpu-hr below plausibility floor $0.5 (canon=H100))"
+      "error": "H100 SXM: quarantined (price band violation: H100 SXM: $0.3069/gpu-hr below plausibility floor $0.5 (canon=H100))"
     },
     {
       "note": "quarantined 1 items"
