@@ -1,0 +1,10 @@
+# Tooling configuration for the stdlib-only collectors suite.
+# The collectors are run from source (see README: `python3 collectors/run.py`),
+# so this file carries pytest/ruff tooling config rather than a build system.
+[tool.pytest.ini_options]
+testpaths = ["collectors/tests"]
+pythonpath = ["collectors"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"

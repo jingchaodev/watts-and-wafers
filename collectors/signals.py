@@ -27,7 +27,7 @@ import statistics
 import sys
 from datetime import datetime, timedelta, timezone
 
-from common import atomic_write_json, iso_utc_now, latest_path, read_history
+from common import atomic_write_json, iso_utc_now, latest_path, read_history, read_latest_json
 from validation import check_price
 
 # ---------------------------------------------------------------------------
@@ -108,16 +108,6 @@ def _spark(daily_pairs, n=30):
     """[(date, value), ...] chronological -> last n as [[date, value], ...]."""
     tail = daily_pairs[-n:]
     return [[d, v] for d, v in tail]
-
-
-def _read_latest_json(name):
-    import json
-    path = latest_path(name)
-    try:
-        with open(path) as f:
-            return json.load(f)
-    except (FileNotFoundError, ValueError):
-        return {}
 
 
 # ---------------------------------------------------------------------------
@@ -702,7 +692,7 @@ def collect():
     neoclouds_hist = read_history("neoclouds")
     hyperscaler_hist = read_history("hyperscaler")
     openrouter_tokens_hist = read_history("openrouter_tokens")
-    composite_doc = _read_latest_json("composite")
+    composite_doc = read_latest_json("composite")
 
     cards = []
     for name, fn in (
