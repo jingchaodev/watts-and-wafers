@@ -1,16 +1,16 @@
 {
-  "asof": "2026-08-22T04:00:05Z",
+  "asof": "2026-08-22T04:53:30Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.6837,
+      "value": 2.6754,
       "unit": "$/hr",
       "value_fmt": "$2.68",
       "percentile": 77,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 10.48,
+      "delta_7d_pct": 10.14,
       "read": "Rich vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-08-22",
-          2.68365
+          2.6754
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 14.29,
+      "value": 16.67,
       "unit": "% (7d)",
-      "value_fmt": "+14.3%",
-      "percentile": 89,
+      "value_fmt": "+16.7%",
+      "percentile": 92,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 14.29,
+      "delta_7d_pct": 16.67,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-08-22",
-          48
+          49
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8058,
+      "value": 0.8083,
       "unit": "ratio",
       "value_fmt": "0.81x",
       "percentile": 38,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -7.66,
+      "delta_7d_pct": -7.37,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-08-22",
-          0.8058055260559311
+          0.8082903491066755
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 57.17,
+    "index": 56.92,
     "label": "TIGHTENING"
   },
   "errors": []
