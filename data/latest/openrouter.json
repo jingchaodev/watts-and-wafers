@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-21T14:16:14Z",
-  "n_models": 420,
+  "asof": "2026-08-22T13:55:28Z",
+  "n_models": 421,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -255,27 +255,6 @@
       "context": 1048576
     },
     {
-      "id": "openai/gpt-5.6-sol-pro",
-      "name": "OpenAI: GPT-5.6 Sol Pro",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 15.0,
-      "context": 1050000
-    },
-    {
-      "id": "openai/gpt-5.6-sol",
-      "name": "OpenAI: GPT-5.6 Sol",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 15.0,
-      "context": 1050000
-    },
-    {
-      "id": "~openai/gpt-latest",
-      "name": "OpenAI GPT Latest",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 15.0,
-      "context": 1050000
-    },
-    {
       "id": "openai/gpt-5.5:batch",
       "name": "OpenAI: GPT-5.5 (batch)",
       "prompt_usd_per_m": 2.5,
@@ -472,6 +451,20 @@
       "context": 65536
     },
     {
+      "id": "openai/gpt-5.6-sol-pro",
+      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
+    },
+    {
       "id": "anthropic/claude-sonnet-5",
       "name": "Anthropic: Claude Sonnet 5",
       "prompt_usd_per_m": 2.0,
@@ -484,6 +477,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1000000
+    },
+    {
+      "id": "~openai/gpt-latest",
+      "name": "OpenAI GPT Latest",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
     },
     {
       "id": "openai/gpt-audio",
@@ -619,20 +619,6 @@
       "context": 128000
     },
     {
-      "id": "openai/gpt-5.6-sol-pro:batch",
-      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 7.5,
-      "context": 1050000
-    },
-    {
-      "id": "openai/gpt-5.6-sol:batch",
-      "name": "OpenAI: GPT-5.6 Sol (batch)",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 7.5,
-      "context": 1050000
-    },
-    {
       "id": "mistralai/mistral-medium-3-5",
       "name": "Mistral: Mistral Medium 3.5",
       "prompt_usd_per_m": 1.5,
@@ -764,6 +750,20 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 128000
+    },
+    {
+      "id": "openai/gpt-5.6-sol-pro:batch",
+      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-5.6-sol:batch",
+      "name": "OpenAI: GPT-5.6 Sol (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
     },
     {
       "id": "anthropic/claude-sonnet-5:batch",
@@ -1053,7 +1053,7 @@
       "context": 1000000
     }
   ],
-  "frontier_median_completion_usd_per_m": 13.0,
+  "frontier_median_completion_usd_per_m": 12.5,
   "tokens_daily": null,
   "errors": []
 }
