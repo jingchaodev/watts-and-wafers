@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-22T13:55:28Z",
-  "n_models": 421,
+  "asof": "2026-08-23T13:56:38Z",
+  "n_models": 422,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -922,7 +922,7 @@
     {
       "id": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
-      "prompt_usd_per_m": 0.95,
+      "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 4.05,
       "context": 1048576
     },
@@ -943,6 +943,13 @@
     {
       "id": "moonshotai/kimi-k2.7-code:batch",
       "name": "MoonshotAI: Kimi K2.7 Code (batch)",
+      "prompt_usd_per_m": 0.95,
+      "completion_usd_per_m": 4.0,
+      "context": 262144
+    },
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
       "prompt_usd_per_m": 0.95,
       "completion_usd_per_m": 4.0,
       "context": 262144
@@ -1032,13 +1039,6 @@
       "context": 262144
     },
     {
-      "id": "deepseek/deepseek-v4-pro-0813",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813",
-      "prompt_usd_per_m": 1.188,
-      "completion_usd_per_m": 3.564,
-      "context": 1048576
-    },
-    {
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "prompt_usd_per_m": 0.67,
@@ -1046,11 +1046,11 @@
       "context": 262144
     },
     {
-      "id": "qwen/qwen3-coder-plus",
-      "name": "Qwen: Qwen3 Coder Plus",
-      "prompt_usd_per_m": 0.65,
-      "completion_usd_per_m": 3.25,
-      "context": 1000000
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "prompt_usd_per_m": 1.122,
+      "completion_usd_per_m": 3.366,
+      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
