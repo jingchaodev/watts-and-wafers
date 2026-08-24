@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-23T13:56:38Z",
-  "n_models": 422,
+  "asof": "2026-08-24T14:21:55Z",
+  "n_models": 416,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -1032,9 +1032,9 @@
       "context": 512288
     },
     {
-      "id": "qwen/qwen3.6-27b",
-      "name": "Qwen: Qwen3.6 27B",
-      "prompt_usd_per_m": 0.6,
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen: Qwen3.5 397B A17B",
+      "prompt_usd_per_m": 0.5,
       "completion_usd_per_m": 3.6,
       "context": 262144
     },
