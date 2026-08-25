@@ -1,35 +1,35 @@
 {
-  "asof": "2026-08-24T14:21:58Z",
+  "asof": "2026-08-25T14:24:46Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 54.167,
-      "chg_pct": 0.12
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 23.75,
-      "chg_pct": 0.21
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 91.317,
-      "chg_pct": 0.27
+      "avg": 90.561,
+      "chg_pct": -0.83
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.3,
-      "chg_pct": -0.22
+      "avg": 11.325,
+      "chg_pct": 0.22
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 43.288,
-      "chg_pct": 0.0
+      "avg": 43.377,
+      "chg_pct": 0.21
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 4.262,
-      "chg_pct": 0.38
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-08-18",
-    "summary": "[News] NVIDIA Vera Rubin Spillover from HBM to NAND: CMX Fuels TLC Spot Price Rebound from June Dip",
-    "url": "https://www.trendforce.com/news/2026/08/18/news-nvidia-vera-rubin-spillover-from-hbm-to-nand-cmx-fuels-tlc-spot-price-rebound-from-june-dip/"
+    "date": "2026-08-25",
+    "summary": "[News] Micron Warns AI Memory Wall Worsens; Cites HBM in 17% of Meta Llama 3 Training Interruptions",
+    "url": "https://www.trendforce.com/news/2026/08/25/news-micron-warns-ai-memory-wall-worsens-cites-hbm-in-17-of-meta-llama-3-training-interruptions/"
   },
   "proxies": {},
   "errors": []
