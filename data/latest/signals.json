@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-25T20:50:01Z",
+  "asof": "2026-08-25T21:47:55Z",
   "cards": [
     {
       "key": "h100_price",
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 64.04,
+    "index": 64.03,
     "label": "TIGHTENING"
   },
   "errors": []
