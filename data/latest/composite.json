@@ -1,14 +1,14 @@
 {
-  "asof": "2026-08-26T03:28:11Z",
-  "index": 55.11,
+  "asof": "2026-08-26T04:59:10Z",
+  "index": 55.6,
   "label": "TIGHTENING",
   "signals": [
     {
       "key": "gpu_availability",
       "weight": 0.35,
-      "z": -1.689,
+      "z": -1.576,
       "direction": "down",
-      "detail": "H100-class offers 54 (-10.0% vs prior)"
+      "detail": "H100-class offers 53 (-1.9% vs prior)"
     },
     {
       "key": "token_economics",
