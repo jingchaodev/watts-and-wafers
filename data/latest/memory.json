@@ -1,10 +1,10 @@
 {
-  "asof": "2026-08-25T14:24:46Z",
+  "asof": "2026-08-26T14:21:42Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 54.167,
-      "chg_pct": 0.0
+      "avg": 54.0,
+      "chg_pct": -0.31
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,23 +13,23 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 90.561,
-      "chg_pct": -0.83
+      "avg": 91.049,
+      "chg_pct": 0.54
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.325,
-      "chg_pct": 0.22
+      "avg": 11.375,
+      "chg_pct": 0.44
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 43.377,
-      "chg_pct": 0.21
+      "avg": 43.637,
+      "chg_pct": 0.6
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.262,
-      "chg_pct": 0.0
+      "avg": 4.305,
+      "chg_pct": 1.01
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-08-25",
-    "summary": "[News] Micron Warns AI Memory Wall Worsens; Cites HBM in 17% of Meta Llama 3 Training Interruptions",
-    "url": "https://www.trendforce.com/news/2026/08/25/news-micron-warns-ai-memory-wall-worsens-cites-hbm-in-17-of-meta-llama-3-training-interruptions/"
+    "date": "2026-08-26",
+    "summary": "[News] South Korea’s DRAM Prices Reportedly Soar 12.5-Fold in 3 Years, Outpacing Gold",
+    "url": "https://www.trendforce.com/news/2026/08/26/news-south-koreas-dram-prices-reportedly-soar-12-5-fold-in-3-years-outpacing-gold/"
   },
   "proxies": {},
   "errors": []
