@@ -1,6 +1,13 @@
 {
-  "asof": "2026-08-27T09:58:40Z",
+  "asof": "2026-08-27T20:35:18Z",
   "events": [
+    {
+      "date": "2026-08-27",
+      "signal": "availability",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "H100 availability entered P5 (90d)"
+    },
     {
       "date": "2026-08-24",
       "signal": "availability",
@@ -133,13 +140,6 @@
       "kind": "shock",
       "direction": "up",
       "detail": "H100 offers 7d +31%"
-    },
-    {
-      "date": "2026-08-08",
-      "signal": "composite",
-      "kind": "label_flip",
-      "direction": "up",
-      "detail": "Composite label NEUTRAL -> TIGHTENING"
     }
   ],
   "errors": []
