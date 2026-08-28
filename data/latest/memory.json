@@ -1,46 +1,46 @@
 {
-  "asof": "2026-08-27T23:02:39Z",
+  "asof": "2026-08-28T23:11:08Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 53.933,
-      "chg_pct": -0.12
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 23.8,
-      "chg_pct": 0.21
-    },
-    {
-      "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 91.049,
       "chg_pct": 0.0
     },
     {
+      "item": "DDR4 16Gb (2Gx8) 3200",
+      "avg": 91.293,
+      "chg_pct": 0.27
+    },
+    {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.425,
+      "avg": 11.475,
       "chg_pct": 0.44
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 44.011,
-      "chg_pct": 0.86
+      "avg": 44.189,
+      "chg_pct": 0.4
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.362,
-      "chg_pct": 1.32
+      "avg": 4.443,
+      "chg_pct": 1.86
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.932,
-      "chg_pct": -0.11
+      "avg": 13.883,
+      "chg_pct": -0.35
     }
   ],
   "nand_note": {
     "date": "2026-08-27",
-    "summary": "[News] Qualcomm Reportedly Enlists Samsung, SK hynix as HBC Memory Partners; TSMC Eyes Packaging Role",
-    "url": "https://www.trendforce.com/news/2026/08/27/news-qualcomm-reportedly-enlists-samsung-sk-hynix-as-hbc-memory-partners-tsmc-eyes-packaging-role/"
+    "summary": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
+    "url": "https://www.trendforce.com/news/2026/08/27/news-kioxia-reportedly-plans-jpy-1t-nand-fab-in-japan-operations-eyed-for-2029-or-later/"
   },
   "proxies": {},
   "errors": []
