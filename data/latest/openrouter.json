@@ -1,6 +1,6 @@
 {
-  "asof": "2026-08-28T23:11:05Z",
-  "n_models": 398,
+  "asof": "2026-08-29T17:21:20Z",
+  "n_models": 396,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -738,13 +738,6 @@
       "context": 1000000
     },
     {
-      "id": "~z-ai/glm-latest",
-      "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.4,
-      "context": 1310720
-    },
-    {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "prompt_usd_per_m": 1.4,
@@ -792,6 +785,13 @@
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
       "context": 1048576
+    },
+    {
+      "id": "~z-ai/glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "prompt_usd_per_m": 1.1875,
+      "completion_usd_per_m": 4.18,
+      "context": 1310720
     },
     {
       "id": "thinkingmachines/inkling",
