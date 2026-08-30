@@ -1,5 +1,5 @@
 {
-  "asof": "2026-08-29T17:21:20Z",
+  "asof": "2026-08-30T17:44:43Z",
   "n_models": 396,
   "models": [
     {
@@ -796,7 +796,7 @@
     {
       "id": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
-      "prompt_usd_per_m": 0.95,
+      "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 4.05,
       "context": 1048576
     },
@@ -855,13 +855,6 @@
       "prompt_usd_per_m": 1.32,
       "completion_usd_per_m": 3.96,
       "context": 1048576
-    },
-    {
-      "id": "z-ai/glm-5.1",
-      "name": "Z.ai: GLM 5.1",
-      "prompt_usd_per_m": 1.26,
-      "completion_usd_per_m": 3.96,
-      "context": 204800
     },
     {
       "id": "qwen/qwen3-max-thinking",
@@ -946,6 +939,13 @@
       "prompt_usd_per_m": 0.8,
       "completion_usd_per_m": 3.2,
       "context": 300000
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "prompt_usd_per_m": 0.966,
+      "completion_usd_per_m": 3.036,
+      "context": 204800
     },
     {
       "id": "bytedance-seed/seed-2.0-code",
