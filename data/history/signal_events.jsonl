@@ -39,3 +39,4 @@
 {"date": "2026-08-27", "signal": "availability", "kind": "percentile_cross", "direction": "down", "detail": "H100 availability entered P5 (90d)"}
 {"date": "2026-08-28", "signal": "availability", "kind": "shock", "direction": "down", "detail": "H100 offers 7d -56%"}
 {"date": "2026-08-30", "signal": "composite", "kind": "label_flip", "direction": "down", "detail": "Composite label SURGING -> TIGHTENING"}
+{"date": "2026-08-31", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label TIGHTENING -> SURGING"}
