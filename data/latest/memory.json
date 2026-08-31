@@ -1,10 +1,10 @@
 {
-  "asof": "2026-08-30T17:44:46Z",
+  "asof": "2026-08-31T19:37:07Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 53.933,
-      "chg_pct": 0.0
+      "avg": 53.917,
+      "chg_pct": -0.03
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,34 +13,34 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 91.293,
-      "chg_pct": 0.27
+      "avg": 91.78,
+      "chg_pct": 0.53
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.475,
+      "avg": 11.525,
       "chg_pct": 0.44
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 44.189,
+      "avg": 44.367,
       "chg_pct": 0.4
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.443,
-      "chg_pct": 1.86
+      "avg": 4.507,
+      "chg_pct": 1.44
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.883,
-      "chg_pct": -0.35
+      "avg": 13.854,
+      "chg_pct": -0.21
     }
   ],
   "nand_note": {
-    "date": "2026-08-27",
-    "summary": "[News] Kioxia Reportedly Plans JPY 1T+ NAND Fab in Japan, Operations Eyed for 2029 or Later",
-    "url": "https://www.trendforce.com/news/2026/08/27/news-kioxia-reportedly-plans-jpy-1t-nand-fab-in-japan-operations-eyed-for-2029-or-later/"
+    "date": "2026-08-31",
+    "summary": "[News] CXMT Gross Margin Hits 87% in Q2 to Rival Memory Giants, as LPDDR6 Mass Production Reportedly Begins",
+    "url": "https://www.trendforce.com/news/2026/08/31/news-cxmt-gross-margin-hits-87-in-q2-to-rival-memory-giants-as-lpddr6-mass-production-reportedly-begins/"
   },
   "proxies": {},
   "errors": []
