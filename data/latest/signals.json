@@ -1,5 +1,5 @@
 {
-  "asof": "2026-09-01T10:12:53Z",
+  "asof": "2026-09-01T14:58:08Z",
   "cards": [
     {
       "key": "h100_price",
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -28.0,
+      "value": -16.0,
       "unit": "% (7d)",
-      "value_fmt": "-28.0%",
-      "percentile": 47,
+      "value_fmt": "-16.0%",
+      "percentile": 66,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -28.0,
+      "delta_7d_pct": -16.0,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-09-01",
-          36
+          42
         ]
       ],
       "provenance": null
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 58.71,
+    "index": 55.93,
     "label": "TIGHTENING"
   },
   "errors": []
