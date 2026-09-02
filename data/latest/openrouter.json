@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-01T17:25:43Z",
-  "n_models": 418,
+  "asof": "2026-09-02T17:18:00Z",
+  "n_models": 423,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -101,6 +101,13 @@
       "context": 8191
     },
     {
+      "id": "anthropic/claude-fable-5.1",
+      "name": "Anthropic: Claude Fable 5.1",
+      "prompt_usd_per_m": 10.0,
+      "completion_usd_per_m": 50.0,
+      "context": 1000000
+    },
+    {
       "id": "~anthropic/claude-fable-latest",
       "name": "Anthropic: Claude Fable Latest",
       "prompt_usd_per_m": 10.0,
@@ -155,6 +162,13 @@
       "prompt_usd_per_m": 10.0,
       "completion_usd_per_m": 30.0,
       "context": 128000
+    },
+    {
+      "id": "anthropic/claude-fable-5.1:batch",
+      "name": "Anthropic: Claude Fable 5.1 (batch)",
+      "prompt_usd_per_m": 5.0,
+      "completion_usd_per_m": 25.0,
+      "context": 1000000
     },
     {
       "id": "anthropic/claude-opus-5",
@@ -619,13 +633,6 @@
       "context": 400000
     },
     {
-      "id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 6.25,
-      "context": 1010000
-    },
-    {
       "id": "qwen/qwen3.6-max-preview",
       "name": "Qwen: Qwen3.6 Max Preview",
       "prompt_usd_per_m": 1.027,
@@ -638,6 +645,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 1048576
+    },
+    {
+      "id": "qwen/qwen3.8-2.4t-a95b:batch",
+      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 6.0,
+      "context": 1010000
     },
     {
       "id": "x-ai/grok-4.6",
@@ -941,13 +955,6 @@
       "context": 16385
     },
     {
-      "id": "~z-ai/glm-latest",
-      "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 1.17,
-      "completion_usd_per_m": 3.96,
-      "context": 1310720
-    },
-    {
       "id": "deepseek/deepseek-v4-pro-0813:batch",
       "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
       "prompt_usd_per_m": 1.32,
@@ -967,6 +974,13 @@
       "prompt_usd_per_m": 0.78,
       "completion_usd_per_m": 3.9,
       "context": 262144
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "prompt_usd_per_m": 0.75,
+      "completion_usd_per_m": 3.75,
+      "context": 1048576
     },
     {
       "id": "google/gemini-3.7-flash",
@@ -997,13 +1011,6 @@
       "context": 1048576
     },
     {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 1.19,
-      "completion_usd_per_m": 3.74,
-      "context": 1048576
-    },
-    {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
       "name": "NVIDIA: Nemotron 3 Ultra (batch)",
       "prompt_usd_per_m": 0.6,
@@ -1016,6 +1023,13 @@
       "prompt_usd_per_m": 0.6,
       "completion_usd_per_m": 3.6,
       "context": 262144
+    },
+    {
+      "id": "~z-ai/glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "prompt_usd_per_m": 1.15,
+      "completion_usd_per_m": 3.5,
+      "context": 1310720
     },
     {
       "id": "moonshotai/kimi-k2.7-code",
@@ -1032,25 +1046,11 @@
       "context": 1000000
     },
     {
-      "id": "deepseek/deepseek-v4-pro",
-      "name": "DeepSeek: DeepSeek V4 Pro 0423",
-      "prompt_usd_per_m": 1.6,
-      "completion_usd_per_m": 3.2,
-      "context": 1048576
-    },
-    {
       "id": "amazon/nova-pro-v1",
       "name": "Amazon: Nova Pro 1.0",
       "prompt_usd_per_m": 0.8,
       "completion_usd_per_m": 3.2,
       "context": 300000
-    },
-    {
-      "id": "z-ai/glm-5.1",
-      "name": "Z.ai: GLM 5.1",
-      "prompt_usd_per_m": 0.966,
-      "completion_usd_per_m": 3.036,
-      "context": 204800
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,

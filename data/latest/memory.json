@@ -1,46 +1,46 @@
 {
-  "asof": "2026-09-01T17:25:46Z",
+  "asof": "2026-09-02T17:18:03Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 54.083,
+      "avg": 54.25,
       "chg_pct": 0.31
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 23.9,
+      "avg": 24.0,
       "chg_pct": 0.42
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 92.024,
-      "chg_pct": 0.27
+      "avg": 92.649,
+      "chg_pct": 0.68
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.575,
-      "chg_pct": 0.43
+      "avg": 11.675,
+      "chg_pct": 0.86
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 44.544,
-      "chg_pct": 0.4
+      "avg": 44.571,
+      "chg_pct": 0.06
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.567,
-      "chg_pct": 1.33
+      "avg": 4.69,
+      "chg_pct": 2.69
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.854,
-      "chg_pct": 0.0
+      "avg": 13.83,
+      "chg_pct": -0.17
     }
   ],
   "nand_note": {
-    "date": "2026-08-31",
-    "summary": "[News] Intel’s Advanced Packaging, Led by EMIB-T, Set to Hit Its Stride in 2029; DRAM Manufacturing Ruled Out",
-    "url": "https://www.trendforce.com/news/2026/08/31/news-intels-advanced-packaging-led-by-emib-t-reportedly-set-to-hit-its-stride-in-2029-dram-manufacturing-return-ruled-out/"
+    "date": "2026-09-02",
+    "summary": "[Insights] Memory Spot Price Update: DDR5, DDR4 Demand Weakens, but Firm Supplier Quotes Support Elevated Prices",
+    "url": "https://www.trendforce.com/news/2026/09/02/insights-memory-spot-price-update-ddr5-ddr4-demand-weakens-but-firm-supplier-quotes-support-elevated-prices/"
   },
   "proxies": {},
   "errors": []
