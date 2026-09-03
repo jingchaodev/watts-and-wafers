@@ -41,3 +41,4 @@
 {"date": "2026-08-30", "signal": "composite", "kind": "label_flip", "direction": "down", "detail": "Composite label SURGING -> TIGHTENING"}
 {"date": "2026-08-31", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label TIGHTENING -> SURGING"}
 {"date": "2026-09-02", "signal": "gen_ratio", "kind": "percentile_cross", "direction": "down", "detail": "B200/H100 (perf-adj) entered P6 (90d)"}
+{"date": "2026-09-03", "signal": "availability", "kind": "percentile_cross", "direction": "down", "detail": "H100 availability entered P10 (90d)"}
