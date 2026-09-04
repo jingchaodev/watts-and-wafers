@@ -1,10 +1,10 @@
 {
-  "asof": "2026-09-03T17:09:52Z",
+  "asof": "2026-09-04T17:02:41Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 54.0,
-      "chg_pct": -0.46
+      "avg": 54.067,
+      "chg_pct": 0.12
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,34 +13,34 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 92.912,
-      "chg_pct": 0.28
+      "avg": 93.5,
+      "chg_pct": 0.63
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.775,
-      "chg_pct": 0.86
+      "avg": 11.875,
+      "chg_pct": 0.85
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 44.571,
-      "chg_pct": 0.0
+      "avg": 45.0,
+      "chg_pct": 0.96
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.78,
-      "chg_pct": 1.92
+      "avg": 4.86,
+      "chg_pct": 1.67
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.83,
-      "chg_pct": 0.0
+      "avg": 13.81,
+      "chg_pct": -0.15
     }
   ],
   "nand_note": {
     "date": "2026-09-02",
-    "summary": "[Insights] Memory Spot Price Update: DDR5, DDR4 Demand Weakens, but Firm Supplier Quotes Support Elevated Prices",
-    "url": "https://www.trendforce.com/news/2026/09/02/insights-memory-spot-price-update-ddr5-ddr4-demand-weakens-but-firm-supplier-quotes-support-elevated-prices/"
+    "summary": "[News] Google Says Memory Tops 75% of Server BOM; TPU-Software Dual Strategy Targets Memory Wall",
+    "url": "https://www.trendforce.com/news/2026/09/02/news-google-says-memory-tops-75-of-server-bom-tpu-software-dual-strategy-targets-memory-wall/"
   },
   "proxies": {},
   "errors": []
