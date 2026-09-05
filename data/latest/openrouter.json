@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-04T17:02:38Z",
-  "n_models": 426,
+  "asof": "2026-09-05T16:13:38Z",
+  "n_models": 431,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -101,6 +101,20 @@
       "context": 8191
     },
     {
+      "id": "openai/gpt-6-astra",
+      "name": "OpenAI: GPT-6 Astra",
+      "prompt_usd_per_m": 10.0,
+      "completion_usd_per_m": 50.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6-astra-pro",
+      "name": "OpenAI: GPT-6 Astra Pro",
+      "prompt_usd_per_m": 10.0,
+      "completion_usd_per_m": 50.0,
+      "context": 1050000
+    },
+    {
       "id": "anthropic/claude-fable-5.1",
       "name": "Anthropic: Claude Fable 5.1",
       "prompt_usd_per_m": 10.0,
@@ -162,6 +176,20 @@
       "prompt_usd_per_m": 10.0,
       "completion_usd_per_m": 30.0,
       "context": 128000
+    },
+    {
+      "id": "openai/gpt-6-astra:batch",
+      "name": "OpenAI: GPT-6 Astra (batch)",
+      "prompt_usd_per_m": 5.0,
+      "completion_usd_per_m": 25.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6-astra-pro:batch",
+      "name": "OpenAI: GPT-6 Astra Pro (batch)",
+      "prompt_usd_per_m": 5.0,
+      "completion_usd_per_m": 25.0,
+      "context": 1050000
     },
     {
       "id": "anthropic/claude-fable-5.1:batch",
@@ -304,13 +332,6 @@
       "context": 128000
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI Kimi Latest",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 14.0,
-      "context": 1048576
-    },
-    {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "prompt_usd_per_m": 1.75,
@@ -337,6 +358,13 @@
       "prompt_usd_per_m": 1.75,
       "completion_usd_per_m": 14.0,
       "context": 400000
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI Kimi Latest",
+      "prompt_usd_per_m": 2.55,
+      "completion_usd_per_m": 12.75,
+      "context": 1048576
     },
     {
       "id": "anthropic/claude-opus-5:batch",
@@ -640,6 +668,13 @@
       "context": 262144
     },
     {
+      "id": "qwen/qwen3.8-max-0902",
+      "name": "Qwen: Qwen3.8 Max (0902)",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 6.0,
+      "context": 1000000
+    },
+    {
       "id": "qwen/qwen3.8-2.4t-a95b",
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "prompt_usd_per_m": 2.0,
@@ -659,13 +694,6 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 500000
-    },
-    {
-      "id": "qwen/qwen3.8-max",
-      "name": "Qwen: Qwen3.8 Max",
-      "prompt_usd_per_m": 2.0,
-      "completion_usd_per_m": 6.0,
-      "context": 1000000
     },
     {
       "id": "openai/gpt-5.6-terra-pro:batch",
@@ -1023,34 +1051,6 @@
       "prompt_usd_per_m": 1.15,
       "completion_usd_per_m": 3.5,
       "context": 1310720
-    },
-    {
-      "id": "qwen/qwen3.5-397b-a17b",
-      "name": "Qwen: Qwen3.5 397B A17B",
-      "prompt_usd_per_m": 0.55,
-      "completion_usd_per_m": 3.5,
-      "context": 262144
-    },
-    {
-      "id": "moonshotai/kimi-k2.7-code",
-      "name": "MoonshotAI: Kimi K2.7 Code",
-      "prompt_usd_per_m": 0.66,
-      "completion_usd_per_m": 3.4,
-      "context": 262144
-    },
-    {
-      "id": "qwen/qwen3-coder-plus",
-      "name": "Qwen: Qwen3 Coder Plus",
-      "prompt_usd_per_m": 0.65,
-      "completion_usd_per_m": 3.25,
-      "context": 1000000
-    },
-    {
-      "id": "amazon/nova-pro-v1",
-      "name": "Amazon: Nova Pro 1.0",
-      "prompt_usd_per_m": 0.8,
-      "completion_usd_per_m": 3.2,
-      "context": 300000
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
