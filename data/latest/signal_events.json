@@ -1,6 +1,13 @@
 {
-  "asof": "2026-09-05T04:38:23Z",
+  "asof": "2026-09-05T09:08:54Z",
   "events": [
+    {
+      "date": "2026-09-05",
+      "signal": "gen_ratio",
+      "kind": "percentile_cross",
+      "direction": "up",
+      "detail": "B200/H100 (perf-adj) entered P94 (90d)"
+    },
     {
       "date": "2026-09-04",
       "signal": "h100_price",
@@ -133,13 +140,6 @@
       "kind": "label_flip",
       "direction": "up",
       "detail": "Composite label NEUTRAL -> TIGHTENING"
-    },
-    {
-      "date": "2026-08-14",
-      "signal": "composite",
-      "kind": "label_flip",
-      "direction": "down",
-      "detail": "Composite label TIGHTENING -> NEUTRAL"
     }
   ],
   "errors": []
