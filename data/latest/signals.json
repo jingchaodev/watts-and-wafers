@@ -1,17 +1,17 @@
 {
-  "asof": "2026-09-06T11:05:25Z",
+  "asof": "2026-09-06T14:14:18Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.6785,
+      "value": 2.3792,
       "unit": "$/hr",
-      "value_fmt": "$2.68",
-      "percentile": 88,
+      "value_fmt": "$2.38",
+      "percentile": 54,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 14.91,
-      "read": "Rich vs its 90-day history, trending up over the last week",
+      "delta_7d_pct": 2.07,
+      "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-09-06",
-          2.6785
+          2.37925
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 74.07,
+      "value": 44.44,
       "unit": "% (7d)",
-      "value_fmt": "+74.1%",
-      "percentile": 83,
+      "value_fmt": "+44.4%",
+      "percentile": 54,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 74.07,
+      "delta_7d_pct": 44.44,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-09-06",
-          47
+          39
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.7467,
+      "value": 0.9089,
       "unit": "ratio",
-      "value_fmt": "0.75x",
-      "percentile": 6,
+      "value_fmt": "0.91x",
+      "percentile": 75,
       "window_days": 90,
-      "direction": "down",
-      "delta_7d_pct": -12.98,
-      "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
+      "direction": "up",
+      "delta_7d_pct": 5.93,
+      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-09-06",
-          0.7466865783087548
+          0.9088998634023325
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,8 +683,8 @@
     }
   ],
   "composite": {
-    "index": 54.47,
-    "label": "NEUTRAL"
+    "index": 58.13,
+    "label": "TIGHTENING"
   },
   "errors": []
 }
