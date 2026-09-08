@@ -1,10 +1,10 @@
 {
-  "asof": "2026-09-07T18:22:17Z",
+  "asof": "2026-09-08T17:26:40Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 54.3,
-      "chg_pct": 0.43
+      "avg": 54.333,
+      "chg_pct": 0.06
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,23 +13,23 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 93.25,
-      "chg_pct": -0.27
+      "avg": 91.75,
+      "chg_pct": -1.61
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 11.975,
-      "chg_pct": 0.84
+      "avg": 12.088,
+      "chg_pct": 0.94
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.357,
-      "chg_pct": 0.79
+      "avg": 45.364,
+      "chg_pct": 0.02
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 4.95,
-      "chg_pct": 1.85
+      "avg": 5.05,
+      "chg_pct": 2.02
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -39,8 +39,8 @@
   ],
   "nand_note": {
     "date": "2026-09-07",
-    "summary": "[News] SK hynix 1c DRAM Reportedly to Overtake 1b as Main Process in 1Q27 as It Prepares for HBM4E",
-    "url": "https://www.trendforce.com/news/2026/09/07/news-sk-hynix-1c-dram-reportedly-to-overtake-1b-as-main-process-in-1q27-as-it-prepares-for-hbm4e/"
+    "summary": "[News] Apple Said to Have Signed NAND LTA with Kioxia Seen as Likely Partner; Foldable iPhone Memory Suppliers in Focus",
+    "url": "https://www.trendforce.com/news/2026/09/07/news-apple-said-to-have-signed-nand-lta-with-kioxia-seen-as-likely-partner-foldable-iphone-memory-suppliers-in-focus/"
   },
   "proxies": {},
   "errors": []

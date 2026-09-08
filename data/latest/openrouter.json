@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-07T18:22:14Z",
-  "n_models": 428,
+  "asof": "2026-09-08T17:26:37Z",
+  "n_models": 429,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -332,6 +332,13 @@
       "context": 128000
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI Kimi Latest",
+      "prompt_usd_per_m": 2.5,
+      "completion_usd_per_m": 14.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "prompt_usd_per_m": 1.75,
@@ -358,13 +365,6 @@
       "prompt_usd_per_m": 1.75,
       "completion_usd_per_m": 14.0,
       "context": 400000
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI Kimi Latest",
-      "prompt_usd_per_m": 2.55,
-      "completion_usd_per_m": 12.75,
-      "context": 1048576
     },
     {
       "id": "anthropic/claude-opus-5:batch",
@@ -990,13 +990,6 @@
       "context": 16385
     },
     {
-      "id": "deepseek/deepseek-v4-pro-0813:batch",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
-      "prompt_usd_per_m": 1.32,
-      "completion_usd_per_m": 3.96,
-      "context": 1048576
-    },
-    {
       "id": "qwen/qwen3-max-thinking",
       "name": "Qwen: Qwen3 Max Thinking",
       "prompt_usd_per_m": 0.78,
@@ -1046,11 +1039,18 @@
       "context": 1048576
     },
     {
-      "id": "~z-ai/glm-latest",
-      "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 1.12,
-      "completion_usd_per_m": 3.52,
-      "context": 1310720
+      "id": "moonshotai/kimi-k2.7-code",
+      "name": "MoonshotAI: Kimi K2.7 Code",
+      "prompt_usd_per_m": 0.71,
+      "completion_usd_per_m": 3.5,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen: Qwen3.5 397B A17B",
+      "prompt_usd_per_m": 0.55,
+      "completion_usd_per_m": 3.5,
+      "context": 262144
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
