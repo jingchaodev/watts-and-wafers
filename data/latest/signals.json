@@ -1,18 +1,18 @@
 {
-  "asof": "2026-09-08T04:49:10Z",
+  "asof": "2026-09-08T09:48:36Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.4113,
+      "value": 2.468,
       "unit": "$/hr",
-      "value_fmt": "$2.41",
-      "percentile": 62,
+      "value_fmt": "$2.47",
+      "percentile": 65,
       "window_days": 90,
-      "direction": "flat",
-      "delta_7d_pct": 0.99,
-      "read": "Mid-range vs its 90-day history",
-      "tone": "neutral",
+      "direction": "up",
+      "delta_7d_pct": 3.37,
+      "read": "Mid-range vs its 90-day history, trending up over the last week",
+      "tone": "hot",
       "spark": [
         [
           "2026-08-10",
@@ -132,7 +132,7 @@
         ],
         [
           "2026-09-08",
-          2.4112999999999998
+          2.46795
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -40.91,
+      "value": -36.36,
       "unit": "% (7d)",
-      "value_fmt": "-40.9%",
-      "percentile": 11,
+      "value_fmt": "-36.4%",
+      "percentile": 22,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -40.91,
+      "delta_7d_pct": -36.36,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-09-08",
-          26
+          28
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8915,
+      "value": 0.8762,
       "unit": "ratio",
-      "value_fmt": "0.89x",
-      "percentile": 67,
+      "value_fmt": "0.88x",
+      "percentile": 59,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 6.42,
+      "delta_7d_pct": 4.6,
       "read": "Blackwell already at or below H100 compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-09-08",
-          0.8914861796541286
+          0.8762333110476305
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 62.38,
+    "index": 61.57,
     "label": "TIGHTENING"
   },
   "errors": []
