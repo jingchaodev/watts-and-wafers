@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-08T17:26:37Z",
-  "n_models": 429,
+  "asof": "2026-09-09T17:15:07Z",
+  "n_models": 430,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -332,13 +332,6 @@
       "context": 128000
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI Kimi Latest",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 14.0,
-      "context": 1048576
-    },
-    {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "prompt_usd_per_m": 1.75,
@@ -433,6 +426,13 @@
       "id": "~google/gemini-pro-latest",
       "name": "Google Gemini Pro Latest",
       "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 12.0,
+      "context": 1048576
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI Kimi Latest",
+      "prompt_usd_per_m": 2.4,
       "completion_usd_per_m": 12.0,
       "context": 1048576
     },
@@ -868,7 +868,7 @@
       "name": "Z.ai: GLM 5.3",
       "prompt_usd_per_m": 1.4,
       "completion_usd_per_m": 4.4,
-      "context": 1310720
+      "context": 1048576
     },
     {
       "id": "openai/o4-mini-high",
@@ -1053,7 +1053,7 @@
       "context": 262144
     }
   ],
-  "frontier_median_completion_usd_per_m": 12.5,
+  "frontier_median_completion_usd_per_m": 12.0,
   "tokens_daily": null,
   "errors": []
 }

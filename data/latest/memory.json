@@ -1,10 +1,10 @@
 {
-  "asof": "2026-09-08T17:26:40Z",
+  "asof": "2026-09-09T17:15:16Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 54.333,
-      "chg_pct": 0.06
+      "avg": 54.5,
+      "chg_pct": 0.31
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,23 +13,23 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 91.75,
-      "chg_pct": -1.61
+      "avg": 91.0,
+      "chg_pct": -0.82
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.088,
-      "chg_pct": 0.94
+      "avg": 12.213,
+      "chg_pct": 1.03
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.364,
-      "chg_pct": 0.02
+      "avg": 45.321,
+      "chg_pct": -0.1
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.05,
-      "chg_pct": 2.02
+      "avg": 5.13,
+      "chg_pct": 1.58
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-09-07",
-    "summary": "[News] Apple Said to Have Signed NAND LTA with Kioxia Seen as Likely Partner; Foldable iPhone Memory Suppliers in Focus",
-    "url": "https://www.trendforce.com/news/2026/09/07/news-apple-said-to-have-signed-nand-lta-with-kioxia-seen-as-likely-partner-foldable-iphone-memory-suppliers-in-focus/"
+    "date": "2026-09-09",
+    "summary": "[Insights] Memory Spot Price Update: DDR4 Mainstream Rises 1.78% on 2Gx8 Orders; DDR5 Demand Remains Limited",
+    "url": "https://www.trendforce.com/news/2026/09/09/insights-memory-spot-price-update-ddr4-mainstream-prices-rise-1-78-on-2gx8-orders-ddr5-demand-remains-limited/"
   },
   "proxies": {},
   "errors": []

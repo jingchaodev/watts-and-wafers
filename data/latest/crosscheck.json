@@ -1,13 +1,6 @@
 {
-  "asof": "2026-09-08T17:26:40Z",
+  "asof": "2026-09-09T17:15:16Z",
   "flags": [
-    {
-      "gpu": "A100",
-      "provider": "vast",
-      "price": 0.7753,
-      "cohort_median": 1.99,
-      "ratio": 0.39
-    },
     {
       "gpu": "H100",
       "provider": "azure",
@@ -16,11 +9,11 @@
       "ratio": 3.098
     },
     {
-      "gpu": "MI300X",
-      "provider": "runpod",
-      "price": 0.5,
-      "cohort_median": 1.975,
-      "ratio": 0.253
+      "gpu": "H200",
+      "provider": "azure",
+      "price": 10.6,
+      "cohort_median": 4.145,
+      "ratio": 2.557
     }
   ],
   "errors": []
