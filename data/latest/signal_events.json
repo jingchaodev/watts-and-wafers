@@ -1,6 +1,13 @@
 {
-  "asof": "2026-09-10T09:50:05Z",
+  "asof": "2026-09-10T14:30:15Z",
   "events": [
+    {
+      "date": "2026-09-10",
+      "signal": "availability",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "H100 availability entered P7 (90d)"
+    },
     {
       "date": "2026-09-08",
       "signal": "availability",
@@ -133,13 +140,6 @@
       "kind": "percentile_cross",
       "direction": "down",
       "detail": "H100 availability entered P3 (90d)"
-    },
-    {
-      "date": "2026-08-19",
-      "signal": "gen_ratio",
-      "kind": "percentile_cross",
-      "direction": "up",
-      "detail": "B200/H100 (perf-adj) entered P97 (90d)"
     }
   ],
   "errors": []
