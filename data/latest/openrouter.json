@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-09T17:15:07Z",
-  "n_models": 430,
+  "asof": "2026-09-10T17:08:54Z",
+  "n_models": 437,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -868,7 +868,7 @@
       "name": "Z.ai: GLM 5.3",
       "prompt_usd_per_m": 1.4,
       "completion_usd_per_m": 4.4,
-      "context": 1048576
+      "context": 1310720
     },
     {
       "id": "openai/o4-mini-high",
