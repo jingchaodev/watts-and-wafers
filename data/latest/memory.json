@@ -1,35 +1,35 @@
 {
-  "asof": "2026-09-10T17:08:56Z",
+  "asof": "2026-09-11T17:10:15Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 54.333,
-      "chg_pct": -0.31
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 24.2,
-      "chg_pct": 0.83
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 90.5,
-      "chg_pct": -0.55
+      "avg": 89.75,
+      "chg_pct": -0.83
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.3,
-      "chg_pct": 0.71
+      "avg": 12.45,
+      "chg_pct": 1.22
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.279,
-      "chg_pct": -0.09
+      "avg": 45.214,
+      "chg_pct": -0.14
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.22,
-      "chg_pct": 1.75
+      "avg": 5.31,
+      "chg_pct": 1.72
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -39,8 +39,8 @@
   ],
   "nand_note": {
     "date": "2026-09-09",
-    "summary": "[Insights] Memory Spot Price Update: DDR4 Mainstream Rises 1.78% on 2Gx8 Orders; DDR5 Demand Remains Limited",
-    "url": "https://www.trendforce.com/news/2026/09/09/insights-memory-spot-price-update-ddr4-mainstream-prices-rise-1-78-on-2gx8-orders-ddr5-demand-remains-limited/"
+    "summary": "[News] The Race to 2028: Samsung, SK hynix Set High-NA EUV Timelines for DRAM as Micron Stays Tight-Lipped",
+    "url": "https://www.trendforce.com/news/2026/09/09/news-the-race-to-2028-samsung-sk-hynix-set-high-na-euv-timelines-for-dram-as-micron-stays-tight-lipped/"
   },
   "proxies": {},
   "errors": []
