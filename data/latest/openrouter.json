@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-11T17:10:13Z",
-  "n_models": 443,
+  "asof": "2026-09-12T16:27:56Z",
+  "n_models": 445,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -102,7 +102,7 @@
     },
     {
       "id": "~openai/gpt-astra-latest",
-      "name": "OpenAI GPT Astra Latest",
+      "name": "OpenAI: GPT Astra Latest",
       "prompt_usd_per_m": 10.0,
       "completion_usd_per_m": 50.0,
       "context": 1050000
@@ -410,7 +410,7 @@
     },
     {
       "id": "~openai/gpt-terra-latest",
-      "name": "OpenAI GPT Terra Latest",
+      "name": "OpenAI: GPT Terra Latest",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 12.0,
       "context": 1050000
@@ -438,7 +438,7 @@
     },
     {
       "id": "~google/gemini-pro-latest",
-      "name": "Google Gemini Pro Latest",
+      "name": "Google: Gemini Pro Latest",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 12.0,
       "context": 1048576
@@ -465,22 +465,22 @@
       "context": 65536
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 2.34,
-      "completion_usd_per_m": 11.7,
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 2.125,
+      "completion_usd_per_m": 11.9,
       "context": 1048576
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI Kimi Latest",
-      "prompt_usd_per_m": 2.34,
-      "completion_usd_per_m": 11.7,
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 2.302729,
+      "completion_usd_per_m": 11.550195,
       "context": 1048576
     },
     {
       "id": "~openai/gpt-sol-latest",
-      "name": "OpenAI GPT Sol Latest",
+      "name": "OpenAI: GPT Sol Latest",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1050000
@@ -508,7 +508,7 @@
     },
     {
       "id": "~anthropic/claude-sonnet-latest",
-      "name": "Anthropic Claude Sonnet Latest",
+      "name": "Anthropic: Claude Sonnet Latest",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1000000
@@ -816,7 +816,7 @@
     },
     {
       "id": "~anthropic/claude-haiku-latest",
-      "name": "Anthropic Claude Haiku Latest",
+      "name": "Anthropic: Claude Haiku Latest",
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 5.0,
       "context": 200000
@@ -872,7 +872,7 @@
     },
     {
       "id": "~openai/gpt-mini-latest",
-      "name": "OpenAI GPT Mini Latest",
+      "name": "OpenAI: GPT Mini Latest",
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 4.5,
       "context": 400000
