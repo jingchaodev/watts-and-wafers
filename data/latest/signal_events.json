@@ -1,6 +1,13 @@
 {
-  "asof": "2026-09-12T22:23:19Z",
+  "asof": "2026-09-13T01:07:22Z",
   "events": [
+    {
+      "date": "2026-09-13",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "down",
+      "detail": "Composite label SURGING -> TIGHTENING"
+    },
     {
       "date": "2026-09-12",
       "signal": "h100_price",
@@ -133,13 +140,6 @@
       "kind": "label_flip",
       "direction": "down",
       "detail": "Composite label SURGING -> TIGHTENING"
-    },
-    {
-      "date": "2026-08-20",
-      "signal": "gen_ratio",
-      "kind": "percentile_cross",
-      "direction": "down",
-      "detail": "B200/H100 (perf-adj) entered P3 (90d)"
     }
   ],
   "errors": []
