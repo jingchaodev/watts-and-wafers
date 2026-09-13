@@ -1,5 +1,5 @@
 {
-  "asof": "2026-09-12T16:27:56Z",
+  "asof": "2026-09-13T17:02:27Z",
   "n_models": 445,
   "models": [
     {
@@ -367,6 +367,13 @@
       "context": 400000
     },
     {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 2.648138,
+      "completion_usd_per_m": 13.282724,
+      "context": 1048576
+    },
+    {
       "id": "anthropic/claude-opus-5:batch",
       "name": "Claude Opus 5 (batch)",
       "prompt_usd_per_m": 2.5,
@@ -467,15 +474,8 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 2.125,
-      "completion_usd_per_m": 11.9,
-      "context": 1048576
-    },
-    {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 2.302729,
-      "completion_usd_per_m": 11.550195,
+      "prompt_usd_per_m": 2.1,
+      "completion_usd_per_m": 10.95,
       "context": 1048576
     },
     {
@@ -892,13 +892,6 @@
       "context": 1000000
     },
     {
-      "id": "z-ai/glm-5.3",
-      "name": "Z.ai: GLM 5.3",
-      "prompt_usd_per_m": 1.4,
-      "completion_usd_per_m": 4.4,
-      "context": 1310720
-    },
-    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1051,6 +1044,13 @@
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 3.75,
       "context": 1048576
+    },
+    {
+      "id": "mistralai/mistral-medium-3-5:batch",
+      "name": "Mistral: Mistral Medium 3.5 (batch)",
+      "prompt_usd_per_m": 0.75,
+      "completion_usd_per_m": 3.75,
+      "context": 262144
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
