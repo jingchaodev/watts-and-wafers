@@ -1,5 +1,5 @@
 {
-  "asof": "2026-09-13T17:02:30Z",
+  "asof": "2026-09-14T18:50:45Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
@@ -13,23 +13,23 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 89.75,
-      "chg_pct": -0.83
+      "avg": 89.25,
+      "chg_pct": -0.56
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.45,
-      "chg_pct": 1.22
+      "avg": 12.55,
+      "chg_pct": 0.8
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.214,
-      "chg_pct": -0.14
+      "avg": 45.571,
+      "chg_pct": 0.79
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.31,
-      "chg_pct": 1.72
+      "avg": 5.4,
+      "chg_pct": 1.7
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-09-09",
-    "summary": "[News] The Race to 2028: Samsung, SK hynix Set High-NA EUV Timelines for DRAM as Micron Stays Tight-Lipped",
-    "url": "https://www.trendforce.com/news/2026/09/09/news-the-race-to-2028-samsung-sk-hynix-set-high-na-euv-timelines-for-dram-as-micron-stays-tight-lipped/"
+    "date": "2026-09-14",
+    "summary": "[News] SanDisk Reportedly Hunts for HBM, LPDDR Talent in Korea as AI Memory Race Heats Up",
+    "url": "https://www.trendforce.com/news/2026/09/14/news-sandisk-reportedly-hunts-for-hbm-lpddr-talent-in-korea-as-ai-memory-race-heats-up/"
   },
   "proxies": {},
   "errors": []

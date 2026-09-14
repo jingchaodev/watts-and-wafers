@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-13T17:02:27Z",
-  "n_models": 445,
+  "asof": "2026-09-14T18:50:42Z",
+  "n_models": 447,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -892,6 +892,13 @@
       "context": 1000000
     },
     {
+      "id": "z-ai/glm-5.3",
+      "name": "Z.ai: GLM 5.3",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 1310720
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1044,13 +1051,6 @@
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 3.75,
       "context": 1048576
-    },
-    {
-      "id": "mistralai/mistral-medium-3-5:batch",
-      "name": "Mistral: Mistral Medium 3.5 (batch)",
-      "prompt_usd_per_m": 0.75,
-      "completion_usd_per_m": 3.75,
-      "context": 262144
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
