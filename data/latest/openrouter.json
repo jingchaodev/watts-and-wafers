@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-14T18:50:42Z",
-  "n_models": 447,
+  "asof": "2026-09-15T17:45:05Z",
+  "n_models": 446,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -180,13 +180,6 @@
     {
       "id": "openai/gpt-4-turbo",
       "name": "OpenAI: GPT-4 Turbo",
-      "prompt_usd_per_m": 10.0,
-      "completion_usd_per_m": 30.0,
-      "context": 128000
-    },
-    {
-      "id": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
       "prompt_usd_per_m": 10.0,
       "completion_usd_per_m": 30.0,
       "context": 128000
@@ -570,13 +563,6 @@
       "context": 1048576
     },
     {
-      "id": "google/gemini-2.5-pro-preview-05-06",
-      "name": "Google: Gemini 2.5 Pro Preview 05-06",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 10.0,
-      "context": 1048576
-    },
-    {
       "id": "cohere/command-a",
       "name": "Cohere: Command A",
       "prompt_usd_per_m": 2.5,
@@ -899,6 +885,13 @@
       "context": 1310720
     },
     {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 1048576
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1051,6 +1044,13 @@
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 3.75,
       "context": 1048576
+    },
+    {
+      "id": "mistralai/mistral-medium-3-5:batch",
+      "name": "Mistral: Mistral Medium 3.5 (batch)",
+      "prompt_usd_per_m": 0.75,
+      "completion_usd_per_m": 3.75,
+      "context": 262144
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
