@@ -1,35 +1,35 @@
 {
-  "asof": "2026-09-15T17:45:08Z",
+  "asof": "2026-09-16T17:43:13Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 54.4,
-      "chg_pct": 0.12
+      "avg": 54.833,
+      "chg_pct": 0.8
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 24.3,
-      "chg_pct": 0.41
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 89.125,
-      "chg_pct": -0.14
+      "avg": 87.625,
+      "chg_pct": -1.68
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.7,
-      "chg_pct": 1.2
+      "avg": 12.9,
+      "chg_pct": 1.58
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.536,
-      "chg_pct": -0.08
+      "avg": 45.786,
+      "chg_pct": 0.55
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.5,
-      "chg_pct": 1.85
+      "avg": 5.59,
+      "chg_pct": 1.64
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-09-14",
-    "summary": "[News] China’s High-Purity Quartz Reportedly Qualifies for 300mm DRAM Production, Boosting Materials Localization",
-    "url": "https://www.trendforce.com/news/2026/09/14/news-chinas-high-purity-quartz-reportedly-qualifies-for-300mm-dram-production-boosting-materials-localization/"
+    "date": "2026-09-16",
+    "summary": "[Insights] Memory Spot Price Update: DRAM Spot Cools as DDR5 Inquiries Slow, 2Gx8 DDR4 Prices Retreat",
+    "url": "https://www.trendforce.com/news/2026/09/16/insights-memory-spot-price-update-dram-spot-cools-as-ddr5-inquiries-slow-2gx8-ddr4-prices-retreat/"
   },
   "proxies": {},
   "errors": []
