@@ -1,5 +1,5 @@
 {
-  "asof": "2026-09-16T17:43:11Z",
+  "asof": "2026-09-17T17:43:53Z",
   "n_models": 444,
   "models": [
     {
@@ -255,6 +255,13 @@
       "context": 200000
     },
     {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 3.0,
+      "completion_usd_per_m": 15.0,
+      "context": 1048576
+    },
+    {
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "prompt_usd_per_m": 3.0,
@@ -360,13 +367,6 @@
       "context": 400000
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 2.648138,
-      "completion_usd_per_m": 13.282724,
-      "context": 1048576
-    },
-    {
       "id": "anthropic/claude-opus-5:batch",
       "name": "Anthropic: Claude Opus 5 (batch)",
       "prompt_usd_per_m": 2.5,
@@ -467,8 +467,8 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 2.1,
-      "completion_usd_per_m": 10.95,
+      "prompt_usd_per_m": 1.875,
+      "completion_usd_per_m": 10.5,
       "context": 1048576
     },
     {
