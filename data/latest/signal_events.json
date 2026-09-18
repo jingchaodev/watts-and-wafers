@@ -1,6 +1,13 @@
 {
-  "asof": "2026-09-18T19:43:01Z",
+  "asof": "2026-09-18T22:39:16Z",
   "events": [
+    {
+      "date": "2026-09-18",
+      "signal": "availability",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "H100 availability entered P9 (90d)"
+    },
     {
       "date": "2026-09-17",
       "signal": "composite",
@@ -133,13 +140,6 @@
       "kind": "percentile_cross",
       "direction": "down",
       "detail": "H100 availability entered P5 (90d)"
-    },
-    {
-      "date": "2026-08-24",
-      "signal": "availability",
-      "kind": "shock",
-      "direction": "up",
-      "detail": "H100 offers 7d +52%"
     }
   ],
   "errors": []
