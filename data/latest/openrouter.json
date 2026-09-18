@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-17T17:43:53Z",
-  "n_models": 444,
+  "asof": "2026-09-18T17:10:37Z",
+  "n_models": 445,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -255,13 +255,6 @@
       "context": 200000
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 3.0,
-      "completion_usd_per_m": 15.0,
-      "context": 1048576
-    },
-    {
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "prompt_usd_per_m": 3.0,
@@ -465,10 +458,17 @@
       "context": 65536
     },
     {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 2.1,
+      "completion_usd_per_m": 10.95,
+      "context": 1048576
+    },
+    {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 1.875,
-      "completion_usd_per_m": 10.5,
+      "prompt_usd_per_m": 2.1,
+      "completion_usd_per_m": 10.95,
       "context": 1048576
     },
     {
@@ -631,6 +631,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 8.0,
       "context": 128000
+    },
+    {
+      "id": "unbiased/pareto",
+      "name": "Pareto",
+      "prompt_usd_per_m": 2.5,
+      "completion_usd_per_m": 7.5,
+      "context": 262144
     },
     {
       "id": "mistralai/mistral-medium-3-5",
@@ -878,20 +885,6 @@
       "context": 1000000
     },
     {
-      "id": "z-ai/glm-5.3",
-      "name": "Z.ai: GLM 5.3",
-      "prompt_usd_per_m": 1.4,
-      "completion_usd_per_m": 4.4,
-      "context": 1310720
-    },
-    {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 1.4,
-      "completion_usd_per_m": 4.4,
-      "context": 1048576
-    },
-    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1051,6 +1044,13 @@
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 3.75,
       "context": 262144
+    },
+    {
+      "id": "~google/gemini-flash-latest",
+      "name": "Google: Gemini Flash Latest",
+      "prompt_usd_per_m": 0.75,
+      "completion_usd_per_m": 3.75,
+      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
