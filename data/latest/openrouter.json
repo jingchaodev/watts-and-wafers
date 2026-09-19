@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-18T17:10:37Z",
-  "n_models": 445,
+  "asof": "2026-09-19T16:46:06Z",
+  "n_models": 447,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -458,20 +458,6 @@
       "context": 65536
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 2.1,
-      "completion_usd_per_m": 10.95,
-      "context": 1048576
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 2.1,
-      "completion_usd_per_m": 10.95,
-      "context": 1048576
-    },
-    {
       "id": "~openai/gpt-sol-latest",
       "name": "OpenAI: GPT Sol Latest",
       "prompt_usd_per_m": 2.0,
@@ -602,6 +588,20 @@
       "name": "Google: Gemini 3.5 Flash",
       "prompt_usd_per_m": 1.5,
       "completion_usd_per_m": 9.0,
+      "context": 1048576
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 1.7,
+      "completion_usd_per_m": 8.5,
+      "context": 1048576
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 1.7,
+      "completion_usd_per_m": 8.5,
       "context": 1048576
     },
     {
