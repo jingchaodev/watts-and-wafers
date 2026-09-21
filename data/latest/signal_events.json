@@ -1,6 +1,13 @@
 {
-  "asof": "2026-09-21T06:30:15Z",
+  "asof": "2026-09-21T14:18:36Z",
   "events": [
+    {
+      "date": "2026-09-21",
+      "signal": "availability",
+      "kind": "shock",
+      "direction": "down",
+      "detail": "H100 offers 7d -42%"
+    },
     {
       "date": "2026-09-21",
       "signal": "h100_price",
@@ -133,13 +140,6 @@
       "kind": "label_flip",
       "direction": "down",
       "detail": "Composite label SURGING -> TIGHTENING"
-    },
-    {
-      "date": "2026-08-28",
-      "signal": "availability",
-      "kind": "shock",
-      "direction": "down",
-      "detail": "H100 offers 7d -56%"
     }
   ],
   "errors": []
