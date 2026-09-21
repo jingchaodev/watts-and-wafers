@@ -1,46 +1,46 @@
 {
-  "asof": "2026-09-20T16:57:26Z",
+  "asof": "2026-09-21T18:53:17Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 56.0,
-      "chg_pct": 1.39
+      "avg": 56.933,
+      "chg_pct": 1.67
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 24.6,
-      "chg_pct": 0.41
+      "avg": 24.8,
+      "chg_pct": 0.81
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 85.75,
-      "chg_pct": -0.29
+      "avg": 85.0,
+      "chg_pct": -0.88
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.225,
-      "chg_pct": 1.34
+      "avg": 13.35,
+      "chg_pct": 0.95
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
       "avg": 46.036,
-      "chg_pct": -0.23
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.77,
-      "chg_pct": 1.59
+      "avg": 5.88,
+      "chg_pct": 1.91
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
       "avg": 13.78,
-      "chg_pct": -0.08
+      "chg_pct": 0.0
     }
   ],
   "nand_note": {
-    "date": "2026-09-16",
-    "summary": "[News] SK hynix Reportedly Explores Leasing Intel’s Ohio Fab, Could Produce Memory in U.S. for First Time",
-    "url": "https://www.trendforce.com/news/2026/09/16/news-sk-hynix-reportedly-explores-leasing-intels-ohio-fab-could-produce-memory-in-u-s-for-first-time/"
+    "date": "2026-09-21",
+    "summary": "[News] CXMT G5 DRAM Enters Mass Production with 50%+ Higher Dies Per Wafer; SAQP Enables 11.95nm Half-Pitch",
+    "url": "https://www.trendforce.com/news/2026/09/21/news-cxmt-g5-dram-enters-mass-production-with-50-higher-dies-per-wafer-saqp-enables-11-95nm-half-pitch/"
   },
   "proxies": {},
   "errors": []

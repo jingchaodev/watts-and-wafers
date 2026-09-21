@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-20T16:57:23Z",
-  "n_models": 446,
+  "asof": "2026-09-21T18:53:15Z",
+  "n_models": 440,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -68,13 +68,6 @@
     {
       "id": "anthropic/claude-opus-4.1",
       "name": "Anthropic: Claude Opus 4.1",
-      "prompt_usd_per_m": 15.0,
-      "completion_usd_per_m": 75.0,
-      "context": 200000
-    },
-    {
-      "id": "anthropic/claude-opus-4",
-      "name": "Anthropic: Claude Opus 4",
       "prompt_usd_per_m": 15.0,
       "completion_usd_per_m": 75.0,
       "context": 200000
@@ -255,8 +248,8 @@
       "context": 200000
     },
     {
-      "id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)",
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
       "prompt_usd_per_m": 3.0,
       "completion_usd_per_m": 15.0,
       "context": 1048576
@@ -308,7 +301,7 @@
       "name": "Anthropic: Claude Sonnet 4",
       "prompt_usd_per_m": 3.0,
       "completion_usd_per_m": 15.0,
-      "context": 1000000
+      "context": 200000
     },
     {
       "id": "perplexity/sonar-pro",
@@ -591,13 +584,6 @@
       "context": 1048576
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 1.7,
-      "completion_usd_per_m": 8.5,
-      "context": 1048576
-    },
-    {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
       "prompt_usd_per_m": 1.7,
@@ -703,13 +689,6 @@
       "context": 1048576
     },
     {
-      "id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
-      "prompt_usd_per_m": 2.0,
-      "completion_usd_per_m": 6.0,
-      "context": 1010000
-    },
-    {
       "id": "x-ai/grok-4.6",
       "name": "SpaceXAI: Grok 4.6",
       "prompt_usd_per_m": 2.0,
@@ -733,13 +712,6 @@
     {
       "id": "x-ai/grok-4.5",
       "name": "SpaceXAI: Grok 4.5",
-      "prompt_usd_per_m": 2.0,
-      "completion_usd_per_m": 6.0,
-      "context": 500000
-    },
-    {
-      "id": "~x-ai/grok-latest",
-      "name": "xAI: Grok Latest",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 500000
@@ -857,6 +829,20 @@
       "context": 128000
     },
     {
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXAI: Grok 4.7",
+      "prompt_usd_per_m": 1.6,
+      "completion_usd_per_m": 4.8,
+      "context": 500000
+    },
+    {
+      "id": "~x-ai/grok-latest",
+      "name": "xAI: Grok Latest",
+      "prompt_usd_per_m": 1.6,
+      "completion_usd_per_m": 4.8,
+      "context": 500000
+    },
+    {
       "id": "google/gemini-3.5-flash:batch",
       "name": "Google: Gemini 3.5 Flash (batch)",
       "prompt_usd_per_m": 0.75,
@@ -939,13 +925,6 @@
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 4.05,
       "context": 1048576
-    },
-    {
-      "id": "thinkingmachines/inkling:batch",
-      "name": "Thinking Machines: Inkling (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 4.05,
-      "context": 524288
     },
     {
       "id": "sakana/sakana-namazu",
@@ -1051,6 +1030,27 @@
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 3.75,
       "context": 1048576
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen: Qwen3.5 397B A17B",
+      "prompt_usd_per_m": 0.55,
+      "completion_usd_per_m": 3.5,
+      "context": 262144
+    },
+    {
+      "id": "qwen/qwen3-coder-plus",
+      "name": "Qwen: Qwen3 Coder Plus",
+      "prompt_usd_per_m": 0.65,
+      "completion_usd_per_m": 3.25,
+      "context": 1000000
+    },
+    {
+      "id": "moonshotai/kimi-k2.7-code",
+      "name": "MoonshotAI: Kimi K2.7 Code",
+      "prompt_usd_per_m": 0.7062,
+      "completion_usd_per_m": 3.21,
+      "context": 262144
     }
   ],
   "frontier_median_completion_usd_per_m": 12.5,
