@@ -1,6 +1,13 @@
 {
-  "asof": "2026-09-21T23:22:04Z",
+  "asof": "2026-09-22T01:38:42Z",
   "events": [
+    {
+      "date": "2026-09-22",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "down",
+      "detail": "Composite label SURGING -> TIGHTENING"
+    },
     {
       "date": "2026-09-21",
       "signal": "availability",
@@ -133,13 +140,6 @@
       "kind": "label_flip",
       "direction": "up",
       "detail": "Composite label TIGHTENING -> SURGING"
-    },
-    {
-      "date": "2026-08-30",
-      "signal": "composite",
-      "kind": "label_flip",
-      "direction": "down",
-      "detail": "Composite label SURGING -> TIGHTENING"
     }
   ],
   "errors": []
