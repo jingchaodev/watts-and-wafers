@@ -1,46 +1,46 @@
 {
-  "asof": "2026-09-22T17:44:34Z",
+  "asof": "2026-09-23T17:56:58Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 57.167,
-      "chg_pct": 0.41
+      "avg": 57.5,
+      "chg_pct": 0.58
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 25.0,
-      "chg_pct": 0.81
+      "avg": 25.3,
+      "chg_pct": 1.2
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 84.5,
-      "chg_pct": -0.59
+      "avg": 84.375,
+      "chg_pct": -0.15
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.463,
-      "chg_pct": 0.85
+      "avg": 13.575,
+      "chg_pct": 0.83
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.036,
-      "chg_pct": 0.0
+      "avg": 45.893,
+      "chg_pct": -0.31
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.84,
-      "chg_pct": -0.68
+      "avg": 5.83,
+      "chg_pct": -0.17
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.78,
-      "chg_pct": 0.0
+      "avg": 13.768,
+      "chg_pct": -0.09
     }
   ],
   "nand_note": {
-    "date": "2026-09-21",
-    "summary": "[News] CXMT G5 DRAM Enters Mass Production with 50%+ Higher Dies Per Wafer; SAQP Enables 11.95nm Half-Pitch",
-    "url": "https://www.trendforce.com/news/2026/09/21/news-cxmt-g5-dram-enters-mass-production-with-50-higher-dies-per-wafer-saqp-enables-11-95nm-half-pitch/"
+    "date": "2026-09-23",
+    "summary": "[Insights] Memory Spot Price Update: DRAM Spot Prices Hold Cautious Tone; DDR4 2Gx8 Drops 3.6%",
+    "url": "https://www.trendforce.com/news/2026/09/23/insights-memory-spot-price-update-dram-spot-prices-hold-cautious-tone-ddr4-2gx8-drops-3-6/"
   },
   "proxies": {},
   "errors": []
