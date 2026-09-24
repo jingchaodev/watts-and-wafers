@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-23T17:56:55Z",
-  "n_models": 456,
+  "asof": "2026-09-24T17:56:04Z",
+  "n_models": 458,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -255,6 +255,13 @@
       "context": 1000000
     },
     {
+      "id": "fireworks/ember-1",
+      "name": "Fireworks: Ember-1",
+      "prompt_usd_per_m": 3.0,
+      "completion_usd_per_m": 15.0,
+      "context": 1048576
+    },
+    {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "prompt_usd_per_m": 3.0,
@@ -402,6 +409,13 @@
       "context": 1000000
     },
     {
+      "id": "qwen/qwen3.8-max-prime",
+      "name": "Qwen: Qwen3.8 Max Prime",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 12.0,
+      "context": 1000000
+    },
+    {
       "id": "~openai/gpt-terra-latest",
       "name": "OpenAI: GPT Terra Latest",
       "prompt_usd_per_m": 2.0,
@@ -458,17 +472,17 @@
       "context": 65536
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 1.35,
+      "completion_usd_per_m": 11.5,
+      "context": 1048576
+    },
+    {
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "prompt_usd_per_m": 2.28,
       "completion_usd_per_m": 11.4,
-      "context": 1048576
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 1.4989,
-      "completion_usd_per_m": 10.758,
       "context": 1048576
     },
     {
@@ -624,6 +638,13 @@
       "prompt_usd_per_m": 1.5,
       "completion_usd_per_m": 9.0,
       "context": 1048576
+    },
+    {
+      "id": "z-ai/glm-5.3-prime",
+      "name": "Z.ai: GLM 5.3 Prime",
+      "prompt_usd_per_m": 2.8,
+      "completion_usd_per_m": 8.8,
+      "context": 1000000
     },
     {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
@@ -934,6 +955,13 @@
       "context": 1000000
     },
     {
+      "id": "z-ai/glm-5.3",
+      "name": "Z.ai: GLM 5.3",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 1310720
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1023,37 +1051,9 @@
       "prompt_usd_per_m": 0.4,
       "completion_usd_per_m": 4.0,
       "context": 131072
-    },
-    {
-      "id": "openai/o3:batch",
-      "name": "OpenAI: o3 (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 4.0,
-      "context": 200000
-    },
-    {
-      "id": "openai/gpt-4.1:batch",
-      "name": "OpenAI: GPT-4.1 (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 4.0,
-      "context": 1047576
-    },
-    {
-      "id": "openai/gpt-3.5-turbo-16k",
-      "name": "OpenAI: GPT-3.5 Turbo 16k",
-      "prompt_usd_per_m": 3.0,
-      "completion_usd_per_m": 4.0,
-      "context": 16385
-    },
-    {
-      "id": "qwen/qwen3-max-thinking",
-      "name": "Qwen: Qwen3 Max Thinking",
-      "prompt_usd_per_m": 0.78,
-      "completion_usd_per_m": 3.9,
-      "context": 262144
     }
   ],
-  "frontier_median_completion_usd_per_m": 12.5,
+  "frontier_median_completion_usd_per_m": 15.0,
   "tokens_daily": null,
   "errors": []
 }
