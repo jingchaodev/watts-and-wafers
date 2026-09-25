@@ -37,6 +37,7 @@ Data contract between collectors and site: [`docs/DATA_CONTRACT.md`](docs/DATA_C
 ```bash
 # collectors
 python3 collectors/run.py --group hourly   # or: daily
+python3 collectors/run.py --group hourly --json   # machine-readable summary for cron
 python3 -m pytest collectors/tests -q
 
 # site

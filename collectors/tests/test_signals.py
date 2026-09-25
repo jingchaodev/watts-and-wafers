@@ -332,7 +332,7 @@ def test_null_card_shape_matches_normal_card_keys():
 
 def test_collect_produces_all_five_cards_even_with_no_history(monkeypatch, tmp_path):
     monkeypatch.setattr(signals, "read_history", lambda name, limit=None: [])
-    monkeypatch.setattr(signals, "_read_latest_json", lambda name: {})
+    monkeypatch.setattr(signals, "read_latest_json", lambda name: {})
     payload = signals.collect()
     keys = [c["key"] for c in payload["cards"]]
     assert keys == ["h100_price", "availability", "spot_discount", "gen_ratio", "token_growth"]
@@ -348,7 +348,7 @@ def test_collect_card_computation_crash_yields_null_card_not_exception(monkeypat
         raise RuntimeError("boom")
     monkeypatch.setattr(signals, "compute_h100_price", _boom)
     monkeypatch.setattr(signals, "read_history", lambda name, limit=None: [])
-    monkeypatch.setattr(signals, "_read_latest_json", lambda name: {})
+    monkeypatch.setattr(signals, "read_latest_json", lambda name: {})
     payload = signals.collect()
     h100_card = next(c for c in payload["cards"] if c["key"] == "h100_price")
     assert h100_card["value"] is None
