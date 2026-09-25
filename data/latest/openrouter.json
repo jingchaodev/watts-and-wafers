@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-24T17:56:04Z",
-  "n_models": 458,
+  "asof": "2026-09-25T18:02:58Z",
+  "n_models": 459,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -472,17 +472,17 @@
       "context": 65536
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 1.35,
-      "completion_usd_per_m": 11.5,
-      "context": 1048576
-    },
-    {
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "prompt_usd_per_m": 2.28,
       "completion_usd_per_m": 11.4,
+      "context": 1048576
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 1.2,
+      "completion_usd_per_m": 10.5346,
       "context": 1048576
     },
     {
