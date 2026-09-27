@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-26T22:57:31Z",
-  "index": 56.63,
+  "asof": "2026-09-27T01:33:22Z",
+  "index": 56.61,
   "label": "TIGHTENING",
   "signals": [
     {
@@ -27,9 +27,9 @@
     {
       "key": "gpu_price",
       "weight": 0.15,
-      "z": 1.563,
+      "z": 1.551,
       "direction": "up",
-      "detail": "H100-class median $/hr 2.99 (7d mean)"
+      "detail": "H100-class median $/hr 2.98 (7d mean)"
     }
   ]
 }
