@@ -1,6 +1,6 @@
 {
-  "asof": "2026-09-28T20:13:00Z",
-  "n_models": 460,
+  "asof": "2026-09-29T18:50:53Z",
+  "n_models": 464,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -486,11 +486,18 @@
       "context": 1048576
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.875,
-      "completion_usd_per_m": 11.2,
-      "context": 1048576
+      "id": "openai/gpt-6.1-sol-pro",
+      "name": "OpenAI: GPT-6.1 Sol Pro",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
     },
     {
       "id": "anthropic/claude-sonnet-5.5",
@@ -643,6 +650,13 @@
       "id": "google/gemini-3.5-flash",
       "name": "Google: Gemini 3.5 Flash",
       "prompt_usd_per_m": 1.5,
+      "completion_usd_per_m": 9.0,
+      "context": 1048576
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.4,
       "completion_usd_per_m": 9.0,
       "context": 1048576
     },
@@ -850,6 +864,20 @@
       "context": 128000
     },
     {
+      "id": "openai/gpt-6.1-sol-pro:batch",
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.1-sol:batch",
+      "name": "OpenAI: GPT-6.1 Sol (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
+    },
+    {
       "id": "anthropic/claude-sonnet-5.5:batch",
       "name": "Anthropic: Claude Sonnet 5.5 (batch)",
       "prompt_usd_per_m": 1.0,
@@ -976,6 +1004,20 @@
       "context": 1310720
     },
     {
+      "id": "qwen/qwen3.8-27b",
+      "name": "Qwen: Qwen3.8 27B",
+      "prompt_usd_per_m": 0.0249,
+      "completion_usd_per_m": 4.4,
+      "context": 1000000
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.2339,
+      "completion_usd_per_m": 4.4,
+      "context": 1048576
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1009,48 +1051,6 @@
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
       "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.2",
-      "name": "Meta: Muse Spark 1.2",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.1",
-      "name": "Meta: Muse Spark 1.1",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "deepseek/deepseek-v4-pro-0813",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813",
-      "prompt_usd_per_m": 0.3981,
-      "completion_usd_per_m": 4.2,
-      "context": 1048576
-    },
-    {
-      "id": "thinkingmachines/inkling",
-      "name": "Thinking Machines: Inkling",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 4.05,
-      "context": 524288
-    },
-    {
-      "id": "sakana/sakana-namazu",
-      "name": "Sakana: Sakana Namazu",
-      "prompt_usd_per_m": 0.95,
-      "completion_usd_per_m": 4.0,
-      "context": 262144
-    },
-    {
-      "id": "z-ai/glm-5v-turbo",
-      "name": "Z.ai: GLM 5V Turbo",
-      "prompt_usd_per_m": 1.2,
-      "completion_usd_per_m": 4.0,
-      "context": 202752
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
