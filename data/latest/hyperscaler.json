@@ -1,5 +1,5 @@
 {
-  "asof": "2026-09-30T18:32:36Z",
+  "asof": "2026-10-01T19:00:38Z",
   "azure": {
     "Standard_ND96isr_H200_v5": {
       "gpu": "H200",
@@ -69,7 +69,7 @@
       "gpu": "A100",
       "gpus_per_vm": 8,
       "ondemand_vm_hr": 32.77,
-      "spot_vm_hr": 8.4416,
+      "spot_vm_hr": 7.6319,
       "ondemand_gpu_hr": 4.0963,
       "region": "westus3"
     },
