@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-02T18:39:53Z",
-  "n_models": 465,
+  "asof": "2026-10-03T17:34:38Z",
+  "n_models": 466,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -369,14 +369,14 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 2.7,
-      "completion_usd_per_m": 13.5,
+      "prompt_usd_per_m": 0.99,
+      "completion_usd_per_m": 13.0,
       "context": 1048576
     },
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 1.34,
+      "prompt_usd_per_m": 0.9895,
       "completion_usd_per_m": 13.0,
       "context": 1048576
     },
@@ -990,6 +990,13 @@
       "context": 1048576
     },
     {
+      "id": "z-ai/glm-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 204800
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1039,21 +1046,14 @@
       "context": 1048576
     },
     {
-      "id": "thinkingmachines/inkling",
-      "name": "Thinking Machines: Inkling",
-      "prompt_usd_per_m": 0.95,
-      "completion_usd_per_m": 4.05,
-      "context": 524288
-    },
-    {
-      "id": "~z-ai/glm-latest",
-      "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 0.12,
-      "completion_usd_per_m": 4.0,
+      "id": "~deepseek/deepseek-pro-latest",
+      "name": "DeepSeek: DeepSeek Pro Latest",
+      "prompt_usd_per_m": 0.22,
+      "completion_usd_per_m": 4.2,
       "context": 1048576
     }
   ],
-  "frontier_median_completion_usd_per_m": 13.5,
+  "frontier_median_completion_usd_per_m": 13.0,
   "tokens_daily": null,
   "errors": []
 }
