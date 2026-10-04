@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-03T17:34:38Z",
+  "asof": "2026-10-04T17:48:38Z",
   "n_models": 466,
   "models": [
     {
@@ -369,14 +369,14 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.99,
+      "prompt_usd_per_m": 0.72,
       "completion_usd_per_m": 13.0,
       "context": 1048576
     },
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.9895,
+      "prompt_usd_per_m": 0.6773,
       "completion_usd_per_m": 13.0,
       "context": 1048576
     },
@@ -672,6 +672,13 @@
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "prompt_usd_per_m": 4.35,
       "completion_usd_per_m": 8.7,
+      "context": 1048576
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.1984,
+      "completion_usd_per_m": 8.0,
       "context": 1048576
     },
     {
@@ -983,6 +990,13 @@
       "context": 1000000
     },
     {
+      "id": "~z-ai/glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "prompt_usd_per_m": 0.08,
+      "completion_usd_per_m": 4.4,
+      "context": 1048576
+    },
+    {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "prompt_usd_per_m": 1.4,
@@ -1036,20 +1050,6 @@
       "name": "Meta: Muse Spark 1.2",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.1",
-      "name": "Meta: Muse Spark 1.1",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "~deepseek/deepseek-pro-latest",
-      "name": "DeepSeek: DeepSeek Pro Latest",
-      "prompt_usd_per_m": 0.22,
-      "completion_usd_per_m": 4.2,
       "context": 1048576
     }
   ],
