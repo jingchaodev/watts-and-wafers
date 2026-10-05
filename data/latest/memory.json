@@ -1,25 +1,25 @@
 {
-  "asof": "2026-10-04T17:48:41Z",
+  "asof": "2026-10-05T21:13:21Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 58.0,
+      "avg": 58.067,
       "chg_pct": 0.12
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 26.1,
-      "chg_pct": 0.39
+      "avg": 26.3,
+      "chg_pct": 0.77
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
       "avg": 83.588,
-      "chg_pct": -0.09
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 14.0,
-      "chg_pct": 0.36
+      "avg": 14.125,
+      "chg_pct": 0.89
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
@@ -28,8 +28,8 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.94,
-      "chg_pct": 0.34
+      "avg": 5.95,
+      "chg_pct": 0.17
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-09-30",
-    "summary": "[Insights] Memory Spot Price Update: DRAM Market Quiet Amid Holidays; NAND Buying Stays Weak",
-    "url": "https://www.trendforce.com/news/2026/09/30/insights-memory-spot-price-update-dram-market-quiet-amid-holidays-nand-buying-stays-weak/"
+    "date": "2026-09-23",
+    "summary": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers",
+    "url": "https://www.trendforce.com/news/2026/09/23/news-samsungs-lpddr6-passes-industry-first-snapdragon-validation-at-10-7-gbps-galaxy-s27-may-split-memory-tiers/"
   },
   "proxies": {},
   "errors": []
