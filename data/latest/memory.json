@@ -1,15 +1,15 @@
 {
-  "asof": "2026-10-05T21:13:21Z",
+  "asof": "2026-10-06T19:01:16Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 58.067,
-      "chg_pct": 0.12
+      "avg": 58.167,
+      "chg_pct": 0.17
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 26.3,
-      "chg_pct": 0.77
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
@@ -19,7 +19,7 @@
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
       "avg": 14.125,
-      "chg_pct": 0.89
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
@@ -29,7 +29,7 @@
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 5.95,
-      "chg_pct": 0.17
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-09-23",
-    "summary": "[News] Samsung's LPDDR6 Passes Industry-First Snapdragon Validation; Galaxy S27 May Split Memory Tiers",
-    "url": "https://www.trendforce.com/news/2026/09/23/news-samsungs-lpddr6-passes-industry-first-snapdragon-validation-at-10-7-gbps-galaxy-s27-may-split-memory-tiers/"
+    "date": "2026-10-06",
+    "summary": "[News] Nanya DRAM ASP Seen Rising 10% in 4Q26; Winbond Also Sees Further Price Gains as Memory Supply Stays Tight",
+    "url": "https://www.trendforce.com/news/2026/10/06/news-nanya-dram-asp-seen-rising-10-in-4q26-winbond-also-sees-further-price-gains-as-memory-supply-stays-tight/"
   },
   "proxies": {},
   "errors": []
