@@ -1,15 +1,15 @@
 {
-  "asof": "2026-10-06T19:01:16Z",
+  "asof": "2026-10-07T19:29:55Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 58.167,
-      "chg_pct": 0.17
+      "avg": 58.4,
+      "chg_pct": 0.4
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 26.3,
-      "chg_pct": 0.0
+      "avg": 26.4,
+      "chg_pct": 0.38
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
@@ -23,8 +23,8 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.321,
-      "chg_pct": 0.0
+      "avg": 46.357,
+      "chg_pct": 0.08
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-10-06",
-    "summary": "[News] Nanya DRAM ASP Seen Rising 10% in 4Q26; Winbond Also Sees Further Price Gains as Memory Supply Stays Tight",
-    "url": "https://www.trendforce.com/news/2026/10/06/news-nanya-dram-asp-seen-rising-10-in-4q26-winbond-also-sees-further-price-gains-as-memory-supply-stays-tight/"
+    "date": "2026-10-07",
+    "summary": "[Insights] Memory Spot Price Update: DRAM Spot Largely Sideways as Holidays, Month-End Effects Weigh",
+    "url": "https://www.trendforce.com/news/2026/10/07/insights-memory-spot-price-update-dram-spot-largely-sideways-as-holidays-month-end-effects-weigh/"
   },
   "proxies": {},
   "errors": []
