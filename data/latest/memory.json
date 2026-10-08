@@ -1,20 +1,20 @@
 {
-  "asof": "2026-10-07T19:29:55Z",
+  "asof": "2026-10-08T19:24:09Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 58.4,
-      "chg_pct": 0.4
+      "avg": 58.667,
+      "chg_pct": 0.46
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 26.4,
-      "chg_pct": 0.38
+      "avg": 26.6,
+      "chg_pct": 0.76
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 83.588,
-      "chg_pct": 0.0
+      "avg": 83.64,
+      "chg_pct": 0.06
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,8 +23,8 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.357,
-      "chg_pct": 0.08
+      "avg": 46.4,
+      "chg_pct": 0.09
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
