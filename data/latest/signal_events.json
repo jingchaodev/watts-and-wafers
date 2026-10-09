@@ -1,6 +1,13 @@
 {
-  "asof": "2026-10-09T18:57:54Z",
+  "asof": "2026-10-09T21:00:45Z",
   "events": [
+    {
+      "date": "2026-10-09",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "down",
+      "detail": "Composite label SURGING -> TIGHTENING"
+    },
     {
       "date": "2026-10-09",
       "signal": "availability",
@@ -133,13 +140,6 @@
       "kind": "percentile_cross",
       "direction": "down",
       "detail": "H100 availability entered P9 (90d)"
-    },
-    {
-      "date": "2026-09-17",
-      "signal": "composite",
-      "kind": "label_flip",
-      "direction": "up",
-      "detail": "Composite label TIGHTENING -> SURGING"
     }
   ],
   "errors": []

@@ -74,3 +74,4 @@
 {"date": "2026-10-07", "signal": "gen_ratio", "kind": "percentile_cross", "direction": "down", "detail": "B200/H100 (perf-adj) entered P4 (90d)"}
 {"date": "2026-10-09", "signal": "availability", "kind": "percentile_cross", "direction": "down", "detail": "H100 availability entered P4 (90d)"}
 {"date": "2026-10-09", "signal": "availability", "kind": "shock", "direction": "down", "detail": "H100 offers 7d -62%"}
+{"date": "2026-10-09", "signal": "composite", "kind": "label_flip", "direction": "down", "detail": "Composite label SURGING -> TIGHTENING"}
