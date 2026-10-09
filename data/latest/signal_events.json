@@ -1,6 +1,20 @@
 {
-  "asof": "2026-10-09T09:14:41Z",
+  "asof": "2026-10-09T16:19:20Z",
   "events": [
+    {
+      "date": "2026-10-09",
+      "signal": "availability",
+      "kind": "shock",
+      "direction": "down",
+      "detail": "H100 offers 7d -62%"
+    },
+    {
+      "date": "2026-10-09",
+      "signal": "availability",
+      "kind": "percentile_cross",
+      "direction": "down",
+      "detail": "H100 availability entered P4 (90d)"
+    },
     {
       "date": "2026-10-07",
       "signal": "gen_ratio",
@@ -126,20 +140,6 @@
       "kind": "label_flip",
       "direction": "up",
       "detail": "Composite label TIGHTENING -> SURGING"
-    },
-    {
-      "date": "2026-09-17",
-      "signal": "availability",
-      "kind": "shock",
-      "direction": "up",
-      "detail": "H100 offers 7d +84%"
-    },
-    {
-      "date": "2026-09-16",
-      "signal": "gen_ratio",
-      "kind": "percentile_cross",
-      "direction": "down",
-      "detail": "B200/H100 (perf-adj) entered P5 (90d)"
     }
   ],
   "errors": []

@@ -1,17 +1,17 @@
 {
-  "asof": "2026-10-09T09:14:41Z",
+  "asof": "2026-10-09T16:19:20Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.354,
+      "value": 2.3022,
       "unit": "$/hr",
-      "value_fmt": "$2.35",
-      "percentile": 35,
+      "value_fmt": "$2.30",
+      "percentile": 30,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -14.44,
-      "read": "Mid-range vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -16.32,
+      "read": "Cheap vs its 90-day history, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-10-09",
-          2.35395
+          2.3022
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -15.38,
+      "value": -61.54,
       "unit": "% (7d)",
-      "value_fmt": "-15.4%",
-      "percentile": 22,
+      "value_fmt": "-61.5%",
+      "percentile": 4,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -15.38,
+      "delta_7d_pct": -61.54,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-10-09",
-          22
+          10
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 1.0109,
+      "value": 1.0336,
       "unit": "ratio",
-      "value_fmt": "1.01x",
-      "percentile": 89,
+      "value_fmt": "1.03x",
+      "percentile": 92,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 19.69,
+      "delta_7d_pct": 22.39,
       "read": "Blackwell nearing compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-10-09",
-          1.0108540963062085
+          1.0336240878290333
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,8 +683,8 @@
     }
   ],
   "composite": {
-    "index": 61.42,
-    "label": "TIGHTENING"
+    "index": 65.65,
+    "label": "SURGING"
   },
   "errors": []
 }
