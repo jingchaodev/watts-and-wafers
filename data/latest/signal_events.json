@@ -1,6 +1,13 @@
 {
-  "asof": "2026-10-10T18:41:34Z",
+  "asof": "2026-10-10T22:39:24Z",
   "events": [
+    {
+      "date": "2026-10-10",
+      "signal": "composite",
+      "kind": "label_flip",
+      "direction": "up",
+      "detail": "Composite label NEUTRAL -> TIGHTENING"
+    },
     {
       "date": "2026-10-10",
       "signal": "availability",
@@ -133,13 +140,6 @@
       "kind": "shock",
       "direction": "down",
       "detail": "H100 offers 7d -42%"
-    },
-    {
-      "date": "2026-09-21",
-      "signal": "h100_price",
-      "kind": "percentile_cross",
-      "direction": "up",
-      "detail": "H100 market price entered P92 (90d)"
     }
   ],
   "errors": []
