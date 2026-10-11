@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-10T17:58:36Z",
+  "asof": "2026-10-11T18:25:32Z",
   "n_models": 458,
   "models": [
     {
@@ -334,8 +334,8 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.31,
-      "completion_usd_per_m": 14.89,
+      "prompt_usd_per_m": 0.75,
+      "completion_usd_per_m": 14.9,
       "context": 1048576
     },
     {
@@ -369,7 +369,7 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.5,
+      "prompt_usd_per_m": 0.8,
       "completion_usd_per_m": 13.5,
       "context": 1048576
     },
@@ -971,14 +971,14 @@
     {
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 0.039,
+      "prompt_usd_per_m": 0.07,
       "completion_usd_per_m": 4.8,
       "context": 1048576
     },
     {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
-      "prompt_usd_per_m": 0.039,
+      "prompt_usd_per_m": 0.07,
       "completion_usd_per_m": 4.8,
       "context": 1048576
     },
@@ -1053,7 +1053,7 @@
       "context": 1048576
     }
   ],
-  "frontier_median_completion_usd_per_m": 14.89,
+  "frontier_median_completion_usd_per_m": 14.9,
   "tokens_daily": null,
   "errors": []
 }
