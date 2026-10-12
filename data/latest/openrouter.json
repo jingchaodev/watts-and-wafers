@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-11T18:25:32Z",
-  "n_models": 458,
+  "asof": "2026-10-12T21:50:47Z",
+  "n_models": 459,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -241,6 +241,13 @@
       "context": 200000
     },
     {
+      "id": "meta/muse-wonder",
+      "name": "Meta: Muse Wonder",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1048576
+    },
+    {
       "id": "anthropic/claude-opus-5.5",
       "name": "Anthropic: Claude Opus 5.5",
       "prompt_usd_per_m": 4.0,
@@ -332,13 +339,6 @@
       "context": 128000
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.75,
-      "completion_usd_per_m": 14.9,
-      "context": 1048576
-    },
-    {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "prompt_usd_per_m": 1.75,
@@ -365,13 +365,6 @@
       "prompt_usd_per_m": 1.75,
       "completion_usd_per_m": 14.0,
       "context": 400000
-    },
-    {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.8,
-      "completion_usd_per_m": 13.5,
-      "context": 1048576
     },
     {
       "id": "anthropic/claude-opus-5:batch",
@@ -535,6 +528,13 @@
       "context": 1050000
     },
     {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.73,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
       "prompt_usd_per_m": 2.0,
@@ -554,6 +554,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1000000
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.73,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
     },
     {
       "id": "~anthropic/claude-sonnet-latest",
@@ -971,14 +978,14 @@
     {
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 0.07,
+      "prompt_usd_per_m": 0.079,
       "completion_usd_per_m": 4.8,
       "context": 1048576
     },
     {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
-      "prompt_usd_per_m": 0.07,
+      "prompt_usd_per_m": 0.079,
       "completion_usd_per_m": 4.8,
       "context": 1048576
     },
@@ -1044,16 +1051,9 @@
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
       "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.2",
-      "name": "Meta: Muse Spark 1.2",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
     }
   ],
-  "frontier_median_completion_usd_per_m": 14.9,
+  "frontier_median_completion_usd_per_m": 15.0,
   "tokens_daily": null,
   "errors": []
 }
