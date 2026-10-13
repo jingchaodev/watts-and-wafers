@@ -1,20 +1,20 @@
 {
-  "asof": "2026-10-12T21:50:50Z",
+  "asof": "2026-10-13T19:56:44Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 59.433,
-      "chg_pct": 0.91
+      "avg": 59.9,
+      "chg_pct": 0.79
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 27.0,
-      "chg_pct": 0.75
+      "avg": 27.2,
+      "chg_pct": 0.74
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 83.809,
-      "chg_pct": 0.2
+      "avg": 83.858,
+      "chg_pct": 0.06
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,24 +23,24 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.079,
-      "chg_pct": -0.23
+      "avg": 46.057,
+      "chg_pct": -0.05
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.96,
-      "chg_pct": 0.0
+      "avg": 5.97,
+      "chg_pct": 0.17
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.709,
-      "chg_pct": 0.0
+      "avg": 13.694,
+      "chg_pct": -0.11
     }
   ],
   "nand_note": {
     "date": "2026-10-12",
-    "summary": "[News] Nanya’s 3Q DRAM ASPs Surge Over 60% QoQ as Gross Margin Hits 85.7%; Further Gains Seen in 4Q",
-    "url": "https://www.trendforce.com/news/2026/10/12/news-nanyas-3q-dram-asps-surge-over-60-qoq-as-gross-margin-hits-85-7-further-gains-seen-in-4q/"
+    "summary": "[News] CXMT Accelerates 4F² DRAM Push, Eyes Year-End Server DDR5 RDIMM Launch",
+    "url": "https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%c2%b2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/"
   },
   "proxies": {},
   "errors": []

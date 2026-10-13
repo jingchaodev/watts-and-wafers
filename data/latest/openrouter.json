@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-12T21:50:47Z",
-  "n_models": 459,
+  "asof": "2026-10-13T19:56:41Z",
+  "n_models": 461,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -241,6 +241,13 @@
       "context": 200000
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.72,
+      "completion_usd_per_m": 24.0,
+      "context": 1048576
+    },
+    {
       "id": "meta/muse-wonder",
       "name": "Meta: Muse Wonder",
       "prompt_usd_per_m": 4.0,
@@ -479,6 +486,13 @@
       "context": 1048576
     },
     {
+      "id": "google/gemini-4-argon",
+      "name": "Google: Gemini 4 Argon",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-6.1-sol-pro",
       "name": "OpenAI: GPT-6.1 Sol Pro",
       "prompt_usd_per_m": 2.0,
@@ -554,13 +568,6 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1000000
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.73,
-      "completion_usd_per_m": 10.0,
-      "context": 1048576
     },
     {
       "id": "~anthropic/claude-sonnet-latest",
@@ -878,6 +885,13 @@
       "context": 128000
     },
     {
+      "id": "google/gemini-4-argon:batch",
+      "name": "Google: Gemini 4 Argon (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-6.1-sol-pro:batch",
       "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
       "prompt_usd_per_m": 1.0,
@@ -1037,20 +1051,6 @@
       "prompt_usd_per_m": 1.1,
       "completion_usd_per_m": 4.4,
       "context": 200000
-    },
-    {
-      "id": "openai/o3-mini",
-      "name": "OpenAI: o3 Mini",
-      "prompt_usd_per_m": 1.1,
-      "completion_usd_per_m": 4.4,
-      "context": 200000
-    },
-    {
-      "id": "meta/muse-spark-1.3",
-      "name": "Meta: Muse Spark 1.3",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
