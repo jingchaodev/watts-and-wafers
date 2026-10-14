@@ -1,12 +1,12 @@
 {
-  "asof": "2026-10-13T19:56:44Z",
+  "asof": "2026-10-14T18:09:19Z",
   "flags": [
     {
       "gpu": "A100",
       "provider": "vast",
-      "price": 0.6674,
+      "price": 0.7348,
       "cohort_median": 1.99,
-      "ratio": 0.335
+      "ratio": 0.369
     },
     {
       "gpu": "H100",

@@ -1,20 +1,20 @@
 {
-  "asof": "2026-10-13T19:56:44Z",
+  "asof": "2026-10-14T18:09:19Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 59.9,
-      "chg_pct": 0.79
+      "avg": 60.1,
+      "chg_pct": 0.33
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 27.2,
-      "chg_pct": 0.74
+      "avg": 27.5,
+      "chg_pct": 1.1
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 83.858,
-      "chg_pct": 0.06
+      "avg": 83.611,
+      "chg_pct": -0.3
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
@@ -23,24 +23,24 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.057,
-      "chg_pct": -0.05
+      "avg": 45.971,
+      "chg_pct": -0.19
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 5.97,
-      "chg_pct": 0.17
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.694,
-      "chg_pct": -0.11
+      "avg": 13.685,
+      "chg_pct": -0.07
     }
   ],
   "nand_note": {
-    "date": "2026-10-12",
-    "summary": "[News] CXMT Accelerates 4F² DRAM Push, Eyes Year-End Server DDR5 RDIMM Launch",
-    "url": "https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%c2%b2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/"
+    "date": "2026-10-13",
+    "summary": "[News] AI Chip Memory Strategies Diverge: Microsoft’s Maia 300 Fuels HBM4 Demand as Intel Bets on LPDDR5X",
+    "url": "https://www.trendforce.com/news/2026/10/13/news-ai-chip-memory-strategies-diverge-microsofts-maia-300-fuels-hbm4-demand-as-intel-bets-on-lower-cost-lpddr5x/"
   },
   "proxies": {},
   "errors": []
