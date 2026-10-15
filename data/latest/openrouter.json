@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-14T18:09:16Z",
+  "asof": "2026-10-15T17:52:00Z",
   "n_models": 462,
   "models": [
     {
@@ -255,6 +255,20 @@
       "context": 1000000
     },
     {
+      "id": "openai/gpt-5.6-sol-pro",
+      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1050000
+    },
+    {
       "id": "~anthropic/claude-opus-latest",
       "name": "Anthropic: Claude Opus Latest",
       "prompt_usd_per_m": 4.0,
@@ -262,23 +276,16 @@
       "context": 1000000
     },
     {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.45,
+      "completion_usd_per_m": 16.5,
+      "context": 1048576
+    },
+    {
       "id": "fireworks/ember-1",
       "name": "Fireworks: Ember-1",
       "prompt_usd_per_m": 3.0,
-      "completion_usd_per_m": 15.0,
-      "context": 1048576
-    },
-    {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.5,
-      "completion_usd_per_m": 15.0,
-      "context": 1048576
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.5,
       "completion_usd_per_m": 15.0,
       "context": 1048576
     },
@@ -325,13 +332,6 @@
       "context": 1000000
     },
     {
-      "id": "anthropic/claude-sonnet-4",
-      "name": "Anthropic: Claude Sonnet 4",
-      "prompt_usd_per_m": 3.0,
-      "completion_usd_per_m": 15.0,
-      "context": 200000
-    },
-    {
       "id": "perplexity/sonar-pro",
       "name": "Perplexity: Sonar Pro",
       "prompt_usd_per_m": 3.0,
@@ -351,6 +351,13 @@
       "prompt_usd_per_m": 5.0,
       "completion_usd_per_m": 15.0,
       "context": 128000
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.4,
+      "completion_usd_per_m": 14.0,
+      "context": 1048576
     },
     {
       "id": "openai/gpt-5.3-codex",
@@ -458,13 +465,6 @@
       "context": 131072
     },
     {
-      "id": "~google/gemini-pro-latest",
-      "name": "Google: Gemini Pro Latest",
-      "prompt_usd_per_m": 2.0,
-      "completion_usd_per_m": 12.0,
-      "context": 1048576
-    },
-    {
       "id": "google/gemini-3.1-pro-preview-customtools",
       "name": "Google: Gemini 3.1 Pro Preview Custom Tools",
       "prompt_usd_per_m": 2.0,
@@ -549,15 +549,15 @@
       "context": 1050000
     },
     {
-      "id": "openai/gpt-5.6-sol-pro",
-      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "id": "openai/gpt-5.6-sol-pro:batch",
+      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1050000
     },
     {
-      "id": "openai/gpt-5.6-sol",
-      "name": "OpenAI: GPT-5.6 Sol",
+      "id": "openai/gpt-5.6-sol:batch",
+      "name": "OpenAI: GPT-5.6 Sol (batch)",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1050000
@@ -568,6 +568,20 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 10.0,
       "context": 1000000
+    },
+    {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.2,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
+    },
+    {
+      "id": "~google/gemini-pro-latest",
+      "name": "Google: Gemini Pro Latest",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
     },
     {
       "id": "~anthropic/claude-sonnet-latest",
@@ -773,13 +787,6 @@
       "context": 1000000
     },
     {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.05,
-      "completion_usd_per_m": 7.0,
-      "context": 1048576
-    },
-    {
       "id": "openai/gpt-5.2:batch",
       "name": "OpenAI: GPT-5.2 (batch)",
       "prompt_usd_per_m": 0.875,
@@ -941,20 +948,6 @@
       "context": 1050000
     },
     {
-      "id": "openai/gpt-5.6-sol-pro:batch",
-      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 1050000
-    },
-    {
-      "id": "openai/gpt-5.6-sol:batch",
-      "name": "OpenAI: GPT-5.6 Sol (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 1050000
-    },
-    {
       "id": "anthropic/claude-sonnet-5:batch",
       "name": "Anthropic: Claude Sonnet 5 (batch)",
       "prompt_usd_per_m": 1.0,
@@ -1006,7 +999,7 @@
     {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
-      "prompt_usd_per_m": 0.079,
+      "prompt_usd_per_m": 0.11,
       "completion_usd_per_m": 4.8,
       "context": 1048576
     },
@@ -1041,13 +1034,20 @@
     {
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 0.063,
+      "prompt_usd_per_m": 0.0608,
       "completion_usd_per_m": 4.4,
       "context": 1048576
     },
     {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
+      "prompt_usd_per_m": 1.1,
+      "completion_usd_per_m": 4.4,
+      "context": 200000
+    },
+    {
+      "id": "openai/o4-mini",
+      "name": "OpenAI: o4 Mini",
       "prompt_usd_per_m": 1.1,
       "completion_usd_per_m": 4.4,
       "context": 200000
