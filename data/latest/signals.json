@@ -1,17 +1,17 @@
 {
-  "asof": "2026-10-15T17:52:02Z",
+  "asof": "2026-10-15T20:23:25Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.6281,
+      "value": 2.5079,
       "unit": "$/hr",
-      "value_fmt": "$2.63",
-      "percentile": 69,
+      "value_fmt": "$2.51",
+      "percentile": 52,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -17.76,
-      "read": "Rich vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -21.52,
+      "read": "Mid-range vs its 90-day history, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-10-15",
-          2.6281499999999998
+          2.5079000000000002
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 19.23,
+      "value": 15.38,
       "unit": "% (7d)",
-      "value_fmt": "+19.2%",
+      "value_fmt": "+15.4%",
       "percentile": 53,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 19.23,
+      "delta_7d_pct": 15.38,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-10-15",
-          31
+          30
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.966,
+      "value": 1.0123,
       "unit": "ratio",
-      "value_fmt": "0.97x",
-      "percentile": 86,
+      "value_fmt": "1.01x",
+      "percentile": 89,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 33.08,
-      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
+      "delta_7d_pct": 39.47,
+      "read": "Blackwell nearing compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-10-15",
-          0.9660193482107186
+          1.0123385103074283
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 54.26,
+    "index": 54.57,
     "label": "NEUTRAL"
   },
   "errors": []
