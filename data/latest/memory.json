@@ -1,25 +1,25 @@
 {
-  "asof": "2026-10-15T17:52:02Z",
+  "asof": "2026-10-16T17:40:40Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.433,
-      "chg_pct": 0.55
+      "avg": 60.6,
+      "chg_pct": 0.28
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 27.8,
-      "chg_pct": 1.09
+      "avg": 28.0,
+      "chg_pct": 0.72
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
       "avg": 83.66,
-      "chg_pct": 0.06
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
       "avg": 14.113,
-      "chg_pct": -0.09
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
@@ -28,19 +28,19 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.97,
-      "chg_pct": 0.0
+      "avg": 5.968,
+      "chg_pct": -0.03
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.68,
-      "chg_pct": -0.04
+      "avg": 13.751,
+      "chg_pct": 0.52
     }
   ],
   "nand_note": {
-    "date": "2026-10-13",
-    "summary": "[News] AI Chip Memory Strategies Diverge: Microsoft’s Maia 300 Fuels HBM4 Demand as Intel Bets on LPDDR5X",
-    "url": "https://www.trendforce.com/news/2026/10/13/news-ai-chip-memory-strategies-diverge-microsofts-maia-300-fuels-hbm4-demand-as-intel-bets-on-lower-cost-lpddr5x/"
+    "date": "2026-10-15",
+    "summary": "[News] SK hynix Reportedly Seeks U.S. Chip Tool Approval for China Expansion to Fund Potential U.S. NAND Fab",
+    "url": "https://www.trendforce.com/news/2026/10/15/news-sk-hynix-reportedly-seeks-u-s-chip-tool-approval-for-china-expansion-to-fund-potential-u-s-nand-fab/"
   },
   "proxies": {},
   "errors": []

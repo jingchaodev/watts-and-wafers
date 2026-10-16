@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-15T17:52:00Z",
-  "n_models": 462,
+  "asof": "2026-10-16T17:40:37Z",
+  "n_models": 466,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -178,6 +178,13 @@
       "context": 128000
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.294,
+      "completion_usd_per_m": 28.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-6-astra:batch",
       "name": "OpenAI: GPT-6 Astra (batch)",
       "prompt_usd_per_m": 5.0,
@@ -276,13 +283,6 @@
       "context": 1000000
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.45,
-      "completion_usd_per_m": 16.5,
-      "context": 1048576
-    },
-    {
       "id": "fireworks/ember-1",
       "name": "Fireworks: Ember-1",
       "prompt_usd_per_m": 3.0,
@@ -353,13 +353,6 @@
       "context": 128000
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.4,
-      "completion_usd_per_m": 14.0,
-      "context": 1048576
-    },
-    {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "prompt_usd_per_m": 1.75,
@@ -386,6 +379,13 @@
       "prompt_usd_per_m": 1.75,
       "completion_usd_per_m": 14.0,
       "context": 400000
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.304,
+      "completion_usd_per_m": 12.533,
+      "context": 1048576
     },
     {
       "id": "anthropic/claude-opus-5:batch",
@@ -570,13 +570,6 @@
       "context": 1000000
     },
     {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.2,
-      "completion_usd_per_m": 10.0,
-      "context": 1048576
-    },
-    {
       "id": "~google/gemini-pro-latest",
       "name": "Google: Gemini Pro Latest",
       "prompt_usd_per_m": 2.0,
@@ -700,13 +693,6 @@
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "prompt_usd_per_m": 4.35,
       "completion_usd_per_m": 8.7,
-      "context": 1048576
-    },
-    {
-      "id": "~deepseek/deepseek-pro-latest",
-      "name": "DeepSeek: DeepSeek Pro Latest",
-      "prompt_usd_per_m": 0.1307,
-      "completion_usd_per_m": 8.0,
       "context": 1048576
     },
     {
@@ -999,7 +985,7 @@
     {
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
-      "prompt_usd_per_m": 0.11,
+      "prompt_usd_per_m": 0.079,
       "completion_usd_per_m": 4.8,
       "context": 1048576
     },
@@ -1048,6 +1034,20 @@
     {
       "id": "openai/o4-mini",
       "name": "OpenAI: o4 Mini",
+      "prompt_usd_per_m": 1.1,
+      "completion_usd_per_m": 4.4,
+      "context": 200000
+    },
+    {
+      "id": "openai/o3-mini-high",
+      "name": "OpenAI: o3 Mini High",
+      "prompt_usd_per_m": 1.1,
+      "completion_usd_per_m": 4.4,
+      "context": 200000
+    },
+    {
+      "id": "openai/o3-mini",
+      "name": "OpenAI: o3 Mini",
       "prompt_usd_per_m": 1.1,
       "completion_usd_per_m": 4.4,
       "context": 200000
