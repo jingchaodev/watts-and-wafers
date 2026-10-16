@@ -78,3 +78,4 @@
 {"date": "2026-10-10", "signal": "availability", "kind": "shock", "direction": "up", "detail": "H100 offers 7d +42%"}
 {"date": "2026-10-10", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label NEUTRAL -> TIGHTENING"}
 {"date": "2026-10-15", "signal": "h100_price", "kind": "percentile_cross", "direction": "up", "detail": "H100 market price entered P96 (90d)"}
+{"date": "2026-10-16", "signal": "gen_ratio", "kind": "percentile_cross", "direction": "up", "detail": "B200/H100 (perf-adj) entered P92 (90d)"}
