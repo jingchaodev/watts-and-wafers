@@ -1,16 +1,16 @@
 {
-  "asof": "2026-10-17T10:55:07Z",
+  "asof": "2026-10-17T14:15:53Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.5755,
+      "value": 2.5751,
       "unit": "$/hr",
       "value_fmt": "$2.58",
       "percentile": 63,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 11.94,
+      "delta_7d_pct": 11.92,
       "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-10-17",
-          2.5755
+          2.57505
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 55.0,
+      "value": 30.0,
       "unit": "% (7d)",
-      "value_fmt": "+55.0%",
-      "percentile": 54,
+      "value_fmt": "+30.0%",
+      "percentile": 34,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 55.0,
+      "delta_7d_pct": 30.0,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-10-17",
-          31
+          26
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 1.0004,
+      "value": 1.0005,
       "unit": "ratio",
       "value_fmt": "1.00x",
       "percentile": 87,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -3.27,
+      "delta_7d_pct": -3.26,
       "read": "Blackwell nearing compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-10-17",
-          1.0003518734226364
+          1.0005266888021591
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,8 +683,8 @@
     }
   ],
   "composite": {
-    "index": 53.54,
-    "label": "NEUTRAL"
+    "index": 55.14,
+    "label": "TIGHTENING"
   },
   "errors": []
 }
