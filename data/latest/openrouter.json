@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-16T17:40:37Z",
-  "n_models": 466,
+  "asof": "2026-10-17T16:37:48Z",
+  "n_models": 470,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -178,13 +178,6 @@
       "context": 128000
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.294,
-      "completion_usd_per_m": 28.0,
-      "context": 1048576
-    },
-    {
       "id": "openai/gpt-6-astra:batch",
       "name": "OpenAI: GPT-6 Astra (batch)",
       "prompt_usd_per_m": 5.0,
@@ -353,6 +346,13 @@
       "context": 128000
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.27,
+      "completion_usd_per_m": 14.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "prompt_usd_per_m": 1.75,
@@ -379,13 +379,6 @@
       "prompt_usd_per_m": 1.75,
       "completion_usd_per_m": 14.0,
       "context": 400000
-    },
-    {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.304,
-      "completion_usd_per_m": 12.533,
-      "context": 1048576
     },
     {
       "id": "anthropic/claude-opus-5:batch",
@@ -484,6 +477,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 12.0,
       "context": 65536
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.304,
+      "completion_usd_per_m": 11.936,
+      "context": 1048576
     },
     {
       "id": "moonshotai/kimi-k3:batch",
@@ -693,6 +693,13 @@
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "prompt_usd_per_m": 4.35,
       "completion_usd_per_m": 8.7,
+      "context": 1048576
+    },
+    {
+      "id": "~deepseek/deepseek-pro-latest",
+      "name": "DeepSeek: DeepSeek Pro Latest",
+      "prompt_usd_per_m": 0.12,
+      "completion_usd_per_m": 8.0,
       "context": 1048576
     },
     {
@@ -1020,7 +1027,7 @@
     {
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
-      "prompt_usd_per_m": 0.0608,
+      "prompt_usd_per_m": 0.0632,
       "completion_usd_per_m": 4.4,
       "context": 1048576
     },
@@ -1041,13 +1048,6 @@
     {
       "id": "openai/o3-mini-high",
       "name": "OpenAI: o3 Mini High",
-      "prompt_usd_per_m": 1.1,
-      "completion_usd_per_m": 4.4,
-      "context": 200000
-    },
-    {
-      "id": "openai/o3-mini",
-      "name": "OpenAI: o3 Mini",
       "prompt_usd_per_m": 1.1,
       "completion_usd_per_m": 4.4,
       "context": 200000
