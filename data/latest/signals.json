@@ -1,17 +1,17 @@
 {
-  "asof": "2026-10-18T06:02:37Z",
+  "asof": "2026-10-18T11:21:44Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.627,
+      "value": 2.5351,
       "unit": "$/hr",
-      "value_fmt": "$2.63",
-      "percentile": 68,
+      "value_fmt": "$2.54",
+      "percentile": 53,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -5.96,
-      "read": "Rich vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -9.25,
+      "read": "Mid-range vs its 90-day history, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-10-18",
-          2.627
+          2.53515
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 21.43,
+      "value": 14.29,
       "unit": "% (7d)",
-      "value_fmt": "+21.4%",
-      "percentile": 63,
+      "value_fmt": "+14.3%",
+      "percentile": 55,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 21.43,
+      "delta_7d_pct": 14.29,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-10-18",
-          34
+          32
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9807,
+      "value": 1.0187,
       "unit": "ratio",
-      "value_fmt": "0.98x",
-      "percentile": 85,
+      "value_fmt": "1.02x",
+      "percentile": 90,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 15.19,
-      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
+      "delta_7d_pct": 19.66,
+      "read": "Blackwell nearing compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-10-18",
-          0.9807408641035401
+          1.0187390292487624
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 52.59,
+    "index": 53.35,
     "label": "NEUTRAL"
   },
   "errors": []
