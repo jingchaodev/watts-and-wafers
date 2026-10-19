@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-18T16:50:47Z",
-  "n_models": 471,
+  "asof": "2026-10-19T19:27:15Z",
+  "n_models": 470,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -276,6 +276,13 @@
       "context": 1000000
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.238,
+      "completion_usd_per_m": 16.0,
+      "context": 1048576
+    },
+    {
       "id": "fireworks/ember-1",
       "name": "Fireworks: Ember-1",
       "prompt_usd_per_m": 3.0,
@@ -474,7 +481,7 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.304,
+      "prompt_usd_per_m": 0.239,
       "completion_usd_per_m": 11.936,
       "context": 1048576
     },
@@ -691,14 +698,7 @@
     {
       "id": "~deepseek/deepseek-pro-latest",
       "name": "DeepSeek: DeepSeek Pro Latest",
-      "prompt_usd_per_m": 0.12,
-      "completion_usd_per_m": 8.0,
-      "context": 1048576
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.25,
+      "prompt_usd_per_m": 0.1307,
       "completion_usd_per_m": 8.0,
       "context": 1048576
     },
@@ -806,6 +806,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 1000000
+    },
+    {
+      "id": "~z-ai/glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "prompt_usd_per_m": 0.055,
+      "completion_usd_per_m": 6.0,
+      "context": 1048576
     },
     {
       "id": "qwen/qwen3.8-2.4t-a95b",
@@ -1041,13 +1048,6 @@
     {
       "id": "meta/muse-spark-open",
       "name": "Meta: Muse Spark Open",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.3",
-      "name": "Meta: Muse Spark 1.3",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
       "context": 1048576
