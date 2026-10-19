@@ -1,14 +1,14 @@
 {
-  "asof": "2026-10-19T01:24:21Z",
-  "index": 54.97,
-  "label": "NEUTRAL",
+  "asof": "2026-10-19T07:54:15Z",
+  "index": 57.28,
+  "label": "TIGHTENING",
   "signals": [
     {
       "key": "gpu_availability",
       "weight": 0.35,
-      "z": 0.563,
+      "z": 1.11,
       "direction": "up",
-      "detail": "H100-class offers 28 (-3.4% vs prior)"
+      "detail": "H100-class offers 22 (-21.4% vs prior)"
     },
     {
       "key": "token_economics",
@@ -27,9 +27,9 @@
     {
       "key": "gpu_price",
       "weight": 0.15,
-      "z": 0.21,
+      "z": 0.165,
       "direction": "up",
-      "detail": "H100-class median $/hr 2.59 (7d mean)"
+      "detail": "H100-class median $/hr 2.57 (7d mean)"
     }
   ]
 }
