@@ -1,35 +1,35 @@
 {
-  "asof": "2026-10-19T19:27:17Z",
+  "asof": "2026-10-20T18:05:58Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.633,
-      "chg_pct": 0.05
+      "avg": 60.7,
+      "chg_pct": 0.11
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 28.3,
-      "chg_pct": 1.07
+      "avg": 28.5,
+      "chg_pct": 0.71
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 83.414,
-      "chg_pct": -0.29
+      "avg": 83.364,
+      "chg_pct": -0.06
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
       "avg": 14.1,
-      "chg_pct": -0.09
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.971,
-      "chg_pct": 0.0
+      "avg": 46.357,
+      "chg_pct": 0.84
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
       "avg": 5.96,
-      "chg_pct": -0.13
+      "chg_pct": 0.0
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-10-15",
-    "summary": "[News] SK hynix Reportedly Seeks U.S. Chip Tool Approval for China Expansion to Fund Potential U.S. NAND Fab",
-    "url": "https://www.trendforce.com/news/2026/10/15/news-sk-hynix-reportedly-seeks-u-s-chip-tool-approval-for-china-expansion-to-fund-potential-u-s-nand-fab/"
+    "date": "2026-10-20",
+    "summary": "[News] DRAM Prices Seen Rising 20% QoQ in 4Q26 Despite Slower Gains; AI Demand, Tight Supply Support Outlook",
+    "url": "https://www.trendforce.com/news/2026/10/20/news-dram-prices-seen-rising-20-qoq-in-4q26-despite-slower-gains-ai-demand-tight-supply-support-outlook/"
   },
   "proxies": {},
   "errors": []
