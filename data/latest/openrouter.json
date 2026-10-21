@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-20T18:05:54Z",
+  "asof": "2026-10-21T18:14:12Z",
   "n_models": 468,
   "models": [
     {
@@ -241,13 +241,6 @@
       "context": 200000
     },
     {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.238,
-      "completion_usd_per_m": 24.0,
-      "context": 1048576
-    },
-    {
       "id": "meta/muse-wonder",
       "name": "Meta: Muse Wonder",
       "prompt_usd_per_m": 4.0,
@@ -481,6 +474,13 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.239,
+      "completion_usd_per_m": 11.936,
+      "context": 1048576
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
       "prompt_usd_per_m": 0.239,
       "completion_usd_per_m": 11.936,
       "context": 1048576
@@ -773,6 +773,13 @@
       "context": 1000000
     },
     {
+      "id": "z-ai/glm-5.2",
+      "name": "Z.ai: GLM 5.2",
+      "prompt_usd_per_m": 0.0341,
+      "completion_usd_per_m": 7.0,
+      "context": 1048576
+    },
+    {
       "id": "openai/gpt-5.2:batch",
       "name": "OpenAI: GPT-5.2 (batch)",
       "prompt_usd_per_m": 0.875,
@@ -1004,6 +1011,13 @@
       "context": 1000000
     },
     {
+      "id": "z-ai/glm-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "prompt_usd_per_m": 1.4,
+      "completion_usd_per_m": 4.4,
+      "context": 204800
+    },
+    {
       "id": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "prompt_usd_per_m": 1.1,
@@ -1034,20 +1048,6 @@
     {
       "id": "meta/muse-spark-open",
       "name": "Meta: Muse Spark Open",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.3",
-      "name": "Meta: Muse Spark 1.3",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.2",
-      "name": "Meta: Muse Spark 1.2",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
       "context": 1048576

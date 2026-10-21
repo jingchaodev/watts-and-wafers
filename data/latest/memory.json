@@ -1,35 +1,35 @@
 {
-  "asof": "2026-10-20T18:05:58Z",
+  "asof": "2026-10-21T18:14:14Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.7,
-      "chg_pct": 0.11
+      "avg": 60.867,
+      "chg_pct": 0.28
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 28.5,
-      "chg_pct": 0.71
+      "avg": 28.6,
+      "chg_pct": 0.35
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 83.364,
-      "chg_pct": -0.06
+      "avg": 83.117,
+      "chg_pct": -0.3
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 14.1,
-      "chg_pct": 0.0
+      "avg": 13.975,
+      "chg_pct": -0.89
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.357,
-      "chg_pct": 0.84
+      "avg": 46.786,
+      "chg_pct": 0.93
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.96,
-      "chg_pct": 0.0
+      "avg": 5.962,
+      "chg_pct": 0.03
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-10-20",
-    "summary": "[News] DRAM Prices Seen Rising 20% QoQ in 4Q26 Despite Slower Gains; AI Demand, Tight Supply Support Outlook",
-    "url": "https://www.trendforce.com/news/2026/10/20/news-dram-prices-seen-rising-20-qoq-in-4q26-despite-slower-gains-ai-demand-tight-supply-support-outlook/"
+    "date": "2026-10-21",
+    "summary": "[Insights] Memory Spot Price Update: DDR5 Supply Tight, DDR4 Trading Weak Despite 0.84% Gain in Mainstream Prices",
+    "url": "https://www.trendforce.com/news/2026/10/21/insights-memory-spot-price-update-ddr5-supply-tight-ddr4-trading-subdued-despite-0-84-gain-in-mainstream-prices/"
   },
   "proxies": {},
   "errors": []
