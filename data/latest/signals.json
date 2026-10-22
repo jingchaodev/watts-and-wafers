@@ -1,17 +1,17 @@
 {
-  "asof": "2026-10-22T18:37:40Z",
+  "asof": "2026-10-22T22:27:36Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.3282,
+      "value": 2.7152,
       "unit": "$/hr",
-      "value_fmt": "$2.33",
-      "percentile": 22,
+      "value_fmt": "$2.72",
+      "percentile": 75,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -24.78,
-      "read": "Cheap vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -12.28,
+      "read": "Rich vs its 90-day history, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-10-22",
-          2.3282499999999997
+          2.7152000000000003
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -4.76,
+      "value": -14.29,
       "unit": "% (7d)",
-      "value_fmt": "-4.8%",
-      "percentile": 22,
+      "value_fmt": "-14.3%",
+      "percentile": 18,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -4.76,
+      "delta_7d_pct": -14.29,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-10-22",
-          20
+          18
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 1.1476,
+      "value": 0.9652,
       "unit": "ratio",
-      "value_fmt": "1.15x",
-      "percentile": 97,
+      "value_fmt": "0.97x",
+      "percentile": 82,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 39.91,
-      "read": "Blackwell nearing compute-price parity, premium widening",
+      "delta_7d_pct": 17.67,
+      "read": "Blackwell already at or below H100 compute-price parity, premium widening",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-10-22",
-          1.1475893911736283
+          0.965168311726576
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 59.29,
+    "index": 60.07,
     "label": "TIGHTENING"
   },
   "errors": []
