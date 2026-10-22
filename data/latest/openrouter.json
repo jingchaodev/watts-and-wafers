@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-21T18:14:12Z",
+  "asof": "2026-10-22T18:08:36Z",
   "n_models": 468,
   "models": [
     {
@@ -241,6 +241,13 @@
       "context": 200000
     },
     {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.238,
+      "completion_usd_per_m": 24.0,
+      "context": 1048576
+    },
+    {
       "id": "meta/muse-wonder",
       "name": "Meta: Muse Wonder",
       "prompt_usd_per_m": 4.0,
@@ -474,13 +481,6 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.239,
-      "completion_usd_per_m": 11.936,
-      "context": 1048576
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
       "prompt_usd_per_m": 0.239,
       "completion_usd_per_m": 11.936,
       "context": 1048576
