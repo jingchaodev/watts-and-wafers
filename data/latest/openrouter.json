@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-22T18:08:36Z",
+  "asof": "2026-10-23T17:56:49Z",
   "n_models": 468,
   "models": [
     {
@@ -479,17 +479,17 @@
       "context": 65536
     },
     {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.239,
-      "completion_usd_per_m": 11.936,
-      "context": 1048576
-    },
-    {
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "prompt_usd_per_m": 2.28,
       "completion_usd_per_m": 11.4,
+      "context": 1048576
+    },
+    {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.239,
+      "completion_usd_per_m": 10.8,
       "context": 1048576
     },
     {
@@ -698,7 +698,7 @@
     {
       "id": "~deepseek/deepseek-pro-latest",
       "name": "DeepSeek: DeepSeek Pro Latest",
-      "prompt_usd_per_m": 0.1307,
+      "prompt_usd_per_m": 0.1188,
       "completion_usd_per_m": 8.0,
       "context": 1048576
     },
