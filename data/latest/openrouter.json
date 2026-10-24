@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-23T17:56:49Z",
-  "n_models": 468,
+  "asof": "2026-10-24T16:54:47Z",
+  "n_models": 469,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -239,13 +239,6 @@
       "prompt_usd_per_m": 5.0,
       "completion_usd_per_m": 25.0,
       "context": 200000
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.238,
-      "completion_usd_per_m": 24.0,
-      "context": 1048576
     },
     {
       "id": "meta/muse-wonder",
@@ -493,6 +486,13 @@
       "context": 1048576
     },
     {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
+    },
+    {
       "id": "google/gemini-4-argon",
       "name": "Google: Gemini 4 Argon",
       "prompt_usd_per_m": 2.0,
@@ -679,6 +679,13 @@
       "name": "Google: Gemini 3.5 Flash",
       "prompt_usd_per_m": 1.5,
       "completion_usd_per_m": 9.0,
+      "context": 1048576
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.19,
+      "completion_usd_per_m": 8.94,
       "context": 1048576
     },
     {
@@ -1044,13 +1051,6 @@
       "prompt_usd_per_m": 1.1,
       "completion_usd_per_m": 4.4,
       "context": 200000
-    },
-    {
-      "id": "meta/muse-spark-open",
-      "name": "Meta: Muse Spark Open",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
