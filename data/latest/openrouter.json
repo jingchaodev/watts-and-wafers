@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-24T16:54:47Z",
-  "n_models": 469,
+  "asof": "2026-10-25T17:11:57Z",
+  "n_models": 467,
   "models": [
     {
       "id": "openai/o1-pro",
@@ -274,6 +274,13 @@
       "prompt_usd_per_m": 4.0,
       "completion_usd_per_m": 20.0,
       "context": 1000000
+    },
+    {
+      "id": "~moonshotai/kimi-latest",
+      "name": "MoonshotAI: Kimi Latest",
+      "prompt_usd_per_m": 0.152,
+      "completion_usd_per_m": 16.0,
+      "context": 1048576
     },
     {
       "id": "fireworks/ember-1",
@@ -679,13 +686,6 @@
       "name": "Google: Gemini 3.5 Flash",
       "prompt_usd_per_m": 1.5,
       "completion_usd_per_m": 9.0,
-      "context": 1048576
-    },
-    {
-      "id": "~moonshotai/kimi-latest",
-      "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.19,
-      "completion_usd_per_m": 8.94,
       "context": 1048576
     },
     {
