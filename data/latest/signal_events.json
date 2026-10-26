@@ -1,6 +1,13 @@
 {
-  "asof": "2026-10-25T22:38:48Z",
+  "asof": "2026-10-26T01:18:56Z",
   "events": [
+    {
+      "date": "2026-10-26",
+      "signal": "availability",
+      "kind": "shock",
+      "direction": "up",
+      "detail": "H100 offers 7d +57%"
+    },
     {
       "date": "2026-10-23",
       "signal": "gen_ratio",
@@ -133,13 +140,6 @@
       "kind": "percentile_cross",
       "direction": "up",
       "detail": "B200/H100 (perf-adj) entered P98 (90d)"
-    },
-    {
-      "date": "2026-10-03",
-      "signal": "composite",
-      "kind": "label_flip",
-      "direction": "up",
-      "detail": "Composite label TIGHTENING -> SURGING"
     }
   ],
   "errors": []
