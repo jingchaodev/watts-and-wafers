@@ -90,3 +90,4 @@
 {"date": "2026-10-23", "signal": "gen_ratio", "kind": "percentile_cross", "direction": "up", "detail": "B200/H100 (perf-adj) entered P92 (90d)"}
 {"date": "2026-10-26", "signal": "availability", "kind": "shock", "direction": "up", "detail": "H100 offers 7d +57%"}
 {"date": "2026-10-26", "signal": "composite", "kind": "label_flip", "direction": "down", "detail": "Composite label TIGHTENING -> SOFTENING"}
+{"date": "2026-10-27", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label SOFTENING -> NEUTRAL"}
