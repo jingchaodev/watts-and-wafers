@@ -1,17 +1,17 @@
 {
-  "asof": "2026-10-27T10:40:59Z",
+  "asof": "2026-10-27T16:43:41Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 3.2493,
+      "value": 2.6216,
       "unit": "$/hr",
-      "value_fmt": "$3.25",
-      "percentile": 100,
+      "value_fmt": "$2.62",
+      "percentile": 65,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 26.71,
-      "read": "Near 90-day highs, trending up over the last week",
+      "delta_7d_pct": 2.23,
+      "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-10-27",
-          3.2493
+          2.62165
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 260.0,
+      "value": 140.0,
       "unit": "% (7d)",
-      "value_fmt": "+260.0%",
-      "percentile": 20,
+      "value_fmt": "+140.0%",
+      "percentile": 6,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 260.0,
+      "delta_7d_pct": 140.0,
       "read": "Offers expanding — capacity loosening",
       "tone": "cold",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-10-27",
-          18
+          12
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8223,
+      "value": 1.0192,
       "unit": "ratio",
-      "value_fmt": "0.82x",
-      "percentile": 33,
+      "value_fmt": "1.02x",
+      "percentile": 87,
       "window_days": 90,
-      "direction": "down",
-      "delta_7d_pct": -20.61,
-      "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
+      "direction": "flat",
+      "delta_7d_pct": -1.61,
+      "read": "Blackwell nearing compute-price parity",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-10-27",
-          0.8222924937678885
+          1.0191577823126658
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 45.75,
+    "index": 48.08,
     "label": "NEUTRAL"
   },
   "errors": []
