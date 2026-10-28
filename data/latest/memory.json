@@ -1,5 +1,5 @@
 {
-  "asof": "2026-10-27T18:55:27Z",
+  "asof": "2026-10-28T19:04:21Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
@@ -8,39 +8,39 @@
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 29.3,
-      "chg_pct": 0.34
+      "avg": 29.5,
+      "chg_pct": 0.68
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 82.623,
-      "chg_pct": 0.0
+      "avg": 82.92,
+      "chg_pct": 0.36
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.825,
-      "chg_pct": 0.0
+      "avg": 13.8,
+      "chg_pct": -0.18
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 47.043,
-      "chg_pct": 0.09
+      "avg": 46.864,
+      "chg_pct": -0.38
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.968,
-      "chg_pct": -0.03
+      "avg": 5.97,
+      "chg_pct": 0.03
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.889,
+      "avg": 13.936,
       "chg_pct": 0.34
     }
   ],
   "nand_note": {
-    "date": "2026-10-22",
-    "summary": "[News] Micron Reportedly Rules Out 4F² DRAM Scaling, Backs 6F² and 3D DRAM in Next-Gen Memory Roadmap",
-    "url": "https://www.trendforce.com/news/2026/10/22/news-micron-reportedly-rules-out-4f%c2%b2-dram-scaling-backs-6f%c2%b2-and-3d-dram-in-next-gen-memory-roadmap/"
+    "date": "2026-10-28",
+    "summary": "[Insights] Memory Spot Price Update: NAND Price Cuts Accelerate Amid China Phone Discounts; 512Gb TLC Sink 9.19%",
+    "url": "https://www.trendforce.com/news/2026/10/28/insights-memory-spot-price-update-nand-spot-price-cuts-accelerate-amid-china-phone-discounts-512gb-tlc-sink-9-19/"
   },
   "proxies": {},
   "errors": []
