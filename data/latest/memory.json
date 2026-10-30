@@ -1,24 +1,24 @@
 {
-  "asof": "2026-10-29T19:10:58Z",
+  "asof": "2026-10-30T18:48:41Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 61.333,
-      "chg_pct": 0.0
+      "avg": 61.5,
+      "chg_pct": 0.27
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 29.7,
-      "chg_pct": 0.68
+      "avg": 29.8,
+      "chg_pct": 0.34
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 82.92,
-      "chg_pct": 0.0
+      "avg": 82.796,
+      "chg_pct": -0.15
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.75,
+      "avg": 13.7,
       "chg_pct": -0.36
     },
     {
@@ -28,19 +28,19 @@
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.97,
-      "chg_pct": 0.0
+      "avg": 5.96,
+      "chg_pct": -0.17
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 14.007,
+      "avg": 14.078,
       "chg_pct": 0.51
     }
   ],
   "nand_note": {
-    "date": "2026-10-28",
-    "summary": "[Insights] Memory Spot Price Update: NAND Price Cuts Accelerate Amid China Phone Discounts; 512Gb TLC Sink 9.19%",
-    "url": "https://www.trendforce.com/news/2026/10/28/insights-memory-spot-price-update-nand-spot-price-cuts-accelerate-amid-china-phone-discounts-512gb-tlc-sink-9-19/"
+    "date": "2026-10-29",
+    "summary": "[News] Samsung Says HBM Share Matches DRAM Standing as HBM4 Sales Triple; DS Margin Hits 72%, 10 LTA Clients Signed",
+    "url": "https://www.trendforce.com/news/2026/10/29/news-samsung-says-hbm-share-matches-dram-standing-as-hbm4-sales-triple-ds-margin-hits-72-10-lta-clients-signed/"
   },
   "proxies": {},
   "errors": []

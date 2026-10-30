@@ -1,13 +1,5 @@
 {
-  "asof": "2026-10-29T19:10:58Z",
-  "flags": [
-    {
-      "gpu": "H200",
-      "provider": "lambda",
-      "price": 2.29,
-      "cohort_median": 6.188,
-      "ratio": 0.37
-    }
-  ],
+  "asof": "2026-10-30T18:48:41Z",
+  "flags": [],
   "errors": []
 }
