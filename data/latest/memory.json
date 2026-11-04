@@ -1,35 +1,35 @@
 {
-  "asof": "2026-11-03T20:15:43Z",
+  "asof": "2026-11-04T20:31:12Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 61.5,
-      "chg_pct": 0.0
+      "avg": 61.333,
+      "chg_pct": -0.27
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 30.0,
-      "chg_pct": 0.0
+      "avg": 30.25,
+      "chg_pct": 0.83
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 82.719,
-      "chg_pct": 0.0
+      "avg": 81.926,
+      "chg_pct": -0.96
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.675,
-      "chg_pct": 0.0
+      "avg": 13.575,
+      "chg_pct": -0.73
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 46.821,
-      "chg_pct": 0.0
+      "avg": 46.25,
+      "chg_pct": -1.22
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.94,
-      "chg_pct": -0.17
+      "avg": 5.88,
+      "chg_pct": -1.01
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
@@ -38,9 +38,9 @@
     }
   ],
   "nand_note": {
-    "date": "2026-11-03",
-    "summary": "[News] Apple Sees Holiday-Quarter Margins at 45%–46% as Memory Costs Soar; Inventory Jumps 154% Amid Stockpiling",
-    "url": "https://www.trendforce.com/news/2026/11/03/news-apple-sees-holiday-quarter-margins-at-45-46-as-memory-costs-soar-inventory-jumps-154-amid-stockpiling/"
+    "date": "2026-11-04",
+    "summary": "[Insights] Memory Spot Price Update: Mainstream DDR4 Prices Dip 0.09% as Spot Premium Keeps Buyers on Sidelines",
+    "url": "https://www.trendforce.com/news/2026/11/04/insights-memory-spot-price-update-mainstream-ddr4-prices-dip-0-09-as-spot-premium-keeps-buyers-on-sidelines/"
   },
   "proxies": {},
   "errors": []

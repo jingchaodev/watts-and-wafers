@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-03T20:15:41Z",
+  "asof": "2026-11-04T20:31:09Z",
   "n_models": 454,
   "models": [
     {
@@ -255,6 +255,13 @@
       "context": 1000000
     },
     {
+      "id": "moonshotai/kimi-k3",
+      "name": "MoonshotAI: Kimi K3",
+      "prompt_usd_per_m": 0.2,
+      "completion_usd_per_m": 16.0,
+      "context": 1048576
+    },
+    {
       "id": "fireworks/ember-1",
       "name": "Fireworks: Ember-1",
       "prompt_usd_per_m": 3.0,
@@ -453,8 +460,8 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.1596,
-      "completion_usd_per_m": 10.5354,
+      "prompt_usd_per_m": 0.19,
+      "completion_usd_per_m": 10.5572,
       "context": 1048576
     },
     {
@@ -645,13 +652,6 @@
       "prompt_usd_per_m": 2.5,
       "completion_usd_per_m": 10.0,
       "context": 128000
-    },
-    {
-      "id": "moonshotai/kimi-k3",
-      "name": "MoonshotAI: Kimi K3",
-      "prompt_usd_per_m": 0.276,
-      "completion_usd_per_m": 9.6,
-      "context": 1048576
     },
     {
       "id": "google/gemini-3.5-flash",
@@ -997,6 +997,13 @@
       "context": 500000
     },
     {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "prompt_usd_per_m": 0.115,
+      "completion_usd_per_m": 4.6,
+      "context": 1048576
+    },
+    {
       "id": "google/gemini-3.5-flash:batch",
       "name": "Google: Gemini 3.5 Flash (batch)",
       "prompt_usd_per_m": 0.75,
@@ -1041,13 +1048,6 @@
     {
       "id": "meta/muse-spark-1.3",
       "name": "Meta: Muse Spark 1.3",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 4.25,
-      "context": 1048576
-    },
-    {
-      "id": "meta/muse-spark-1.2",
-      "name": "Meta: Muse Spark 1.2",
       "prompt_usd_per_m": 1.25,
       "completion_usd_per_m": 4.25,
       "context": 1048576
