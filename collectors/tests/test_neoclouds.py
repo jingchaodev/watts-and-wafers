@@ -1,3 +1,4 @@
+import json
 import os
 
 import neoclouds
@@ -133,6 +134,42 @@ def test_parse_coreweave_schema_and_per_node_division():
     # fixture -> skipped (no safe division), not guessed
     assert "GB200" not in result
     assert "B300" not in result
+
+
+def test_parse_runcrate_schema_and_skips():
+    raw = _load("runcrate_gpu_pricing.json")
+    result = neoclouds.parse_runcrate(raw)
+
+    assert isinstance(result, dict)
+    for gpu, price in result.items():
+        assert isinstance(price, float)
+        assert price > 0
+
+    assert result["B300"] == 16.47
+    assert result["B200"] == 7.93
+    assert result["H200"] == 5.13     # SXM H200 row, H200 NVL is not mapped
+    assert result["A100"] == 1.73     # 80GB and 40GB rows collapse to one A100 key
+    assert result["L40S"] == 0.55
+    assert result["RTX 4090"] == 0.58
+    # H100 is not mapped (the feed does not say SXM vs PCIe); GH200 and
+    # MI350X are out of stock or not in the contract
+    assert "H100" not in result
+    assert "GH200" not in result
+    assert "MI350X" not in result
+
+
+def test_parse_runcrate_skips_out_of_stock_and_bad_prices():
+    doc = json.loads(_load("runcrate_gpu_pricing.json"))
+    for g in doc["gpus"]:
+        if g["gpu_type"] == "B300":
+            g["available_options"] = 0   # stale price for an out-of-stock type
+        if g["gpu_type"] == "L40S":
+            g["min_price_hr"] = None
+    result = neoclouds.parse_runcrate(json.dumps(doc))
+
+    assert "B300" not in result
+    assert "L40S" not in result
+    assert result["B200"] == 7.93
 
 
 def test_norm_gpu():

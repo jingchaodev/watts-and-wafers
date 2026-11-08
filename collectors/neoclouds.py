@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Neocloud collector — lowest on-demand $/GPU-hr across 6 neocloud providers
-(hourly): RunPod, DataCrunch, Lambda, Nebius, Crusoe, CoreWeave.
+"""Neocloud collector: lowest on-demand $/GPU-hr across 7 neocloud providers
+(hourly): RunPod, DataCrunch, Lambda, Nebius, Crusoe, CoreWeave, Runcrate.
 
 RunPod + DataCrunch ported from /root/.claude/skills/automation/wiki-web/
 gpu_snapshot.py. Lambda/Nebius/Crusoe/CoreWeave ported+adapted from the public
@@ -31,6 +31,7 @@ LAMBDA_PRICING_URL = "https://lambda.ai/service/gpu-cloud"
 NEBIUS_PRICING_URL = "https://nebius.com/prices"
 CRUSOE_PRICING_URL = "https://crusoe.ai/cloud/pricing/"
 COREWEAVE_PRICING_URL = "https://www.coreweave.com/pricing"
+RUNCRATE_PRICING_URL = "https://www.runcrate.ai/api/gpu-pricing"
 
 WATCH_GPUS = ("GB200", "B300", "B200", "GH200", "H200", "H100", "A100", "L40S", "RTX 4090", "MI300X")
 
@@ -325,6 +326,54 @@ def parse_coreweave(raw_html_text):
 
 
 # ---------------------------------------------------------------------------
+# Runcrate
+# ---------------------------------------------------------------------------
+
+# Feed gpu_type -> contract GPU name. Only types the feed identifies without
+# guessing: it does not say SXM vs PCIe, so H100 is left out, and H200_nvl is
+# a different part from the SXM H200, so it is left out too. A100 is kept
+# because the contract keys A100 without a form factor (the 80GB and 40GB rows
+# collapse to one key, one price per key, same as the other providers).
+RUNCRATE_GPU_TYPES = {
+    "B300": "B300",
+    "B200": "B200",
+    "H200": "H200",
+    "A100_80G": "A100",
+    "A100": "A100",
+    "L40S": "L40S",
+    "RTX4090": "RTX 4090",
+}
+
+
+def fetch_runcrate(timeout=25, retries=2):
+    return fetch_url(RUNCRATE_PRICING_URL, timeout=timeout, retries=retries)
+
+
+def parse_runcrate(raw_json_text):
+    """Pure parse: Runcrate pricing feed JSON -> {gpu_name: on_demand_$/hr}.
+
+    `min_price_hr` is the live on-demand $/GPU-hr for the type. Entries with
+    `available_options` < 1 are skipped: the feed keeps a stale price for
+    out-of-stock types, and that is not a rentable price.
+    """
+    doc = json.loads(raw_json_text)
+    best = {}
+    for x in doc.get("gpus") or []:
+        gpu = RUNCRATE_GPU_TYPES.get(x.get("gpu_type"))
+        if not gpu:
+            continue
+        if (x.get("available_options") or 0) < 1:
+            continue
+        price = x.get("min_price_hr")
+        if not isinstance(price, (int, float)) or price <= 0:
+            continue
+        price = float(price)
+        if gpu not in best or price < best[gpu]:
+            best[gpu] = price
+    return {g: round(p, 4) for g, p in best.items()}
+
+
+# ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
 
@@ -338,6 +387,7 @@ def collect():
         ("nebius", fetch_nebius, parse_nebius),
         ("crusoe", fetch_crusoe, parse_crusoe),
         ("coreweave", fetch_coreweave, parse_coreweave),
+        ("runcrate", fetch_runcrate, parse_runcrate),
     ):
         try:
             raw = fetch_fn()
