@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-07T18:15:55Z",
-  "n_models": 460,
+  "asof": "2026-11-08T18:28:20Z",
+  "n_models": 461,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -451,13 +451,6 @@
       "context": 65536
     },
     {
-      "id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)",
-      "prompt_usd_per_m": 2.28,
-      "completion_usd_per_m": 11.4,
-      "context": 1048576
-    },
-    {
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "prompt_usd_per_m": 2.0,
@@ -649,8 +642,8 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.1653,
-      "completion_usd_per_m": 9.3388,
+      "prompt_usd_per_m": 0.17,
+      "completion_usd_per_m": 9.7533,
       "context": 1048576
     },
     {
@@ -820,6 +813,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 500000
+    },
+    {
+      "id": "moonshotai/kimi-k3:batch",
+      "name": "MoonshotAI: Kimi K3 (batch)",
+      "prompt_usd_per_m": 0.917,
+      "completion_usd_per_m": 6.0,
+      "context": 1048576
     },
     {
       "id": "openai/gpt-5.6-terra-pro:batch",
