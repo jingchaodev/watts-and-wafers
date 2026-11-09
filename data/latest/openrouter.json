@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-08T18:28:20Z",
-  "n_models": 461,
+  "asof": "2026-11-09T23:07:23Z",
+  "n_models": 464,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -108,17 +108,24 @@
       "context": 1000000
     },
     {
-      "id": "~anthropic/claude-fable-latest",
-      "name": "Anthropic: Claude Fable Latest",
+      "id": "anthropic/claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
       "prompt_usd_per_m": 10.0,
       "completion_usd_per_m": 50.0,
       "context": 1000000
     },
     {
-      "id": "anthropic/claude-fable-5",
-      "name": "Anthropic: Claude Fable 5",
-      "prompt_usd_per_m": 10.0,
-      "completion_usd_per_m": 50.0,
+      "id": "anthropic/claude-fable-5.2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "prompt_usd_per_m": 8.0,
+      "completion_usd_per_m": 40.0,
+      "context": 1000000
+    },
+    {
+      "id": "~anthropic/claude-fable-latest",
+      "name": "Anthropic: Claude Fable Latest",
+      "prompt_usd_per_m": 8.0,
+      "completion_usd_per_m": 40.0,
       "context": 1000000
     },
     {
@@ -218,6 +225,13 @@
       "prompt_usd_per_m": 5.0,
       "completion_usd_per_m": 25.0,
       "context": 200000
+    },
+    {
+      "id": "anthropic/claude-fable-5.2:batch",
+      "name": "Anthropic: Claude Fable 5.2 (batch)",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1000000
     },
     {
       "id": "meta/muse-wonder",
@@ -451,6 +465,13 @@
       "context": 65536
     },
     {
+      "id": "moonshotai/kimi-k3:batch",
+      "name": "MoonshotAI: Kimi K3 (batch)",
+      "prompt_usd_per_m": 2.28,
+      "completion_usd_per_m": 11.4,
+      "context": 1048576
+    },
+    {
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "prompt_usd_per_m": 2.0,
@@ -642,8 +663,8 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.17,
-      "completion_usd_per_m": 9.7533,
+      "prompt_usd_per_m": 0.1624,
+      "completion_usd_per_m": 9.3388,
       "context": 1048576
     },
     {
@@ -813,13 +834,6 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 500000
-    },
-    {
-      "id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)",
-      "prompt_usd_per_m": 0.917,
-      "completion_usd_per_m": 6.0,
-      "context": 1048576
     },
     {
       "id": "openai/gpt-5.6-terra-pro:batch",
@@ -1037,20 +1051,6 @@
       "prompt_usd_per_m": 0.111,
       "completion_usd_per_m": 4.44,
       "context": 1048576
-    },
-    {
-      "id": "qwen/qwen3.7-max",
-      "name": "Qwen: Qwen3.7 Max",
-      "prompt_usd_per_m": 1.475,
-      "completion_usd_per_m": 4.425,
-      "context": 1000000
-    },
-    {
-      "id": "z-ai/glm-5.1",
-      "name": "Z.ai: GLM 5.1",
-      "prompt_usd_per_m": 1.4,
-      "completion_usd_per_m": 4.4,
-      "context": 204800
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
