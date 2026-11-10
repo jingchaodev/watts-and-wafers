@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-09T23:07:25Z",
+  "asof": "2026-11-10T20:34:57Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
@@ -8,39 +8,39 @@
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 30.25,
-      "chg_pct": 0.0
+      "avg": 30.3,
+      "chg_pct": 0.17
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 80.236,
-      "chg_pct": -0.72
+      "avg": 79.99,
+      "chg_pct": -0.31
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.25,
-      "chg_pct": -0.38
+      "avg": 13.225,
+      "chg_pct": -0.19
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.214,
-      "chg_pct": -0.86
+      "avg": 45.0,
+      "chg_pct": -0.47
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.72,
-      "chg_pct": -0.35
+      "avg": 5.68,
+      "chg_pct": -0.7
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
       "avg": 13.83,
-      "chg_pct": -0.51
+      "chg_pct": 0.0
     }
   ],
   "nand_note": {
-    "date": "2026-11-09",
-    "summary": "[News] Terafab Reportedly Eyes 1M Wafers Monthly by 2032, with 700K for Memory Near Samsung’s Total DRAM Capacity",
-    "url": "https://www.trendforce.com/news/2026/11/09/news-terafab-reportedly-eyes-1m-wafers-monthly-by-2032-with-700k-for-memory-near-samsungs-total-dram-capacity/"
+    "date": "2026-11-10",
+    "summary": "[News] Samsung Reportedly Plans Over 70% of Galaxy S27 Production for Pro, Ultra in 2027 Amid Rising Memory Costs",
+    "url": "https://www.trendforce.com/news/2026/11/10/news-samsung-reportedly-plans-over-70-of-galaxy-s27-production-for-pro-ultra-in-2027-amid-rising-memory-costs/"
   },
   "proxies": {},
   "errors": []

@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-09T23:07:23Z",
-  "n_models": 464,
+  "asof": "2026-11-10T20:34:55Z",
+  "n_models": 469,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -472,6 +472,13 @@
       "context": 1048576
     },
     {
+      "id": "google/gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
+    },
+    {
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "prompt_usd_per_m": 2.0,
@@ -663,7 +670,7 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.1624,
+      "prompt_usd_per_m": 0.1824,
       "completion_usd_per_m": 9.3388,
       "context": 1048576
     },
@@ -789,7 +796,7 @@
     {
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.006,
+      "prompt_usd_per_m": 0.007,
       "completion_usd_per_m": 6.8,
       "context": 1048576
     },
@@ -904,6 +911,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 128000
+    },
+    {
+      "id": "google/gemini-4-carbon:batch",
+      "name": "Google: Gemini 4 Carbon (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1048576
     },
     {
       "id": "openai/gpt-6.1-terra-pro",
@@ -1037,20 +1051,6 @@
       "prompt_usd_per_m": 0.75,
       "completion_usd_per_m": 4.5,
       "context": 400000
-    },
-    {
-      "id": "openai/gpt-5.4-mini",
-      "name": "OpenAI: GPT-5.4 Mini",
-      "prompt_usd_per_m": 0.75,
-      "completion_usd_per_m": 4.5,
-      "context": 400000
-    },
-    {
-      "id": "deepseek/deepseek-v4-pro-0813",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813",
-      "prompt_usd_per_m": 0.111,
-      "completion_usd_per_m": 4.44,
-      "context": 1048576
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
