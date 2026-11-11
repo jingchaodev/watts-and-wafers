@@ -1,16 +1,16 @@
 {
-  "asof": "2026-11-11T15:24:32Z",
+  "asof": "2026-11-11T22:47:32Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.7347,
+      "value": 2.7346,
       "unit": "$/hr",
       "value_fmt": "$2.73",
       "percentile": 68,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 2.56,
+      "delta_7d_pct": 2.55,
       "read": "Rich vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-11-11",
-          2.7346500000000002
+          2.7346
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -43.48,
+      "value": -60.87,
       "unit": "% (7d)",
-      "value_fmt": "-43.5%",
-      "percentile": 9,
+      "value_fmt": "-60.9%",
+      "percentile": 3,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -43.48,
+      "delta_7d_pct": -60.87,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-11-11",
-          13
+          9
         ]
       ],
       "provenance": null
@@ -412,7 +412,7 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.977,
+      "value": 0.9771,
       "unit": "ratio",
       "value_fmt": "0.98x",
       "percentile": 76,
@@ -540,7 +540,7 @@
         ],
         [
           "2026-11-11",
-          0.977044594372223
+          0.9770624588605281
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 59.24,
+    "index": 60.94,
     "label": "TIGHTENING"
   },
   "errors": []
