@@ -24,7 +24,7 @@ VPS cron → collectors/*.py (stdlib Python)
 | Signal | Source | Cadence |
 |---|---|---|
 | GPU availability (offer count) + marketplace price | Vast.ai public API | hourly |
-| Neocloud on-demand $/GPU-hr | RunPod, DataCrunch | hourly |
+| Neocloud on-demand $/GPU-hr | RunPod, DataCrunch, Runcrate | hourly |
 | Hyperscaler $/GPU-hr (on-demand + spot) | Azure Retail Prices API | daily |
 | Model cost / Pareto ($/M tokens) | OpenRouter models API | daily |
 | DRAM spot, NAND weekly note | TrendForce public pages | daily |

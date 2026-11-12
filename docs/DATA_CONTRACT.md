@@ -35,6 +35,9 @@ Ported RunPod + DataCrunch logic from the wiki gpu_snapshot.
 ```
 Key = normalized GPU name (H100 / H200 / B200 / GB200 / A100 / L40S / RTX 4090 / MI300X);
 value = lowest on-demand $/GPU-hr.
+The `runcrate` provider key reads https://www.runcrate.ai/api/gpu-pricing (public JSON, no key)
+and uses `min_price_hr` for B300, B200, H200, A100, L40S and RTX 4090, skipping types with
+`available_options` below 1.
 
 ### `data/latest/hyperscaler.json` (daily)
 Azure Retail Prices API, ND-series GPU SKUs.

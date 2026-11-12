@@ -1,0 +1,104 @@
+{
+  "gpus": [
+    {
+      "gpu_type": "B300",
+      "name": "B300",
+      "vram": "288GB",
+      "min_price_hr": 16.47,
+      "max_price_hr": 16.47,
+      "avg_price_hr": 16.47,
+      "available_options": 3
+    },
+    {
+      "gpu_type": "B200",
+      "name": "B200",
+      "vram": "180GB",
+      "min_price_hr": 7.93,
+      "max_price_hr": 7.93,
+      "avg_price_hr": 7.93,
+      "available_options": 1
+    },
+    {
+      "gpu_type": "MI350X",
+      "name": "MI350X",
+      "vram": "288GB",
+      "min_price_hr": 5.72,
+      "max_price_hr": 5.72,
+      "avg_price_hr": 5.72,
+      "available_options": 0
+    },
+    {
+      "gpu_type": "H200",
+      "name": "H200",
+      "vram": "141GB",
+      "min_price_hr": 5.13,
+      "max_price_hr": 8.51,
+      "avg_price_hr": 6.62,
+      "available_options": 15
+    },
+    {
+      "gpu_type": "H200_nvl",
+      "name": "H200 NVL",
+      "vram": "141GB",
+      "min_price_hr": 4.67,
+      "max_price_hr": 4.67,
+      "avg_price_hr": 4.67,
+      "available_options": 4
+    },
+    {
+      "gpu_type": "H100",
+      "name": "H100",
+      "vram": "80GB",
+      "min_price_hr": 3.58,
+      "max_price_hr": 7.79,
+      "avg_price_hr": 4.57,
+      "available_options": 13
+    },
+    {
+      "gpu_type": "A100_80G",
+      "name": "A100 80GB",
+      "vram": "80GB",
+      "min_price_hr": 1.73,
+      "max_price_hr": 4.26,
+      "avg_price_hr": 2.23,
+      "available_options": 15
+    },
+    {
+      "gpu_type": "A100",
+      "name": "A100 40GB",
+      "vram": "40GB",
+      "min_price_hr": 1.99,
+      "max_price_hr": 4.15,
+      "avg_price_hr": 2.66,
+      "available_options": 5
+    },
+    {
+      "gpu_type": "L40S",
+      "name": "L40S",
+      "vram": "48GB",
+      "min_price_hr": 0.55,
+      "max_price_hr": 2.21,
+      "avg_price_hr": 1.3,
+      "available_options": 9
+    },
+    {
+      "gpu_type": "RTX4090",
+      "name": "RTX 4090",
+      "vram": "24GB",
+      "min_price_hr": 0.58,
+      "max_price_hr": 0.93,
+      "avg_price_hr": 0.68,
+      "available_options": 11
+    },
+    {
+      "gpu_type": "GH200",
+      "name": "GH200",
+      "vram": "96GB",
+      "min_price_hr": 2.98,
+      "max_price_hr": 2.98,
+      "avg_price_hr": 2.98,
+      "available_options": 0
+    }
+  ],
+  "fetched_at": "2026-11-08T06:25:12.461Z"
+}
