@@ -1,46 +1,46 @@
 {
-  "asof": "2026-11-10T20:34:57Z",
+  "asof": "2026-11-12T21:03:30Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.167,
+      "avg": 60.233,
       "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 30.3,
-      "chg_pct": 0.17
+      "avg": 30.45,
+      "chg_pct": 0.16
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 79.99,
-      "chg_pct": -0.31
+      "avg": 79.75,
+      "chg_pct": -0.15
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 13.225,
-      "chg_pct": -0.19
+      "avg": 13.075,
+      "chg_pct": -0.38
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 45.0,
-      "chg_pct": -0.47
+      "avg": 44.714,
+      "chg_pct": -0.4
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.68,
-      "chg_pct": -0.7
+      "avg": 5.63,
+      "chg_pct": -0.35
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.83,
-      "chg_pct": 0.0
+      "avg": 13.777,
+      "chg_pct": -0.05
     }
   ],
   "nand_note": {
-    "date": "2026-11-10",
-    "summary": "[News] Samsung Reportedly Plans Over 70% of Galaxy S27 Production for Pro, Ultra in 2027 Amid Rising Memory Costs",
-    "url": "https://www.trendforce.com/news/2026/11/10/news-samsung-reportedly-plans-over-70-of-galaxy-s27-production-for-pro-ultra-in-2027-amid-rising-memory-costs/"
+    "date": "2026-11-12",
+    "summary": "[News] Memory Makers Reportedly Plan New Price Hikes While AI Demand Widens Enterprise-Consumer Divide",
+    "url": "https://www.trendforce.com/news/2026/11/12/news-memory-makers-reportedly-plan-new-price-hikes-while-ai-demand-widens-enterprise-consumer-divide/"
   },
   "proxies": {},
   "errors": []
