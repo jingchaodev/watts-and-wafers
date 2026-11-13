@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-12T21:03:27Z",
-  "n_models": 473,
+  "asof": "2026-11-13T20:38:07Z",
+  "n_models": 471,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -486,6 +486,13 @@
       "context": 1048576
     },
     {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1048576
+    },
+    {
       "id": "google/gemini-4-argon",
       "name": "Google: Gemini 4 Argon",
       "prompt_usd_per_m": 2.0,
@@ -694,13 +701,6 @@
       "prompt_usd_per_m": 2.8,
       "completion_usd_per_m": 8.8,
       "context": 1000000
-    },
-    {
-      "id": "moonshotai/kimi-k3.1-pro",
-      "name": "MoonshotAI: Kimi K3.1 Pro",
-      "prompt_usd_per_m": 0.2375,
-      "completion_usd_per_m": 8.7856,
-      "context": 1048576
     },
     {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
