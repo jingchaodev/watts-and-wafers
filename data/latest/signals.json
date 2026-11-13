@@ -1,16 +1,16 @@
 {
-  "asof": "2026-11-13T01:56:08Z",
+  "asof": "2026-11-13T09:42:35Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.912,
+      "value": 2.7757,
       "unit": "$/hr",
-      "value_fmt": "$2.91",
-      "percentile": 81,
+      "value_fmt": "$2.78",
+      "percentile": 75,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 17.36,
+      "delta_7d_pct": 11.86,
       "read": "Rich vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-11-13",
-          2.91205
+          2.7756999999999996
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,15 +140,15 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": 0.0,
+      "value": 10.0,
       "unit": "% (7d)",
-      "value_fmt": "+0.0%",
-      "percentile": 28,
+      "value_fmt": "+10.0%",
+      "percentile": 34,
       "window_days": 90,
-      "direction": "flat",
-      "delta_7d_pct": 0.0,
-      "read": "Offers roughly flat over the last week",
-      "tone": "neutral",
+      "direction": "up",
+      "delta_7d_pct": 10.0,
+      "read": "Offers expanding — capacity loosening",
+      "tone": "cold",
       "spark": [
         [
           "2026-10-15",
@@ -268,7 +268,7 @@
         ],
         [
           "2026-11-13",
-          20
+          22
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9175,
+      "value": 0.9626,
       "unit": "ratio",
-      "value_fmt": "0.92x",
-      "percentile": 61,
+      "value_fmt": "0.96x",
+      "percentile": 70,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -14.79,
+      "delta_7d_pct": -10.61,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-11-13",
-          0.9175237375731873
+          0.9625950210757648
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 57.08,
+    "index": 56.65,
     "label": "TIGHTENING"
   },
   "errors": []
