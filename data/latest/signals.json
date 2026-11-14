@@ -1,16 +1,16 @@
 {
-  "asof": "2026-11-14T18:50:08Z",
+  "asof": "2026-11-14T19:14:24Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.7347,
+      "value": 2.735,
       "unit": "$/hr",
       "value_fmt": "$2.73",
       "percentile": 68,
       "window_days": 90,
       "direction": "flat",
-      "delta_7d_pct": -0.68,
+      "delta_7d_pct": -0.66,
       "read": "Rich vs its 90-day history",
       "tone": "neutral",
       "spark": [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-11-14",
-          2.7347
+          2.735
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -4.76,
+      "value": -14.29,
       "unit": "% (7d)",
-      "value_fmt": "-4.8%",
-      "percentile": 29,
+      "value_fmt": "-14.3%",
+      "percentile": 22,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -4.76,
+      "delta_7d_pct": -14.29,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-11-14",
-          20
+          18
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.977,
+      "value": 0.9769,
       "unit": "ratio",
       "value_fmt": "0.98x",
       "percentile": 75,
       "window_days": 90,
       "direction": "flat",
-      "delta_7d_pct": 0.68,
+      "delta_7d_pct": 0.67,
       "read": "Blackwell already at or below H100 compute-price parity",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-11-14",
-          0.9770267305371704
+          0.9769195612431445
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 56.91,
+    "index": 57.68,
     "label": "TIGHTENING"
   },
   "errors": []
