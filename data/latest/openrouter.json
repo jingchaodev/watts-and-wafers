@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-14T18:50:05Z",
-  "n_models": 471,
+  "asof": "2026-11-15T19:26:53Z",
+  "n_models": 467,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -227,6 +227,13 @@
       "context": 200000
     },
     {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "prompt_usd_per_m": 4.4,
+      "completion_usd_per_m": 22.0,
+      "context": 1050000
+    },
+    {
       "id": "anthropic/claude-fable-5.2:batch",
       "name": "Anthropic: Claude Fable 5.2 (batch)",
       "prompt_usd_per_m": 4.0,
@@ -250,13 +257,6 @@
     {
       "id": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
-      "prompt_usd_per_m": 4.0,
-      "completion_usd_per_m": 20.0,
-      "context": 1050000
-    },
-    {
-      "id": "openai/gpt-5.6-sol",
-      "name": "OpenAI: GPT-5.6 Sol",
       "prompt_usd_per_m": 4.0,
       "completion_usd_per_m": 20.0,
       "context": 1050000
