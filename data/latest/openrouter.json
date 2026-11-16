@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-15T19:26:53Z",
-  "n_models": 467,
+  "asof": "2026-11-16T22:59:56Z",
+  "n_models": 470,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -227,13 +227,6 @@
       "context": 200000
     },
     {
-      "id": "openai/gpt-5.6-sol",
-      "name": "OpenAI: GPT-5.6 Sol",
-      "prompt_usd_per_m": 4.4,
-      "completion_usd_per_m": 22.0,
-      "context": 1050000
-    },
-    {
       "id": "anthropic/claude-fable-5.2:batch",
       "name": "Anthropic: Claude Fable 5.2 (batch)",
       "prompt_usd_per_m": 4.0,
@@ -257,6 +250,13 @@
     {
       "id": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "name": "OpenAI: GPT-5.6 Sol",
       "prompt_usd_per_m": 4.0,
       "completion_usd_per_m": 20.0,
       "context": 1050000
@@ -486,13 +486,6 @@
       "context": 1048576
     },
     {
-      "id": "moonshotai/kimi-k3.1-pro",
-      "name": "MoonshotAI: Kimi K3.1 Pro",
-      "prompt_usd_per_m": 2.0,
-      "completion_usd_per_m": 10.0,
-      "context": 1048576
-    },
-    {
       "id": "google/gemini-4-argon",
       "name": "Google: Gemini 4 Argon",
       "prompt_usd_per_m": 2.0,
@@ -696,17 +689,17 @@
       "context": 1048576
     },
     {
-      "id": "z-ai/glm-5.3-prime",
-      "name": "Z.ai: GLM 5.3 Prime",
-      "prompt_usd_per_m": 2.8,
-      "completion_usd_per_m": 8.8,
-      "context": 1000000
-    },
-    {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "prompt_usd_per_m": 4.35,
       "completion_usd_per_m": 8.7,
+      "context": 1048576
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "prompt_usd_per_m": 0.2403,
+      "completion_usd_per_m": 8.4023,
       "context": 1048576
     },
     {
@@ -812,13 +805,6 @@
       "name": "Z.ai: GLM 5.2",
       "prompt_usd_per_m": 0.007,
       "completion_usd_per_m": 6.8,
-      "context": 1048576
-    },
-    {
-      "id": "moonshotai/kimi-k3.1-pro:batch",
-      "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
-      "prompt_usd_per_m": 0.7,
-      "completion_usd_per_m": 6.0,
       "context": 1048576
     },
     {
@@ -932,6 +918,20 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
       "context": 128000
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro:batch",
+      "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+      "prompt_usd_per_m": 0.354,
+      "completion_usd_per_m": 5.31,
+      "context": 1048576
+    },
+    {
+      "id": "z-ai/glm-5.3-prime",
+      "name": "Z.ai: GLM 5.3 Prime",
+      "prompt_usd_per_m": 1.68,
+      "completion_usd_per_m": 5.28,
+      "context": 1000000
     },
     {
       "id": "google/gemini-4-carbon:batch",
