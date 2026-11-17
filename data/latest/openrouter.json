@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-16T22:59:56Z",
-  "n_models": 470,
+  "asof": "2026-11-17T21:53:05Z",
+  "n_models": 474,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -80,13 +80,6 @@
       "context": 8191
     },
     {
-      "id": "~openai/gpt-astra-latest",
-      "name": "OpenAI: GPT Astra Latest",
-      "prompt_usd_per_m": 10.0,
-      "completion_usd_per_m": 50.0,
-      "context": 1050000
-    },
-    {
       "id": "openai/gpt-6-astra",
       "name": "OpenAI: GPT-6 Astra",
       "prompt_usd_per_m": 10.0,
@@ -115,11 +108,32 @@
       "context": 1000000
     },
     {
+      "id": "openai/gpt-6.2-astra-pro",
+      "name": "OpenAI: GPT-6.2 Astra Pro",
+      "prompt_usd_per_m": 8.0,
+      "completion_usd_per_m": 40.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.2-astra",
+      "name": "OpenAI: GPT-6.2 Astra",
+      "prompt_usd_per_m": 8.0,
+      "completion_usd_per_m": 40.0,
+      "context": 1050000
+    },
+    {
       "id": "anthropic/claude-fable-5.2",
       "name": "Anthropic: Claude Fable 5.2",
       "prompt_usd_per_m": 8.0,
       "completion_usd_per_m": 40.0,
       "context": 1000000
+    },
+    {
+      "id": "~openai/gpt-astra-latest",
+      "name": "OpenAI: GPT Astra Latest",
+      "prompt_usd_per_m": 8.0,
+      "completion_usd_per_m": 40.0,
+      "context": 1050000
     },
     {
       "id": "~anthropic/claude-fable-latest",
@@ -477,6 +491,20 @@
       "prompt_usd_per_m": 0.1824,
       "completion_usd_per_m": 11.0055,
       "context": 1048576
+    },
+    {
+      "id": "openai/gpt-6.2-sol-pro",
+      "name": "OpenAI: GPT-6.2 Sol Pro",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "prompt_usd_per_m": 2.0,
+      "completion_usd_per_m": 10.0,
+      "context": 1050000
     },
     {
       "id": "google/gemini-4-carbon",
@@ -922,8 +950,8 @@
     {
       "id": "moonshotai/kimi-k3.1-pro:batch",
       "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
-      "prompt_usd_per_m": 0.354,
-      "completion_usd_per_m": 5.31,
+      "prompt_usd_per_m": 0.372,
+      "completion_usd_per_m": 5.583,
       "context": 1048576
     },
     {
@@ -1023,34 +1051,6 @@
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 5.0,
       "context": 200000
-    },
-    {
-      "id": "openai/gpt-5:batch",
-      "name": "OpenAI: GPT-5 (batch)",
-      "prompt_usd_per_m": 0.625,
-      "completion_usd_per_m": 5.0,
-      "context": 400000
-    },
-    {
-      "id": "anthracite-org/magnum-v4-72b",
-      "name": "Magnum v4 72B",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 5.0,
-      "context": 32768
-    },
-    {
-      "id": "openai/gpt-4o:batch",
-      "name": "OpenAI: GPT-4o (batch)",
-      "prompt_usd_per_m": 1.25,
-      "completion_usd_per_m": 5.0,
-      "context": 128000
-    },
-    {
-      "id": "x-ai/grok-4.7:batch",
-      "name": "SpaceXAI: Grok 4.7 (batch)",
-      "prompt_usd_per_m": 1.6,
-      "completion_usd_per_m": 4.8,
-      "context": 500000
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,

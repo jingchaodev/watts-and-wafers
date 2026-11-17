@@ -1,46 +1,46 @@
 {
-  "asof": "2026-11-16T22:59:58Z",
+  "asof": "2026-11-17T21:53:07Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 60.333,
-      "chg_pct": 0.11
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 30.6,
+      "avg": 30.7,
       "chg_pct": 0.33
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 79.375,
-      "chg_pct": -0.16
+      "avg": 79.125,
+      "chg_pct": -0.32
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.875,
-      "chg_pct": -0.58
+      "avg": 12.825,
+      "chg_pct": -0.39
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 44.357,
-      "chg_pct": -0.4
+      "avg": 44.25,
+      "chg_pct": -0.24
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.58,
-      "chg_pct": -0.54
+      "avg": 5.56,
+      "chg_pct": -0.36
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.779,
-      "chg_pct": 0.15
+      "avg": 13.765,
+      "chg_pct": -0.1
     }
   ],
   "nand_note": {
-    "date": "2026-11-12",
-    "summary": "[News] Memory Makers Reportedly Plan New Price Hikes While AI Demand Widens Enterprise-Consumer Divide",
-    "url": "https://www.trendforce.com/news/2026/11/12/news-memory-makers-reportedly-plan-new-price-hikes-while-ai-demand-widens-enterprise-consumer-divide/"
+    "date": "2026-11-16",
+    "summary": "[News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
+    "url": "https://www.trendforce.com/news/2026/11/16/news-u-s-judge-rejects-samsung-sk-hynix-microns-dram-price-fixing-dismissal-bid-citing-plausible-collusion/"
   },
   "proxies": {},
   "errors": []
