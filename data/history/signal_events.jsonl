@@ -107,3 +107,6 @@
 {"date": "2026-11-15", "signal": "composite", "kind": "label_flip", "direction": "down", "detail": "Composite label TIGHTENING -> NEUTRAL"}
 {"date": "2026-11-16", "signal": "h100_price", "kind": "percentile_cross", "direction": "up", "detail": "H100 market price entered P91 (90d)"}
 {"date": "2026-11-17", "signal": "availability", "kind": "shock", "direction": "down", "detail": "H100 offers 7d -37%"}
+{"date": "2026-11-18", "signal": "h100_price", "kind": "percentile_cross", "direction": "down", "detail": "H100 market price entered P1 (90d)"}
+{"date": "2026-11-18", "signal": "availability", "kind": "percentile_cross", "direction": "down", "detail": "H100 availability entered P5 (90d)"}
+{"date": "2026-11-18", "signal": "composite", "kind": "label_flip", "direction": "up", "detail": "Composite label NEUTRAL -> TIGHTENING"}
