@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-17T21:53:05Z",
-  "n_models": 474,
+  "asof": "2026-11-18T21:33:31Z",
+  "n_models": 480,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -241,6 +241,20 @@
       "context": 200000
     },
     {
+      "id": "openai/gpt-6.2-astra-pro:batch",
+      "name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.2-astra:batch",
+      "name": "OpenAI: GPT-6.2 Astra (batch)",
+      "prompt_usd_per_m": 4.0,
+      "completion_usd_per_m": 20.0,
+      "context": 1050000
+    },
+    {
       "id": "anthropic/claude-fable-5.2:batch",
       "name": "Anthropic: Claude Fable 5.2 (batch)",
       "prompt_usd_per_m": 4.0,
@@ -287,6 +301,13 @@
       "name": "MoonshotAI: Kimi K3",
       "prompt_usd_per_m": 0.192,
       "completion_usd_per_m": 16.0,
+      "context": 1048576
+    },
+    {
+      "id": "google/gemini-4-neon",
+      "name": "Google: Gemini 4 Neon",
+      "prompt_usd_per_m": 3.0,
+      "completion_usd_per_m": 15.0,
       "context": 1048576
     },
     {
@@ -766,6 +787,13 @@
       "context": 128000
     },
     {
+      "id": "google/gemini-4-neon:batch",
+      "name": "Google: Gemini 4 Neon (batch)",
+      "prompt_usd_per_m": 1.5,
+      "completion_usd_per_m": 7.5,
+      "context": 1048576
+    },
+    {
       "id": "google/gemini-4-hydrogen",
       "name": "Google: Gemini 4 Hydrogen",
       "prompt_usd_per_m": 1.5,
@@ -827,13 +855,6 @@
       "prompt_usd_per_m": 0.875,
       "completion_usd_per_m": 7.0,
       "context": 400000
-    },
-    {
-      "id": "z-ai/glm-5.2",
-      "name": "Z.ai: GLM 5.2",
-      "prompt_usd_per_m": 0.007,
-      "completion_usd_per_m": 6.8,
-      "context": 1048576
     },
     {
       "id": "aion-labs/aion-3.5",
@@ -962,6 +983,20 @@
       "context": 1000000
     },
     {
+      "id": "openai/gpt-6.2-sol-pro:batch",
+      "name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6.2-sol:batch",
+      "name": "OpenAI: GPT-6.2 Sol (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
+    },
+    {
       "id": "google/gemini-4-carbon:batch",
       "name": "Google: Gemini 4 Carbon (batch)",
       "prompt_usd_per_m": 1.0,
@@ -1016,41 +1051,6 @@
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 5.0,
       "context": 1050000
-    },
-    {
-      "id": "openai/gpt-6-sol:batch",
-      "name": "OpenAI: GPT-6 Sol (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 1050000
-    },
-    {
-      "id": "~openai/gpt-terra-latest",
-      "name": "OpenAI: GPT Terra Latest",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 1050000
-    },
-    {
-      "id": "anthropic/claude-sonnet-5:batch",
-      "name": "Anthropic: Claude Sonnet 5 (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 1000000
-    },
-    {
-      "id": "openai/gpt-5.1:batch",
-      "name": "OpenAI: GPT-5.1 (batch)",
-      "prompt_usd_per_m": 0.625,
-      "completion_usd_per_m": 5.0,
-      "context": 400000
-    },
-    {
-      "id": "anthropic/claude-haiku-4.5",
-      "name": "Anthropic: Claude Haiku 4.5",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 200000
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,

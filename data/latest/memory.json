@@ -1,46 +1,46 @@
 {
-  "asof": "2026-11-17T21:53:07Z",
+  "asof": "2026-11-18T21:33:33Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.333,
-      "chg_pct": 0.0
+      "avg": 60.5,
+      "chg_pct": 0.28
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 30.7,
-      "chg_pct": 0.33
+      "avg": 30.85,
+      "chg_pct": 0.49
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 79.125,
-      "chg_pct": -0.32
+      "avg": 78.95,
+      "chg_pct": -0.22
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.825,
-      "chg_pct": -0.39
+      "avg": 12.725,
+      "chg_pct": -0.78
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 44.25,
-      "chg_pct": -0.24
+      "avg": 44.029,
+      "chg_pct": -0.5
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.56,
-      "chg_pct": -0.36
+      "avg": 5.52,
+      "chg_pct": -0.72
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.765,
-      "chg_pct": -0.1
+      "avg": 13.806,
+      "chg_pct": 0.3
     }
   ],
   "nand_note": {
-    "date": "2026-11-16",
-    "summary": "[News] U.S. Judge Rejects Samsung, SK hynix, Micron’s DRAM Price-Fixing Dismissal Bid, Citing Plausible Collusion",
-    "url": "https://www.trendforce.com/news/2026/11/16/news-u-s-judge-rejects-samsung-sk-hynix-microns-dram-price-fixing-dismissal-bid-citing-plausible-collusion/"
+    "date": "2026-11-18",
+    "summary": "[Insights] Memory Spot Price Update: NAND Spot-Contract Price Gap Exceeds 20% amid Weak Demand",
+    "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/"
   },
   "proxies": {},
   "errors": []
