@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-18T21:33:31Z",
-  "n_models": 480,
+  "asof": "2026-11-19T21:46:04Z",
+  "n_models": 479,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -509,7 +509,7 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.1824,
+      "prompt_usd_per_m": 0.1805,
       "completion_usd_per_m": 11.0055,
       "context": 1048576
     },
@@ -738,6 +738,13 @@
       "context": 1048576
     },
     {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "prompt_usd_per_m": 0.253,
+      "completion_usd_per_m": 8.8,
+      "context": 1048576
+    },
+    {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "prompt_usd_per_m": 4.35,
@@ -745,16 +752,9 @@
       "context": 1048576
     },
     {
-      "id": "moonshotai/kimi-k3.1-pro",
-      "name": "MoonshotAI: Kimi K3.1 Pro",
-      "prompt_usd_per_m": 0.2403,
-      "completion_usd_per_m": 8.4023,
-      "context": 1048576
-    },
-    {
       "id": "~deepseek/deepseek-pro-latest",
       "name": "DeepSeek: DeepSeek Pro Latest",
-      "prompt_usd_per_m": 0.0999,
+      "prompt_usd_per_m": 0.1211,
       "completion_usd_per_m": 8.0,
       "context": 1048576
     },
@@ -785,6 +785,13 @@
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 8.0,
       "context": 128000
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "prompt_usd_per_m": 0.18,
+      "completion_usd_per_m": 7.8,
+      "context": 1048576
     },
     {
       "id": "google/gemini-4-neon:batch",
@@ -1044,13 +1051,6 @@
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 5.0,
       "context": 1000000
-    },
-    {
-      "id": "openai/gpt-6-sol-pro:batch",
-      "name": "OpenAI: GPT-6 Sol Pro (batch)",
-      "prompt_usd_per_m": 1.0,
-      "completion_usd_per_m": 5.0,
-      "context": 1050000
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
