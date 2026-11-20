@@ -1,46 +1,46 @@
 {
-  "asof": "2026-11-19T21:46:06Z",
+  "asof": "2026-11-20T21:29:59Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
       "avg": 60.667,
-      "chg_pct": 0.28
+      "chg_pct": 0.0
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 30.92,
-      "chg_pct": 0.23
+      "avg": 31.0,
+      "chg_pct": 0.26
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 78.75,
-      "chg_pct": -0.25
+      "avg": 78.625,
+      "chg_pct": -0.16
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.675,
-      "chg_pct": -0.39
+      "avg": 12.575,
+      "chg_pct": -0.79
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 43.921,
-      "chg_pct": -0.25
+      "avg": 43.75,
+      "chg_pct": -0.39
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.492,
-      "chg_pct": -0.51
+      "avg": 5.47,
+      "chg_pct": -0.4
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.806,
-      "chg_pct": 0.0
+      "avg": 13.771,
+      "chg_pct": -0.25
     }
   ],
   "nand_note": {
-    "date": "2026-11-18",
-    "summary": "[Insights] Memory Spot Price Update: NAND Spot-Contract Price Gap Exceeds 20% amid Weak Demand",
-    "url": "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/"
+    "date": "2026-11-17",
+    "summary": "[News] NAND Spot Prices Reverse Course, Sliding 20% in 2 Weeks amid Weak Consumer Demand, YMTC Competition",
+    "url": "https://www.trendforce.com/news/2026/11/17/news-nand-spot-prices-reverse-course-sliding-20-in-2-weeks-amid-weak-consumer-demand-ymtc-competition/"
   },
   "proxies": {},
   "errors": []
