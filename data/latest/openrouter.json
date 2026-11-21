@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-20T21:29:56Z",
+  "asof": "2026-11-21T20:13:08Z",
   "n_models": 476,
   "models": [
     {
@@ -509,7 +509,7 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
-      "prompt_usd_per_m": 0.1805,
+      "prompt_usd_per_m": 0.1824,
       "completion_usd_per_m": 11.0055,
       "context": 1048576
     },
