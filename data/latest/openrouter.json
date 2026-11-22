@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-21T20:13:08Z",
+  "asof": "2026-11-22T20:27:29Z",
   "n_models": 476,
   "models": [
     {
@@ -738,17 +738,17 @@
       "context": 1048576
     },
     {
-      "id": "moonshotai/kimi-k3.1-pro",
-      "name": "MoonshotAI: Kimi K3.1 Pro",
-      "prompt_usd_per_m": 0.253,
-      "completion_usd_per_m": 8.8,
-      "context": 1048576
-    },
-    {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "prompt_usd_per_m": 4.35,
       "completion_usd_per_m": 8.7,
+      "context": 1048576
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "prompt_usd_per_m": 0.2403,
+      "completion_usd_per_m": 8.4023,
       "context": 1048576
     },
     {
