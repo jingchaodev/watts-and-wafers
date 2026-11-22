@@ -1,17 +1,17 @@
 {
-  "asof": "2026-11-22T00:26:46Z",
+  "asof": "2026-11-22T08:08:24Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.8296,
+      "value": 2.5798,
       "unit": "$/hr",
-      "value_fmt": "$2.83",
-      "percentile": 77,
+      "value_fmt": "$2.58",
+      "percentile": 44,
       "window_days": 90,
       "direction": "up",
-      "delta_7d_pct": 14.51,
-      "read": "Rich vs its 90-day history, trending up over the last week",
+      "delta_7d_pct": 4.4,
+      "read": "Mid-range vs its 90-day history, trending up over the last week",
       "tone": "hot",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-11-22",
-          2.8296
+          2.57975
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -7.14,
+      "value": -39.29,
       "unit": "% (7d)",
-      "value_fmt": "-7.1%",
-      "percentile": 47,
+      "value_fmt": "-39.3%",
+      "percentile": 19,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -7.14,
+      "delta_7d_pct": -39.29,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-11-22",
-          26
+          17
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9198,
+      "value": 1.007,
       "unit": "ratio",
-      "value_fmt": "0.92x",
-      "percentile": 57,
+      "value_fmt": "1.01x",
+      "percentile": 79,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -14.93,
-      "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
+      "delta_7d_pct": -6.87,
+      "read": "Blackwell nearing compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-11-22",
-          0.9197799600650268
+          1.0070016474464576
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,8 +683,8 @@
     }
   ],
   "composite": {
-    "index": 54.66,
-    "label": "NEUTRAL"
+    "index": 58.08,
+    "label": "TIGHTENING"
   },
   "errors": []
 }
