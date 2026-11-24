@@ -1,18 +1,18 @@
 {
-  "asof": "2026-11-24T02:19:46Z",
+  "asof": "2026-11-24T12:38:49Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 3.1107,
+      "value": 2.5924,
       "unit": "$/hr",
-      "value_fmt": "$3.11",
-      "percentile": 95,
+      "value_fmt": "$2.59",
+      "percentile": 45,
       "window_days": 90,
-      "direction": "up",
-      "delta_7d_pct": 16.29,
-      "read": "Near 90-day highs, trending up over the last week",
-      "tone": "hot",
+      "direction": "down",
+      "delta_7d_pct": -3.08,
+      "read": "Mid-range vs its 90-day history, trending down over the last week",
+      "tone": "cold",
       "spark": [
         [
           "2026-10-26",
@@ -132,7 +132,7 @@
         ],
         [
           "2026-11-24",
-          3.1107
+          2.5924
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -28.0,
+      "value": -72.0,
       "unit": "% (7d)",
-      "value_fmt": "-28.0%",
-      "percentile": 24,
+      "value_fmt": "-72.0%",
+      "percentile": 3,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -28.0,
+      "delta_7d_pct": -72.0,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-11-24",
-          18
+          7
         ]
       ],
       "provenance": null
@@ -412,13 +412,13 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.8351,
+      "value": 0.9758,
       "unit": "ratio",
-      "value_fmt": "0.84x",
-      "percentile": 28,
+      "value_fmt": "0.98x",
+      "percentile": 72,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -16.88,
+      "delta_7d_pct": -2.88,
       "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
       "tone": "neutral",
       "spark": [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-11-24",
-          0.8351416079981997
+          0.9758090958185466
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 57.77,
+    "index": 61.8,
     "label": "TIGHTENING"
   },
   "errors": []
