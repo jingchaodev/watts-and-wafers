@@ -1,46 +1,46 @@
 {
-  "asof": "2026-11-22T20:27:32Z",
+  "asof": "2026-11-24T01:11:02Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.667,
-      "chg_pct": 0.0
+      "avg": 60.7,
+      "chg_pct": 0.05
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
       "avg": 31.0,
-      "chg_pct": 0.26
+      "chg_pct": 0.0
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 78.625,
+      "avg": 78.5,
       "chg_pct": -0.16
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.575,
-      "chg_pct": -0.79
+      "avg": 12.5,
+      "chg_pct": -0.6
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 43.75,
-      "chg_pct": -0.39
+      "avg": 43.536,
+      "chg_pct": -0.49
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.47,
-      "chg_pct": -0.4
+      "avg": 5.43,
+      "chg_pct": -0.73
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
       "avg": 13.771,
-      "chg_pct": -0.25
+      "chg_pct": 0.0
     }
   ],
   "nand_note": {
-    "date": "2026-11-17",
-    "summary": "[News] NAND Spot Prices Reverse Course, Sliding 20% in 2 Weeks amid Weak Consumer Demand, YMTC Competition",
-    "url": "https://www.trendforce.com/news/2026/11/17/news-nand-spot-prices-reverse-course-sliding-20-in-2-weeks-amid-weak-consumer-demand-ymtc-competition/"
+    "date": "2026-11-20",
+    "summary": "[News] Micron Reportedly Says All Major Customers Eye 3D DRAM Tie-Ups, Broader Adoption Expected by 2030–31",
+    "url": "https://www.trendforce.com/news/2026/11/20/news-micron-reportedly-says-all-major-customers-eye-3d-dram-tie-ups-broader-adoption-expected-by-2030-31/"
   },
   "proxies": {},
   "errors": []

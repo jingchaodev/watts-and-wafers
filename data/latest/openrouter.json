@@ -1,5 +1,5 @@
 {
-  "asof": "2026-11-22T20:27:29Z",
+  "asof": "2026-11-24T01:11:00Z",
   "n_models": 476,
   "models": [
     {
@@ -752,13 +752,6 @@
       "context": 1048576
     },
     {
-      "id": "~deepseek/deepseek-pro-latest",
-      "name": "DeepSeek: DeepSeek Pro Latest",
-      "prompt_usd_per_m": 0.0999,
-      "completion_usd_per_m": 8.0,
-      "context": 1048576
-    },
-    {
       "id": "openai/o3",
       "name": "OpenAI: o3",
       "prompt_usd_per_m": 2.0,
@@ -1051,6 +1044,13 @@
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 5.0,
       "context": 1000000
+    },
+    {
+      "id": "openai/gpt-6-sol-pro:batch",
+      "name": "OpenAI: GPT-6 Sol Pro (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
     }
   ],
   "frontier_median_completion_usd_per_m": 15.0,
