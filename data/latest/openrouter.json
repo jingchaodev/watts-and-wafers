@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-24T01:11:00Z",
-  "n_models": 476,
+  "asof": "2026-11-24T23:14:28Z",
+  "n_models": 470,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
