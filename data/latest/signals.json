@@ -1,17 +1,17 @@
 {
-  "asof": "2026-11-24T12:38:49Z",
+  "asof": "2026-11-24T23:05:09Z",
   "cards": [
     {
       "key": "h100_price",
       "title": "H100 market price",
-      "value": 2.5924,
+      "value": 1.8954,
       "unit": "$/hr",
-      "value_fmt": "$2.59",
-      "percentile": 45,
+      "value_fmt": "$1.90",
+      "percentile": 3,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -3.08,
-      "read": "Mid-range vs its 90-day history, trending down over the last week",
+      "delta_7d_pct": -29.14,
+      "read": "Near 90-day lows, trending down over the last week",
       "tone": "cold",
       "spark": [
         [
@@ -132,7 +132,7 @@
         ],
         [
           "2026-11-24",
-          2.5924
+          1.8954
         ]
       ],
       "provenance": "history includes external tracker data until own series reaches 90d"
@@ -140,13 +140,13 @@
     {
       "key": "availability",
       "title": "H100 availability",
-      "value": -72.0,
+      "value": -48.0,
       "unit": "% (7d)",
-      "value_fmt": "-72.0%",
-      "percentile": 3,
+      "value_fmt": "-48.0%",
+      "percentile": 11,
       "window_days": 90,
       "direction": "down",
-      "delta_7d_pct": -72.0,
+      "delta_7d_pct": -48.0,
       "read": "Offers thinning — capacity being absorbed",
       "tone": "hot",
       "spark": [
@@ -268,7 +268,7 @@
         ],
         [
           "2026-11-24",
-          7
+          13
         ]
       ],
       "provenance": null
@@ -412,14 +412,14 @@
     {
       "key": "gen_ratio",
       "title": "B200/H100 (perf-adj)",
-      "value": 0.9758,
+      "value": 1.4097,
       "unit": "ratio",
-      "value_fmt": "0.98x",
-      "percentile": 72,
+      "value_fmt": "1.41x",
+      "percentile": 98,
       "window_days": 90,
-      "direction": "down",
-      "delta_7d_pct": -2.88,
-      "read": "Blackwell already at or below H100 compute-price parity, premium narrowing",
+      "direction": "up",
+      "delta_7d_pct": 40.3,
+      "read": "Blackwell still carries a compute-price premium, premium widening",
       "tone": "neutral",
       "spark": [
         [
@@ -540,7 +540,7 @@
         ],
         [
           "2026-11-24",
-          0.9758090958185466
+          1.4096628679962013
         ]
       ],
       "provenance": "fixed conservative coefficient 3.2 (MLPerf)"
@@ -683,7 +683,7 @@
     }
   ],
   "composite": {
-    "index": 61.8,
+    "index": 58.91,
     "label": "TIGHTENING"
   },
   "errors": []
