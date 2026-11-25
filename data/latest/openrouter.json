@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-24T23:14:28Z",
-  "n_models": 470,
+  "asof": "2026-11-25T22:42:50Z",
+  "n_models": 474,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -794,13 +794,6 @@
       "context": 1048576
     },
     {
-      "id": "unbiased/pareto-26.9",
-      "name": "Pareto 26.9",
-      "prompt_usd_per_m": 2.5,
-      "completion_usd_per_m": 7.5,
-      "context": 262144
-    },
-    {
       "id": "google/gemini-nano-banana-2.1",
       "name": "Google: Nano Banana 2.1",
       "prompt_usd_per_m": 1.5,
@@ -1048,6 +1041,13 @@
     {
       "id": "openai/gpt-6-sol-pro:batch",
       "name": "OpenAI: GPT-6 Sol Pro (batch)",
+      "prompt_usd_per_m": 1.0,
+      "completion_usd_per_m": 5.0,
+      "context": 1050000
+    },
+    {
+      "id": "openai/gpt-6-sol:batch",
+      "name": "OpenAI: GPT-6 Sol (batch)",
       "prompt_usd_per_m": 1.0,
       "completion_usd_per_m": 5.0,
       "context": 1050000

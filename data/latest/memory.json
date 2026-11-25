@@ -1,10 +1,10 @@
 {
-  "asof": "2026-11-24T23:14:30Z",
+  "asof": "2026-11-25T22:42:52Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.833,
-      "chg_pct": 0.22
+      "avg": 60.767,
+      "chg_pct": -0.11
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
@@ -13,34 +13,34 @@
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 78.25,
-      "chg_pct": -0.32
+      "avg": 77.75,
+      "chg_pct": -0.64
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.475,
-      "chg_pct": -0.2
+      "avg": 12.375,
+      "chg_pct": -0.8
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 43.321,
-      "chg_pct": -0.49
+      "avg": 43.214,
+      "chg_pct": -0.25
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.39,
-      "chg_pct": -0.74
+      "avg": 5.37,
+      "chg_pct": -0.37
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.771,
-      "chg_pct": 0.0
+      "avg": 13.735,
+      "chg_pct": -0.26
     }
   ],
   "nand_note": {
-    "date": "2026-11-20",
-    "summary": "[News] Micron Reportedly Says All Major Customers Eye 3D DRAM Tie-Ups, Broader Adoption Expected by 2030–31",
-    "url": "https://www.trendforce.com/news/2026/11/20/news-micron-reportedly-says-all-major-customers-eye-3d-dram-tie-ups-broader-adoption-expected-by-2030-31/"
+    "date": "2026-11-25",
+    "summary": "[Insights] Memory Spot Price Update: DDR4, DDR3 Bear the Brunt of Weak Consumer Demand; Mainstream DDR4 Down 1.61%",
+    "url": "https://www.trendforce.com/news/2026/11/25/insights-memory-spot-price-update-ddr4-ddr3-bear-the-brunt-of-weak-consumer-demand-mainstream-ddr4-down-1-61/"
   },
   "proxies": {},
   "errors": []
