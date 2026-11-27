@@ -1,6 +1,6 @@
 {
-  "asof": "2026-11-26T22:33:02Z",
-  "n_models": 477,
+  "asof": "2026-11-27T22:17:53Z",
+  "n_models": 476,
   "models": [
     {
       "id": "openai/gpt-5.5-pro",
@@ -882,7 +882,7 @@
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "prompt_usd_per_m": 2.0,
       "completion_usd_per_m": 6.0,
-      "context": 1048576
+      "context": 1000000
     },
     {
       "id": "x-ai/grok-4.6",

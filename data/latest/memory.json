@@ -1,46 +1,46 @@
 {
-  "asof": "2026-11-26T22:33:04Z",
+  "asof": "2026-11-27T22:17:55Z",
   "dram_spot": [
     {
       "item": "DDR5 16Gb (2Gx8) 4800/5600",
-      "avg": 60.767,
-      "chg_pct": 0.0
+      "avg": 60.333,
+      "chg_pct": -0.71
     },
     {
       "item": "DDR5 16Gb (2Gx8) eTT",
-      "avg": 31.0,
-      "chg_pct": 0.0
+      "avg": 30.975,
+      "chg_pct": -0.08
     },
     {
       "item": "DDR4 16Gb (2Gx8) 3200",
-      "avg": 77.5,
-      "chg_pct": -0.32
+      "avg": 76.625,
+      "chg_pct": -1.13
     },
     {
       "item": "DDR4 16Gb (2Gx8) eTT",
-      "avg": 12.288,
-      "chg_pct": -0.7
+      "avg": 12.2,
+      "chg_pct": -0.72
     },
     {
       "item": "DDR4 8Gb (1Gx8) 3200",
-      "avg": 43.125,
-      "chg_pct": -0.21
+      "avg": 42.714,
+      "chg_pct": -0.95
     },
     {
       "item": "DDR4 8Gb (1Gx8) eTT",
-      "avg": 5.33,
-      "chg_pct": -0.75
+      "avg": 5.31,
+      "chg_pct": -0.38
     },
     {
       "item": "DDR3 4Gb 512Mx8 1600/1866",
-      "avg": 13.707,
-      "chg_pct": -0.2
+      "avg": 13.765,
+      "chg_pct": 0.42
     }
   ],
   "nand_note": {
     "date": "2026-11-25",
-    "summary": "[Insights] Memory Spot Price Update: DDR4, DDR3 Bear the Brunt of Weak Consumer Demand; Mainstream DDR4 Down 1.61%",
-    "url": "https://www.trendforce.com/news/2026/11/25/insights-memory-spot-price-update-ddr4-ddr3-bear-the-brunt-of-weak-consumer-demand-mainstream-ddr4-down-1-61/"
+    "summary": "[News] NVIDIA B300 Lead Times Reportedly Hit 40 Weeks; RTX 60 May Face Delays as Memory Supply Tightens",
+    "url": "https://www.trendforce.com/news/2026/11/25/news-nvidia-b300-lead-times-reportedly-hit-40-weeks-rtx-60-may-face-delays-as-memory-supply-tightens/"
   },
   "proxies": {},
   "errors": []
