@@ -117,3 +117,4 @@
 {"date": "2026-11-24", "signal": "h100_price", "kind": "percentile_cross", "direction": "up", "detail": "H100 market price entered P95 (90d)"}
 {"date": "2026-11-25", "signal": "h100_price", "kind": "percentile_cross", "direction": "down", "detail": "H100 market price entered P2 (90d)"}
 {"date": "2026-11-25", "signal": "availability", "kind": "percentile_cross", "direction": "down", "detail": "H100 availability entered P1 (90d)"}
+{"date": "2026-11-27", "signal": "gen_ratio", "kind": "percentile_cross", "direction": "down", "detail": "B200/H100 (perf-adj) entered P3 (90d)"}
